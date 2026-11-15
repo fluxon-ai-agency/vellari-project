@@ -6,7 +6,7 @@ parou, porque a conversa em que o site foi construído não vai junto com a past
 As regras permanentes do projeto estão em `CLAUDE.md` (o Claude Code lê sozinho). O briefing
 original está em `PROMPT.md.txt`. As pendências para o cliente estão em `docs/relatorio-final.md`.
 
-Última atualização: 14/11/2026.
+Última atualização: 15/11/2026.
 
 ## Onde o projeto parou
 
@@ -37,7 +37,8 @@ Qualquer uma pode mudar se o usuário pedir.
    dados oficiais. Voltam se a loja confirmar.
 6. Endereço sem número ("Rua 19, Centro"). O protótipo citava "nº 655, 2º andar", não confirmado.
 7. Cores do iPhone 18 Pro Max: as do briefing (Bordô, Preto, Prata, Glacial).
-8. Git: não estava instalado na máquina original; não há histórico de commits.
+8. Git: não estava instalado na máquina original, então não há commits por fase. Tudo entrou
+   no primeiro commit, em 15/11/2026 (ver "Repositório" abaixo).
 
 Outras decisões:
 
@@ -68,6 +69,15 @@ Existe uma prévia em https://claude.ai/artifact/1nKW7pBrMaenJmezz3rB7V, publica
 original. Outra conta não consegue atualizá-la; se precisar de uma nova prévia, publique outra.
 A cópia usada nela é gerada na pasta `previa/` (fora do git): build com `--base ./`, caminhos
 relativos, só WebP, sem o iframe do Google Maps (bloqueado no claude.ai) e com `noindex`.
+
+## Repositório
+
+- GitHub, privado: https://github.com/fluxon-ai-agency/vellari-site-3d (branch `main`).
+- O envio é por SSH (chave "PC Vellari", em `~/.ssh/id_ed25519`). Nesta rede o login do GitHub
+  pelo navegador (`gh auth login --web`) não funciona: o pedido que fecha o login é derrubado.
+  O `gh` não está logado; para o dia a dia basta o `git` por SSH.
+- Fica fora do repositório (`.gitignore`): `assets/media/` (originais, 1 GB), as folhas de
+  contato da Fase 0 (rostos de clientes), `node_modules/`, `dist/` e `previa/`.
 
 ## Ambiente da máquina original
 

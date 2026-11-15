@@ -14,3 +14,6 @@ Thumbs.db
 
 # Cópia do site usada no link de prévia (gerada)
 previa/
+
+# Permissões locais do Claude Code (de cada máquina)
+.claude/settings.local.json

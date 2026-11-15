@@ -157,8 +157,9 @@ As outras 59 fotos de clientes de `assets/` não foram usadas: mostram a marca a
 4. **Carrinho, seção Troca e "100% originais"** do protótipo ficaram de fora, porque não estão
    nos dados oficiais. Voltam se a loja confirmar.
 5. **Sacola Vellari.** Ela tem a silhueta de uma maçã; evitei fotos em que aparece.
-6. **Git.** Não está instalado nesta máquina, então não há commits por fase. Depois de instalar,
-   o `.gitignore` já deixa `assets/media/` (1 GB) fora do repositório.
+6. **Git.** Resolvido em 15/11/2026: o projeto está no repositório privado
+   `fluxon-ai-agency/vellari-site-3d`, no GitHub. Não há commits por fase (o git não estava
+   instalado durante a construção), e `assets/media/` (1 GB) fica fora do repositório.
 
 ## 7. Antes de publicar
 
