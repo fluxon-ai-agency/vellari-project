@@ -31,7 +31,9 @@ Na Fase 0 o usuário aprovou sem responder às perguntas abaixo, então valem es
 Qualquer uma pode mudar se o usuário pedir.
 
 1. Fotos de produto: recortes das fotos de story de `assets/` em que o texto ficou de fora; o resto
-   usa placeholder "Foto em breve".
+   usa placeholder "Foto em breve". Em 15/11/2026 o usuário trocou as fotos dos iPhones (menos o
+   iPhone 11) por imagens geradas por IA, em `assets/media/fotos-dos-iphones-da-vitrine/`; as do
+   Gemini entram como 2ª foto da galeria do mesmo modelo.
 2. Poster do hero: render do próprio modelo 3D, um por cor (não há foto do iPhone 18 Pro Max).
 3. Clientes: só 2 fotos da fase Vellari (`cliente-01`, `cliente-02`). O usuário confirmou a
    autorização de uso (LGPD) em 15/11/2026. As 59 fotos com a marca antiga "Rafa Imports" não

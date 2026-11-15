@@ -95,12 +95,12 @@ O catálogo tem 26 produtos, montados a partir das fotos de `assets/`. Todos est
 
 | Produto | Condição no site | Confirmar |
 |---|---|---|
-| iPhone 18 Pro Max | Lacrado | foto; armazenamentos e cores em estoque |
-| iPhone 18 Pro | Lacrado | foto; armazenamentos e cores em estoque |
+| iPhone 18 Pro Max | Lacrado | armazenamentos e cores em estoque |
+| iPhone 18 Pro | Lacrado | armazenamentos e cores em estoque |
 | iPhone 17 Pro Max 256 GB | Lacrado | cores em estoque |
-| iPhone 15 Pro Max | Seminovo | foto; condição; armazenamentos e cores |
+| iPhone 15 Pro Max | Seminovo | condição; armazenamentos e cores |
 | iPhone 14 Pro Max 256 GB Prateado | Seminovo | estoque |
-| iPhone 14 Pro | Seminovo | foto; condição; armazenamentos e cores |
+| iPhone 14 Pro | Seminovo | condição; armazenamentos e cores |
 | iPhone 14 128 GB Meia-noite | Seminovo | estoque |
 | iPhone 13 Pro 128 GB Prateado | Seminovo | estoque |
 | iPhone 13 128 GB Azul | Seminovo | estoque |
@@ -119,8 +119,10 @@ acessórios mostram apenas "Lacrado" ou "Seminovo", sem prazo, até a loja infor
 
 ## 4. Imagens faltando
 
-- **iPhone 18 Pro Max, iPhone 18 Pro, iPhone 15 Pro Max e iPhone 14 Pro:** nenhuma foto real em
-  `assets/`. Os cards mostram o bloco neutro "Foto em breve".
+- **Fotos dos iPhones (atualizado em 15/11/2026):** todos os iPhones da vitrine, menos o
+  iPhone 11, usam as imagens geradas por IA enviadas pela agência
+  (`assets/media/fotos-dos-iphones-da-vitrine/`). Com isso, 18 Pro Max, 18 Pro, 15 Pro Max e
+  14 Pro deixaram de mostrar "Foto em breve". O iPhone 11 continua com o recorte de story.
 - **Fones:** nenhuma foto limpa. A categoria não aparece nos filtros.
 - **Loja (fachada, entrada, balcão):** nenhuma foto. A seção "Por que a Vellari" mostra o bloco
   "Foto da loja em breve".
@@ -128,8 +130,8 @@ acessórios mostram apenas "Lacrado" ou "Seminovo", sem prazo, até a loja infor
 - **Wallpaper do aparelho 3D:** não havia; a tela usa um gradiente nas cores da marca.
 - **Poster do hero:** sem foto do 18 Pro Max, os posters são renders do próprio modelo 3D.
 
-As fotos de produto são recortes de stories. Fundo, luz e enquadramento variam de uma para
-outra; fotos tiradas para o site deixariam a vitrine mais uniforme.
+Android, relógio e acessórios continuam com recortes de stories: fundo, luz e enquadramento
+variam de uma para outra, ao contrário dos iPhones, que agora seguem o mesmo cenário.
 
 ## 5. Fotos de clientes (LGPD)
 
@@ -152,8 +154,7 @@ As outras 59 fotos de clientes de `assets/` não foram usadas: mostram a marca a
 1. **Fotos reais mostram a maçã dos aparelhos.** Li a regra "sem logo da Apple" como válida para
    o modelo 3D, os gráficos e a imagem de prévia, que não têm o logo. As fotos de produto são
    fotos reais dos aparelhos. Se a regra valer também para elas, quase todas saem.
-2. **Card do iPhone 18 Pro Max na vitrine.** Hoje é "Foto em breve", como manda o briefing. Posso
-   usar o render 3D ali também, se você preferir.
+2. **Card do iPhone 18 Pro Max na vitrine.** Resolvido em 15/11/2026: usa as imagens novas.
 3. **"Até 18x no cartão".** A linha de confiança do hero e a faixa de benefícios usam o texto
    curto do briefing. O "(com juros)" aparece nos cards, no modal, no FAQ e na descrição da
    faixa. Posso acrescentar a ressalva nos dois textos curtos.

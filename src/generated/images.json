@@ -33,11 +33,221 @@
       }
     ]
   },
+  "iphone-18-pro-max": {
+    "alt": "iPhone 18 Pro Max bordô, visto de trás",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "62c71a8c9e81",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-18-pro-max-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-18-pro-max-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-18-pro-max-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-18-pro-max-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-18-pro-max-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-18-pro-max-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-18-pro-max-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-18-pro-max-960.webp"
+      }
+    ]
+  },
+  "iphone-18-pro-max-2": {
+    "alt": "iPhone 18 Pro Max bordô, com as câmeras em destaque",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "78f5573137e0",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-18-pro-max-2-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-18-pro-max-2-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-18-pro-max-2-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-18-pro-max-2-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-18-pro-max-2-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-18-pro-max-2-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-18-pro-max-2-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-18-pro-max-2-960.webp"
+      }
+    ]
+  },
+  "iphone-18-pro-max-3": {
+    "alt": "iPhone 18 Pro Max bordô na mão",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "3fc9af52945a",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-18-pro-max-3-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-18-pro-max-3-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-18-pro-max-3-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-18-pro-max-3-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-18-pro-max-3-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-18-pro-max-3-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-18-pro-max-3-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-18-pro-max-3-960.webp"
+      }
+    ]
+  },
+  "iphone-18-pro": {
+    "alt": "iPhone 18 Pro prata, visto de trás",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "7a674af85d6f",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-18-pro-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-18-pro-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-18-pro-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-18-pro-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-18-pro-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-18-pro-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-18-pro-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-18-pro-960.webp"
+      }
+    ]
+  },
+  "iphone-18-pro-2": {
+    "alt": "iPhone 18 Pro prata na mão",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "d812198701b5",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-18-pro-2-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-18-pro-2-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-18-pro-2-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-18-pro-2-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-18-pro-2-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-18-pro-2-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-18-pro-2-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-18-pro-2-960.webp"
+      }
+    ]
+  },
   "iphone-17-pro-max": {
-    "alt": "Caixas lacradas do iPhone 17 Pro Max nas cores azul e prata",
-    "largura": 1280,
-    "altura": 1280,
-    "assinatura": "c751d6542dfc",
+    "alt": "iPhone 17 Pro Max laranja, visto de trás",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "4b15410a0961",
     "avif": [
       {
         "w": 320,
@@ -54,10 +264,6 @@
       {
         "w": 960,
         "src": "/img/iphone-17-pro-max-960.avif"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-17-pro-max-1280.avif"
       }
     ],
     "webp": [
@@ -76,118 +282,140 @@
       {
         "w": 960,
         "src": "/img/iphone-17-pro-max-960.webp"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-17-pro-max-1280.webp"
       }
     ]
   },
-  "iphone-17-pro-max-cores": {
-    "alt": "Três iPhone 17 Pro Max nas cores laranja, azul e prata",
-    "largura": 1280,
-    "altura": 1280,
-    "assinatura": "c733221a92f3",
+  "iphone-17-pro-max-2": {
+    "alt": "iPhone 17 Pro Max laranja na mão",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "616fdcf94fa5",
     "avif": [
       {
         "w": 320,
-        "src": "/img/iphone-17-pro-max-cores-320.avif"
+        "src": "/img/iphone-17-pro-max-2-320.avif"
       },
       {
         "w": 480,
-        "src": "/img/iphone-17-pro-max-cores-480.avif"
+        "src": "/img/iphone-17-pro-max-2-480.avif"
       },
       {
         "w": 640,
-        "src": "/img/iphone-17-pro-max-cores-640.avif"
+        "src": "/img/iphone-17-pro-max-2-640.avif"
       },
       {
         "w": 960,
-        "src": "/img/iphone-17-pro-max-cores-960.avif"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-17-pro-max-cores-1280.avif"
+        "src": "/img/iphone-17-pro-max-2-960.avif"
       }
     ],
     "webp": [
       {
         "w": 320,
-        "src": "/img/iphone-17-pro-max-cores-320.webp"
+        "src": "/img/iphone-17-pro-max-2-320.webp"
       },
       {
         "w": 480,
-        "src": "/img/iphone-17-pro-max-cores-480.webp"
+        "src": "/img/iphone-17-pro-max-2-480.webp"
       },
       {
         "w": 640,
-        "src": "/img/iphone-17-pro-max-cores-640.webp"
+        "src": "/img/iphone-17-pro-max-2-640.webp"
       },
       {
         "w": 960,
-        "src": "/img/iphone-17-pro-max-cores-960.webp"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-17-pro-max-cores-1280.webp"
+        "src": "/img/iphone-17-pro-max-2-960.webp"
       }
     ]
   },
-  "iphone-17-pro-max-laranja": {
-    "alt": "iPhone 17 Pro Max laranja ao lado da caixa",
-    "largura": 1280,
-    "altura": 1280,
-    "assinatura": "6ff24b149730",
+  "iphone-15-pro-max": {
+    "alt": "iPhone 15 Pro Max titânio natural, visto de trás",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "b9c7f0062e17",
     "avif": [
       {
         "w": 320,
-        "src": "/img/iphone-17-pro-max-laranja-320.avif"
+        "src": "/img/iphone-15-pro-max-320.avif"
       },
       {
         "w": 480,
-        "src": "/img/iphone-17-pro-max-laranja-480.avif"
+        "src": "/img/iphone-15-pro-max-480.avif"
       },
       {
         "w": 640,
-        "src": "/img/iphone-17-pro-max-laranja-640.avif"
+        "src": "/img/iphone-15-pro-max-640.avif"
       },
       {
         "w": 960,
-        "src": "/img/iphone-17-pro-max-laranja-960.avif"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-17-pro-max-laranja-1280.avif"
+        "src": "/img/iphone-15-pro-max-960.avif"
       }
     ],
     "webp": [
       {
         "w": 320,
-        "src": "/img/iphone-17-pro-max-laranja-320.webp"
+        "src": "/img/iphone-15-pro-max-320.webp"
       },
       {
         "w": 480,
-        "src": "/img/iphone-17-pro-max-laranja-480.webp"
+        "src": "/img/iphone-15-pro-max-480.webp"
       },
       {
         "w": 640,
-        "src": "/img/iphone-17-pro-max-laranja-640.webp"
+        "src": "/img/iphone-15-pro-max-640.webp"
       },
       {
         "w": 960,
-        "src": "/img/iphone-17-pro-max-laranja-960.webp"
+        "src": "/img/iphone-15-pro-max-960.webp"
+      }
+    ]
+  },
+  "iphone-15-pro-max-2": {
+    "alt": "iPhone 15 Pro Max titânio natural na mão",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "21066c080cf1",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-15-pro-max-2-320.avif"
       },
       {
-        "w": 1280,
-        "src": "/img/iphone-17-pro-max-laranja-1280.webp"
+        "w": 480,
+        "src": "/img/iphone-15-pro-max-2-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-15-pro-max-2-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-15-pro-max-2-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-15-pro-max-2-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-15-pro-max-2-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-15-pro-max-2-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-15-pro-max-2-960.webp"
       }
     ]
   },
   "iphone-14-pro-max": {
-    "alt": "iPhone 14 Pro Max prateado com a caixa",
-    "largura": 640,
-    "altura": 640,
-    "assinatura": "6f360a3476aa",
+    "alt": "iPhone 14 Pro Max prateado, visto de trás",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "31f7c15bd429",
     "avif": [
       {
         "w": 320,
@@ -200,6 +428,10 @@
       {
         "w": 640,
         "src": "/img/iphone-14-pro-max-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-pro-max-960.avif"
       }
     ],
     "webp": [
@@ -214,14 +446,144 @@
       {
         "w": 640,
         "src": "/img/iphone-14-pro-max-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-pro-max-960.webp"
+      }
+    ]
+  },
+  "iphone-14-pro-max-2": {
+    "alt": "iPhone 14 Pro Max prateado na mão",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "5933d185aec2",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-pro-max-2-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-pro-max-2-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-pro-max-2-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-pro-max-2-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-pro-max-2-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-pro-max-2-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-pro-max-2-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-pro-max-2-960.webp"
+      }
+    ]
+  },
+  "iphone-14-pro": {
+    "alt": "iPhone 14 Pro roxo-profundo, visto de trás",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "00ce843e11b5",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-pro-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-pro-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-pro-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-pro-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-pro-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-pro-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-pro-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-pro-960.webp"
+      }
+    ]
+  },
+  "iphone-14-pro-2": {
+    "alt": "iPhone 14 Pro roxo-profundo na mão",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "e6e14015947a",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-pro-2-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-pro-2-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-pro-2-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-pro-2-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-pro-2-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-pro-2-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-pro-2-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-pro-2-960.webp"
       }
     ]
   },
   "iphone-14": {
-    "alt": "Dois iPhone 14 na cor meia-noite",
-    "largura": 1280,
-    "altura": 1280,
-    "assinatura": "aa143defcd05",
+    "alt": "iPhone 14 meia-noite, visto de trás",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "60eb0ad74e53",
     "avif": [
       {
         "w": 320,
@@ -238,10 +600,6 @@
       {
         "w": 960,
         "src": "/img/iphone-14-960.avif"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-14-1280.avif"
       }
     ],
     "webp": [
@@ -260,118 +618,14 @@
       {
         "w": 960,
         "src": "/img/iphone-14-960.webp"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-14-1280.webp"
-      }
-    ]
-  },
-  "iphone-14-roxo": {
-    "alt": "iPhone 14 roxo em um suporte",
-    "largura": 1280,
-    "altura": 1280,
-    "assinatura": "52b086933c8b",
-    "avif": [
-      {
-        "w": 320,
-        "src": "/img/iphone-14-roxo-320.avif"
-      },
-      {
-        "w": 480,
-        "src": "/img/iphone-14-roxo-480.avif"
-      },
-      {
-        "w": 640,
-        "src": "/img/iphone-14-roxo-640.avif"
-      },
-      {
-        "w": 960,
-        "src": "/img/iphone-14-roxo-960.avif"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-14-roxo-1280.avif"
-      }
-    ],
-    "webp": [
-      {
-        "w": 320,
-        "src": "/img/iphone-14-roxo-320.webp"
-      },
-      {
-        "w": 480,
-        "src": "/img/iphone-14-roxo-480.webp"
-      },
-      {
-        "w": 640,
-        "src": "/img/iphone-14-roxo-640.webp"
-      },
-      {
-        "w": 960,
-        "src": "/img/iphone-14-roxo-960.webp"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-14-roxo-1280.webp"
-      }
-    ]
-  },
-  "iphone-14-plus": {
-    "alt": "iPhone 14 Plus na cor meia-noite",
-    "largura": 1280,
-    "altura": 1280,
-    "assinatura": "18826cb23372",
-    "avif": [
-      {
-        "w": 320,
-        "src": "/img/iphone-14-plus-320.avif"
-      },
-      {
-        "w": 480,
-        "src": "/img/iphone-14-plus-480.avif"
-      },
-      {
-        "w": 640,
-        "src": "/img/iphone-14-plus-640.avif"
-      },
-      {
-        "w": 960,
-        "src": "/img/iphone-14-plus-960.avif"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-14-plus-1280.avif"
-      }
-    ],
-    "webp": [
-      {
-        "w": 320,
-        "src": "/img/iphone-14-plus-320.webp"
-      },
-      {
-        "w": 480,
-        "src": "/img/iphone-14-plus-480.webp"
-      },
-      {
-        "w": 640,
-        "src": "/img/iphone-14-plus-640.webp"
-      },
-      {
-        "w": 960,
-        "src": "/img/iphone-14-plus-960.webp"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-14-plus-1280.webp"
       }
     ]
   },
   "iphone-13-pro": {
-    "alt": "iPhone 13 Pro prateado",
-    "largura": 1280,
-    "altura": 1280,
-    "assinatura": "a8a1a40d1d1e",
+    "alt": "iPhone 13 Pro prateado, visto de trás",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "fb56854045b1",
     "avif": [
       {
         "w": 320,
@@ -388,10 +642,6 @@
       {
         "w": 960,
         "src": "/img/iphone-13-pro-960.avif"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-13-pro-1280.avif"
       }
     ],
     "webp": [
@@ -410,18 +660,14 @@
       {
         "w": 960,
         "src": "/img/iphone-13-pro-960.webp"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-13-pro-1280.webp"
       }
     ]
   },
   "iphone-13": {
-    "alt": "iPhone 13 azul",
-    "largura": 1280,
-    "altura": 1280,
-    "assinatura": "01117819ba49",
+    "alt": "iPhone 13 azul, visto de trás",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "950cfbc3294c",
     "avif": [
       {
         "w": 320,
@@ -438,10 +684,6 @@
       {
         "w": 960,
         "src": "/img/iphone-13-960.avif"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-13-1280.avif"
       }
     ],
     "webp": [
@@ -460,118 +702,14 @@
       {
         "w": 960,
         "src": "/img/iphone-13-960.webp"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-13-1280.webp"
-      }
-    ]
-  },
-  "iphone-13-pro-max": {
-    "alt": "iPhone 13 Pro Max dourado em um suporte",
-    "largura": 1280,
-    "altura": 1280,
-    "assinatura": "a6a8b0dd80ec",
-    "avif": [
-      {
-        "w": 320,
-        "src": "/img/iphone-13-pro-max-320.avif"
-      },
-      {
-        "w": 480,
-        "src": "/img/iphone-13-pro-max-480.avif"
-      },
-      {
-        "w": 640,
-        "src": "/img/iphone-13-pro-max-640.avif"
-      },
-      {
-        "w": 960,
-        "src": "/img/iphone-13-pro-max-960.avif"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-13-pro-max-1280.avif"
-      }
-    ],
-    "webp": [
-      {
-        "w": 320,
-        "src": "/img/iphone-13-pro-max-320.webp"
-      },
-      {
-        "w": 480,
-        "src": "/img/iphone-13-pro-max-480.webp"
-      },
-      {
-        "w": 640,
-        "src": "/img/iphone-13-pro-max-640.webp"
-      },
-      {
-        "w": 960,
-        "src": "/img/iphone-13-pro-max-960.webp"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-13-pro-max-1280.webp"
-      }
-    ]
-  },
-  "iphone-13-pro-max-azul": {
-    "alt": "iPhone 13 Pro Max azul-sierra",
-    "largura": 1280,
-    "altura": 1280,
-    "assinatura": "1345079f0e00",
-    "avif": [
-      {
-        "w": 320,
-        "src": "/img/iphone-13-pro-max-azul-320.avif"
-      },
-      {
-        "w": 480,
-        "src": "/img/iphone-13-pro-max-azul-480.avif"
-      },
-      {
-        "w": 640,
-        "src": "/img/iphone-13-pro-max-azul-640.avif"
-      },
-      {
-        "w": 960,
-        "src": "/img/iphone-13-pro-max-azul-960.avif"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-13-pro-max-azul-1280.avif"
-      }
-    ],
-    "webp": [
-      {
-        "w": 320,
-        "src": "/img/iphone-13-pro-max-azul-320.webp"
-      },
-      {
-        "w": 480,
-        "src": "/img/iphone-13-pro-max-azul-480.webp"
-      },
-      {
-        "w": 640,
-        "src": "/img/iphone-13-pro-max-azul-640.webp"
-      },
-      {
-        "w": 960,
-        "src": "/img/iphone-13-pro-max-azul-960.webp"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-13-pro-max-azul-1280.webp"
       }
     ]
   },
   "iphone-15-pro": {
-    "alt": "iPhone 15 Pro branco com a caixa",
-    "largura": 1280,
-    "altura": 1280,
-    "assinatura": "de12fca9f0a1",
+    "alt": "iPhone 15 Pro titânio branco, visto de trás",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "85aefb5d331b",
     "avif": [
       {
         "w": 320,
@@ -588,10 +726,6 @@
       {
         "w": 960,
         "src": "/img/iphone-15-pro-960.avif"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-15-pro-1280.avif"
       }
     ],
     "webp": [
@@ -610,18 +744,98 @@
       {
         "w": 960,
         "src": "/img/iphone-15-pro-960.webp"
+      }
+    ]
+  },
+  "iphone-14-plus": {
+    "alt": "iPhone 14 Plus meia-noite, visto de trás",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "e3cc22b242fc",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-plus-320.avif"
       },
       {
-        "w": 1280,
-        "src": "/img/iphone-15-pro-1280.webp"
+        "w": 480,
+        "src": "/img/iphone-14-plus-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-plus-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-plus-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-plus-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-plus-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-plus-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-plus-960.webp"
+      }
+    ]
+  },
+  "iphone-13-pro-max": {
+    "alt": "iPhone 13 Pro Max dourado, visto de trás",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "95dd715e4dbb",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-pro-max-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-pro-max-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-pro-max-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-pro-max-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-pro-max-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-pro-max-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-pro-max-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-pro-max-960.webp"
       }
     ]
   },
   "iphone-12": {
-    "alt": "iPhone 12 branco em um suporte",
-    "largura": 1280,
-    "altura": 1280,
-    "assinatura": "321616ebcf0d",
+    "alt": "iPhone 12 branco, visto de trás",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "2f9dc1da1727",
     "avif": [
       {
         "w": 320,
@@ -638,10 +852,6 @@
       {
         "w": 960,
         "src": "/img/iphone-12-960.avif"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-12-1280.avif"
       }
     ],
     "webp": [
@@ -660,18 +870,14 @@
       {
         "w": 960,
         "src": "/img/iphone-12-960.webp"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-12-1280.webp"
       }
     ]
   },
   "iphone-11-pro-max": {
-    "alt": "iPhone 11 Pro Max verde",
-    "largura": 1280,
-    "altura": 1280,
-    "assinatura": "15b017da740a",
+    "alt": "iPhone 11 Pro Max verde meia-noite, visto de trás",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "187838feab52",
     "avif": [
       {
         "w": 320,
@@ -688,10 +894,6 @@
       {
         "w": 960,
         "src": "/img/iphone-11-pro-max-960.avif"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-11-pro-max-1280.avif"
       }
     ],
     "webp": [
@@ -710,10 +912,6 @@
       {
         "w": 960,
         "src": "/img/iphone-11-pro-max-960.webp"
-      },
-      {
-        "w": 1280,
-        "src": "/img/iphone-11-pro-max-1280.webp"
       }
     ]
   },

@@ -216,7 +216,7 @@ try {
       const d = document.getElementById('modal-produto');
       return { aberto: d.open, nome: d.querySelector('#mp-nome')?.textContent, fotos: d.querySelectorAll('.mp-foto img').length, pagamento: d.querySelector('.mp-pagamento')?.textContent ?? '', href: d.querySelector('a[data-wa]')?.getAttribute('href') ?? '' };
     });
-    checar('Modal: abre com galeria de fotos 2D', modal.aberto && modal.nome === 'iPhone 17 Pro Max' && modal.fotos === 3, `${modal.fotos} fotos`);
+    checar('Modal: abre com galeria de fotos 2D', modal.aberto && modal.nome === 'iPhone 17 Pro Max' && modal.fotos >= 2, `${modal.fotos} fotos`);
     checar('Modal: mostra as formas de pagamento', /Pix/.test(modal.pagamento) && /débito/.test(modal.pagamento) && /Dinheiro/.test(modal.pagamento) && /em até 18x \(com juros\)/.test(modal.pagamento));
     checar('Modal: mesmo CTA do card', decodeURIComponent(modal.href.split('text=')[1] ?? '') === 'Olá! Tenho interesse no iPhone 17 Pro Max 256 GB (Lacrado) que vi no site.', decodeURIComponent(modal.href.split('text=')[1] ?? ''));
     await pagina.screenshot({ path: join(SAIDA, '375-09-modal.png') });

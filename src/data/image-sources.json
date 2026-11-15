@@ -12,145 +12,110 @@
       ],
       "alfa": true
     },
+    "iphone-18-pro-max": {
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-18-pro-max-chatgpt-1.png",
+      "recorte": null,
+      "alt": "iPhone 18 Pro Max bordô, visto de trás"
+    },
+    "iphone-18-pro-max-2": {
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-18-pro-max-chatgpt-2.png",
+      "recorte": null,
+      "alt": "iPhone 18 Pro Max bordô, com as câmeras em destaque"
+    },
+    "iphone-18-pro-max-3": {
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/Gemini_Generated_Image_jzbqmojzbqmojzbq.jfif",
+      "recorte": null,
+      "alt": "iPhone 18 Pro Max bordô na mão"
+    },
+    "iphone-18-pro": {
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-18-pro-chatgpt.png",
+      "recorte": null,
+      "alt": "iPhone 18 Pro prata, visto de trás"
+    },
+    "iphone-18-pro-2": {
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/Gemini_Generated_Image_g6q4u7g6q4u7g6q4.jfif",
+      "recorte": null,
+      "alt": "iPhone 18 Pro prata na mão"
+    },
     "iphone-17-pro-max": {
-      "src": "assets/media/stories/202601/17874046524485484.jpg",
-      "recorte": [
-        0,
-        0.2,
-        1,
-        0.5627
-      ],
-      "alt": "Caixas lacradas do iPhone 17 Pro Max nas cores azul e prata"
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-17-pro-max-chatgpt.png",
+      "recorte": null,
+      "alt": "iPhone 17 Pro Max laranja, visto de trás"
     },
-    "iphone-17-pro-max-cores": {
-      "src": "assets/media/stories/202605/18336173845218111.jpg",
-      "recorte": [
-        0,
-        0.3,
-        1,
-        0.5627
-      ],
-      "alt": "Três iPhone 17 Pro Max nas cores laranja, azul e prata"
+    "iphone-17-pro-max-2": {
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/Gemini_Generated_Image_wqmjmiwqmjmiwqmj.jfif",
+      "recorte": null,
+      "alt": "iPhone 17 Pro Max laranja na mão"
     },
-    "iphone-17-pro-max-laranja": {
-      "src": "assets/media/stories/202609/18103029152014607.jpg",
-      "recorte": [
-        0,
-        0.4,
-        1,
-        0.5627
-      ],
-      "alt": "iPhone 17 Pro Max laranja ao lado da caixa"
+    "iphone-15-pro-max": {
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-15-pro-max-chatgpt.png",
+      "recorte": null,
+      "alt": "iPhone 15 Pro Max titânio natural, visto de trás"
+    },
+    "iphone-15-pro-max-2": {
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/Gemini_Generated_Image_f7s9b8f7s9b8f7s9.jfif",
+      "recorte": null,
+      "alt": "iPhone 15 Pro Max titânio natural na mão"
     },
     "iphone-14-pro-max": {
-      "src": "assets/media/stories/202507/18043706426555366.jpg",
-      "recorte": [
-        0.2,
-        0.205,
-        0.8,
-        0.45
-      ],
-      "alt": "iPhone 14 Pro Max prateado com a caixa"
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-14-pro-max-chatgpt.png",
+      "recorte": null,
+      "alt": "iPhone 14 Pro Max prateado, visto de trás"
+    },
+    "iphone-14-pro-max-2": {
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/Gemini_Generated_Image_4zuewf4zuewf4zue.jfif",
+      "recorte": null,
+      "alt": "iPhone 14 Pro Max prateado na mão"
+    },
+    "iphone-14-pro": {
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-14-pro-chatgpt.png",
+      "recorte": null,
+      "alt": "iPhone 14 Pro roxo-profundo, visto de trás"
+    },
+    "iphone-14-pro-2": {
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/Gemini_Generated_Image_6i6kud6i6kud6i6k.jfif",
+      "recorte": null,
+      "alt": "iPhone 14 Pro roxo-profundo na mão"
     },
     "iphone-14": {
-      "src": "assets/media/stories/202604/17944199076080341.jpg",
-      "recorte": [
-        0,
-        0.4,
-        1,
-        0.5627
-      ],
-      "alt": "Dois iPhone 14 na cor meia-noite"
-    },
-    "iphone-14-roxo": {
-      "src": "assets/media/stories/202609/18166082869482902.jpg",
-      "recorte": [
-        0,
-        0.36,
-        1,
-        0.5627
-      ],
-      "alt": "iPhone 14 roxo em um suporte"
-    },
-    "iphone-14-plus": {
-      "src": "assets/media/stories/202610/18054658610597629.jpg",
-      "recorte": [
-        0,
-        0.36,
-        1,
-        0.5627
-      ],
-      "alt": "iPhone 14 Plus na cor meia-noite"
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-14-chatgpt.png",
+      "recorte": null,
+      "alt": "iPhone 14 meia-noite, visto de trás"
     },
     "iphone-13-pro": {
-      "src": "assets/media/stories/202604/18099157262513858.jpg",
-      "recorte": [
-        0,
-        0.4,
-        1,
-        0.5627
-      ],
-      "alt": "iPhone 13 Pro prateado"
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-13-pro-chatgpt.png",
+      "recorte": null,
+      "alt": "iPhone 13 Pro prateado, visto de trás"
     },
     "iphone-13": {
-      "src": "assets/media/stories/202604/18088926407007216.jpg",
-      "recorte": [
-        0,
-        0.33,
-        1,
-        0.5627
-      ],
-      "alt": "iPhone 13 azul"
-    },
-    "iphone-13-pro-max": {
-      "src": "assets/media/stories/202609/18371802847241987.jpg",
-      "recorte": [
-        0,
-        0.36,
-        1,
-        0.5627
-      ],
-      "alt": "iPhone 13 Pro Max dourado em um suporte"
-    },
-    "iphone-13-pro-max-azul": {
-      "src": "assets/media/stories/202605/17886995472508691.jpg",
-      "recorte": [
-        0,
-        0.28,
-        1,
-        0.5627
-      ],
-      "alt": "iPhone 13 Pro Max azul-sierra"
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-13-chatgpt.png",
+      "recorte": null,
+      "alt": "iPhone 13 azul, visto de trás"
     },
     "iphone-15-pro": {
-      "src": "assets/media/stories/202604/18162740374435202.jpg",
-      "recorte": [
-        0,
-        0.3,
-        1,
-        0.5627
-      ],
-      "alt": "iPhone 15 Pro branco com a caixa"
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-15-pro-chatgpt.png",
+      "recorte": null,
+      "alt": "iPhone 15 Pro titânio branco, visto de trás"
+    },
+    "iphone-14-plus": {
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-14-plus-chatgpt.png",
+      "recorte": null,
+      "alt": "iPhone 14 Plus meia-noite, visto de trás"
+    },
+    "iphone-13-pro-max": {
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-13-pro-max-chatgpt.png",
+      "recorte": null,
+      "alt": "iPhone 13 Pro Max dourado, visto de trás"
     },
     "iphone-12": {
-      "src": "assets/media/stories/202609/17963448801206181.jpg",
-      "recorte": [
-        0,
-        0.38,
-        1,
-        0.5627
-      ],
-      "alt": "iPhone 12 branco em um suporte"
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-12-chatgpt.png",
+      "recorte": null,
+      "alt": "iPhone 12 branco, visto de trás"
     },
     "iphone-11-pro-max": {
-      "src": "assets/media/stories/202604/18108289030810163.jpg",
-      "recorte": [
-        0,
-        0.24,
-        1,
-        0.5627
-      ],
-      "alt": "iPhone 11 Pro Max verde"
+      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-11-pro-max-chatgpt.png",
+      "recorte": null,
+      "alt": "iPhone 11 Pro Max verde meia-noite, visto de trás"
     },
     "iphone-11": {
       "src": "assets/media/posts/17913871682735746.jpg",

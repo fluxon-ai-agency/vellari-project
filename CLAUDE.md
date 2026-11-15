@@ -71,6 +71,8 @@ unibody de alumínio, cores Preto, Prata, Glacial e Bordô, 256 GB a 2 TB).
 - É a exportação do Instagram da loja. Nunca altere, renomeie ou apague nada ali.
 - Versões otimizadas vão para `public/img/`, geradas por `scripts/images.mjs`.
 - Não use banco de imagens nem imagem gerada por IA. Sem foto, placeholder neutro.
+  Exceção pedida pelo usuário em 15/11/2026: as fotos dos iPhones da vitrine vêm de
+  `assets/media/fotos-dos-iphones-da-vitrine/` (geradas por IA e enviadas pela agência).
 - Não use: fotos com "sem juros", pods, perfumes, a marca antiga "Rafa Imports" e preços antigos.
 - O inventário foto a foto está em `docs/fase-0/inventario-imagens.csv`.
 

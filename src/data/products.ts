@@ -56,7 +56,6 @@ export function condicaoComGarantia(p: Pick<Produto, 'categoria' | 'condicao'>):
 }
 
 const ESTOQUE = 'armazenamentos e cores em estoque';
-const SEM_FOTO = 'falta foto oficial em assets/';
 const CONDICAO = 'condição (Lacrado ou Seminovo)';
 
 export const PRODUTOS: Produto[] = [
@@ -64,38 +63,39 @@ export const PRODUTOS: Produto[] = [
   {
     id: 'iphone-18-pro-max', nome: 'iPhone 18 Pro Max', categoria: 'iPhone', modelo: 'iPhone 18 Pro Max',
     armazenamento: null, cor: null, condicao: 'Lacrado', preco: null,
-    imagens: [], selo: 'Lançamento', destaque: true, confirmar: [SEM_FOTO, ESTOQUE],
+    imagens: ['iphone-18-pro-max', 'iphone-18-pro-max-2', 'iphone-18-pro-max-3'],
+    selo: 'Lançamento', destaque: true, confirmar: [ESTOQUE],
   },
   {
     id: 'iphone-18-pro', nome: 'iPhone 18 Pro', categoria: 'iPhone', modelo: 'iPhone 18 Pro',
     armazenamento: null, cor: null, condicao: 'Lacrado', preco: null,
-    imagens: [], selo: 'Lançamento', destaque: true, confirmar: [SEM_FOTO, ESTOQUE],
+    imagens: ['iphone-18-pro', 'iphone-18-pro-2'], selo: 'Lançamento', destaque: true, confirmar: [ESTOQUE],
   },
   {
     id: 'iphone-17-pro-max', nome: 'iPhone 17 Pro Max', categoria: 'iPhone', modelo: 'iPhone 17 Pro Max',
     armazenamento: '256 GB', cor: null, condicao: 'Lacrado', preco: null,
-    imagens: ['iphone-17-pro-max', 'iphone-17-pro-max-cores', 'iphone-17-pro-max-laranja'],
+    imagens: ['iphone-17-pro-max', 'iphone-17-pro-max-2'],
     selo: 'Mais vendido', destaque: true, confirmar: ['cores em estoque'],
   },
   {
     id: 'iphone-15-pro-max', nome: 'iPhone 15 Pro Max', categoria: 'iPhone', modelo: 'iPhone 15 Pro Max',
     armazenamento: null, cor: null, condicao: 'Seminovo', preco: null,
-    imagens: [], selo: 'Mais vendido', destaque: true, confirmar: [SEM_FOTO, ESTOQUE, CONDICAO],
+    imagens: ['iphone-15-pro-max', 'iphone-15-pro-max-2'], selo: 'Mais vendido', destaque: true, confirmar: [ESTOQUE, CONDICAO],
   },
   {
     id: 'iphone-14-pro-max', nome: 'iPhone 14 Pro Max', categoria: 'iPhone', modelo: 'iPhone 14 Pro Max',
     armazenamento: '256 GB', cor: 'Prateado', condicao: 'Seminovo', preco: null,
-    imagens: ['iphone-14-pro-max'], selo: 'Mais vendido', destaque: true, confirmar: [ESTOQUE],
+    imagens: ['iphone-14-pro-max', 'iphone-14-pro-max-2'], selo: 'Mais vendido', destaque: true, confirmar: [ESTOQUE],
   },
   {
     id: 'iphone-14-pro', nome: 'iPhone 14 Pro', categoria: 'iPhone', modelo: 'iPhone 14 Pro',
     armazenamento: null, cor: null, condicao: 'Seminovo', preco: null,
-    imagens: [], selo: 'Mais vendido', destaque: true, confirmar: [SEM_FOTO, ESTOQUE, CONDICAO],
+    imagens: ['iphone-14-pro', 'iphone-14-pro-2'], selo: 'Mais vendido', destaque: true, confirmar: [ESTOQUE, CONDICAO],
   },
   {
     id: 'iphone-14', nome: 'iPhone 14', categoria: 'iPhone', modelo: 'iPhone 14',
     armazenamento: '128 GB', cor: 'Meia-noite', condicao: 'Seminovo', preco: null,
-    imagens: ['iphone-14', 'iphone-14-roxo'], selo: 'Mais vendido', destaque: true, confirmar: [ESTOQUE],
+    imagens: ['iphone-14'], selo: 'Mais vendido', destaque: true, confirmar: [ESTOQUE],
   },
   {
     id: 'iphone-13-pro', nome: 'iPhone 13 Pro', categoria: 'iPhone', modelo: 'iPhone 13 Pro',
@@ -122,7 +122,7 @@ export const PRODUTOS: Produto[] = [
   {
     id: 'iphone-13-pro-max', nome: 'iPhone 13 Pro Max', categoria: 'iPhone', modelo: 'iPhone 13 Pro Max',
     armazenamento: '256 GB', cor: 'Dourado', condicao: 'Seminovo', preco: null,
-    imagens: ['iphone-13-pro-max', 'iphone-13-pro-max-azul'], selo: null, destaque: false, confirmar: ['ainda em estoque?'],
+    imagens: ['iphone-13-pro-max'], selo: null, destaque: false, confirmar: ['ainda em estoque?'],
   },
   {
     id: 'iphone-12', nome: 'iPhone 12', categoria: 'iPhone', modelo: 'iPhone 12',
