@@ -1,0 +1,181 @@
+# MISSÃO
+
+Você é um engenheiro front-end sênior especializado em experiências 3D na web (Three.js/WebGL), performance e conversão para varejo. Sua missão é construir a versão definitiva, pronta para produção, do site da VELLARI PHONE, loja de iPhones, smartphones e eletrônicos em Santa Fé do Sul - SP, usando as informações e as imagens oficiais da loja.
+
+O site tem dois objetivos, nesta ordem:
+1. Impressionar logo no primeiro segundo com o iPhone 18 Pro Max em 3D interativo.
+2. Converter visitantes em conversas no WhatsApp. Não há checkout: toda venda é fechada pelo WhatsApp.
+
+# 0. O QUE JÁ EXISTE NESTA PASTA
+
+- `[NOME-DO-PROTOTIPO].html`: protótipo aprovado do site. Ele define a identidade visual (cores, tipografia, tom, estrutura de seções e textos). Leia o arquivo inteiro antes de qualquer outra coisa. A versão definitiva deve parecer uma evolução dele, não um site diferente. Quando um dado do protótipo divergir da seção 1 deste prompt, vale a seção 1.
+- `assets/`: imagens OFICIAIS da Vellari Phone (fotos dos iPhones e demais produtos, fotos de clientes, logo e fotos da loja). Elas são a fonte de verdade para todas as imagens do site.
+  - Nunca altere, renomeie ou apague nada dentro de `assets/`. Gere as versões otimizadas em outra pasta.
+  - Não use banco de imagens nem imagens geradas por IA no lugar de uma foto que exista em `assets/`.
+  - Se faltar foto de algum produto, use um placeholder neutro e liste a falta no relatório final.
+  - Se existir um arquivo 3D (.glb ou .gltf) em `assets/` ou `assets/3d/`, use-o no hero (ver seção 4).
+
+# 1. DADOS OFICIAIS DA LOJA
+
+Centralize todos estes dados em um único arquivo de configuração (`src/data/store.ts`), para que possam ser editados sem mexer no layout. Use exatamente estes dados. O que estiver entre [COLCHETES] ainda não foi confirmado: mantenha como placeholder e liste no relatório final. Nunca invente nada.
+
+- Nome: Vellari Phone
+- Instagram: @vellari_phone → https://www.instagram.com/vellari_phone/
+- WhatsApp de atendimento: (17) 99722-0015 → formato do link: 5517997220015
+- E-mail: vellariphone@gmail.com
+- CNPJ: 41.253.575/0001-01
+- Endereço: Rua 19, nº [NÚMERO], Centro, Santa Fé do Sul - SP, CEP 15775-057
+- Horário: segunda a sábado, das 08:00 às 18:00. Domingo: fechado.
+- Garantia:
+  - iPhones lacrados: 1 ano de garantia
+  - iPhones seminovos: 3 meses de garantia
+- Pagamento: Pix, cartão de débito, dinheiro e cartão de crédito em até 18x (com juros).
+- Entrega na região: Santa Fé do Sul, Rubinéia, Santa Clara d'Oeste, Três Fronteiras, Ilha Solteira, Aparecida do Taboado (MS), Jales e Fernandópolis. [CONFIRMAR: outras cidades, como funciona a entrega, prazo e taxa]
+- Modelos mais vendidos: iPhone 13, iPhone 13 Pro, iPhone 14, iPhone 14 Pro, iPhone 14 Pro Max, iPhone 15 Pro Max, iPhone 17 Pro Max, iPhone 18 Pro e iPhone 18 Pro Max.
+- Domínio: [ex.: vellariphone.com.br]
+- Crédito no rodapé: "Site por Fluxon Ai Agency", com link para [LINK DA AGÊNCIA]
+
+# 2. REGRAS INEGOCIÁVEIS
+
+1. SOMENTE o iPhone 18 Pro Max é 3D, e só no hero. Todos os outros produtos, inclusive os outros iPhones, aparecem como imagens 2D em alta definição vindas de `assets/`.
+2. Nunca invente preços, avaliações, depoimentos, números (clientes atendidos, anos de mercado) ou especificações. Use placeholder.
+3. Parcelamento: sempre "em até 18x (com juros)". Nunca escreva "sem juros" nem dê a entender isso.
+4. Condição dos aparelhos: use os termos da loja, "Lacrado" e "Seminovo", sempre com a garantia correspondente (1 ano e 3 meses).
+5. Não use o logo da Apple (nem no modelo 3D) e não diga que a loja é revendedora autorizada Apple. No rodapé, inclua: "iPhone é marca registrada da Apple Inc. A Vellari Phone não tem vínculo com a Apple."
+6. Fotos de clientes: use somente as que estão em `assets/` e liste todas no relatório para eu confirmar a autorização de uso (LGPD).
+7. Mobile-first: a maior parte do tráfego vem do Instagram, no celular. Tudo precisa funcionar primeiro em 375 px de largura.
+8. Português do Brasil em todo o site, tom premium e próximo, frases curtas e orientadas à ação.
+
+# 3. STACK E ESTRUTURA
+
+- Vite + TypeScript + Three.js, sem framework de UI (a menos que o protótipo justifique outro). Saída 100% estática em `dist/`, publicável em qualquer hospedagem.
+- CSS com design tokens (variáveis CSS) extraídos do protótipo: cores, fontes, raios, sombras e espaçamentos.
+- Pipeline de imagens no build (ex.: `sharp` ou `vite-imagetools`): gerar AVIF e WebP em várias larguras, com `srcset` e `sizes`, mantendo os originais de `assets/` intactos.
+- Estrutura sugerida (ajuste se fizer sentido):
+
+```
+src/
+  data/store.ts       # dados oficiais da loja e templates de mensagem do WhatsApp
+  data/products.ts    # catálogo da vitrine
+  three/              # cena 3D do iPhone 18 Pro Max
+  sections/           # hero, mais vendidos, vitrine, loja, clientes, entrega, faq, contato
+  styles/tokens.css
+assets/               # originais (não mexer)
+```
+
+- Crie um `CLAUDE.md` na raiz com as regras das seções 1, 2, 3 e 9, para as próximas sessões seguirem o mesmo padrão.
+- Faça um commit no git ao final de cada fase.
+
+# 4. HERO 3D: iPHONE 18 PRO MAX
+
+Ao abrir o site, a primeira coisa que o cliente vê é o iPhone 18 Pro Max em 3D, que ele pode girar com o dedo ou com o mouse.
+
+## Dados do produto (lançamento Apple de 09/09/2026)
+- Tela de 6,9"; chip A20 Pro (2 nm); câmera principal Fusion de 48 MP com abertura variável (ƒ/1.48 a ƒ/4); Dynamic Island menor; corpo unibody de alumínio.
+- Cores: Preto, Prata, Glacial e Bordô (cor nova, destaque da campanha).
+- Armazenamento: 256 GB, 512 GB, 1 TB e 2 TB.
+- Dimensões: 163,4 x 78 x 8,75 mm.
+- Visual externo praticamente igual ao do iPhone 17 Pro Max: platô de câmeras horizontal ocupando toda a largura do topo da traseira, com as três lentes em triângulo à esquerda e flash e LiDAR à direita.
+- Use só estes dados nos textos. Não acrescente especificações que não estejam aqui.
+
+## Modelo 3D
+- Opção A (prioritária): se houver .glb ou .gltf em `assets/`, use-o. Otimize com gltf-transform (Draco ou Meshopt, texturas em WebP ou KTX2), com alvo de no máximo 3 MB.
+- Opção B: se não houver, modele o aparelho proceduralmente em Three.js com alta fidelidade: corpo com cantos arredondados nas proporções reais, laterais de alumínio, platô de câmeras, três lentes com anéis metálicos e vidro com reflexo, flash, LiDAR, botões laterais (incluindo o Controle da Câmera), tela frontal com bordas finas e Dynamic Island. Use as fotos do iPhone 18 Pro Max em `assets/` como referência visual. Sem logo da Apple.
+- Cores do modelo: tire os tons das fotos de `assets/`. Se não houver foto de alguma cor, use aproximações: Preto #232326, Prata #DCDCDC, Glacial #C9D8E2, Bordô #5C1A26.
+- Tela: wallpaper de `assets/`, se existir; senão, um gradiente nas cores da marca Vellari.
+- Materiais PBR: metal acetinado nas laterais, vidro fosco na traseira, lentes com clearcoat. Iluminação de estúdio com RoomEnvironment + PMREM (sem baixar HDR externo) e sombra de contato suave sob o aparelho.
+
+## Interação
+- Arrastar gira o aparelho (mouse e toque), com inércia (damping) e limite de ângulo vertical. Zoom desativado ou bem limitado.
+- Auto-rotação lenta até o primeiro toque; volta a girar após uns 5 segundos sem interação.
+- Indicador "Arraste para girar" que some depois da primeira interação.
+- Seletor das 4 cores: troca a cor do modelo com transição suave e atualiza a mensagem do botão de WhatsApp com a cor escolhida.
+- 3 ou 4 hotspots clicáveis: Câmera de 48 MP com abertura variável, Chip A20 Pro, Tela de 6,9" e Bateria. Ao tocar, a câmera da cena se aproxima da área e mostra um card curto.
+- Abaixo do aparelho, uma linha curta de confiança: "Lacrado com 1 ano de garantia • Até 18x no cartão • Pix, débito e dinheiro".
+- CTA principal: "Quero o iPhone 18 Pro Max", que abre o WhatsApp com a cor selecionada na mensagem. CTA secundário: "Ver vitrine".
+- CRÍTICO NO CELULAR: o canvas nunca pode prender a rolagem da página. Arrasto horizontal gira o aparelho; arrasto vertical rola a página (`touch-action: pan-y` + lógica própria com pointer events). Teste isso.
+- Efeito de scroll discreto: ao rolar para fora do hero, o aparelho gira um pouco e some suavemente.
+
+## Performance e fallback do 3D
+- Primeiro, mostre uma imagem estática (poster) do iPhone 18 Pro Max vinda de `assets/` no lugar do canvas, para o LCP ser rápido. Depois carregue o Three.js com import dinâmico e troque o poster pelo 3D com fade.
+- Limite o devicePixelRatio a 2. Pause o render loop quando o hero sair da tela (IntersectionObserver) e quando a aba ficar oculta.
+- Sem suporte a WebGL, ou com `prefers-reduced-motion`, mantenha o poster estático (sem auto-rotação), com o seletor de cores trocando fotos se houver fotos por cor em `assets/`.
+- Meta: 60 fps em celular intermediário e nenhum travamento ao rolar.
+
+# 5. VITRINE
+
+- Catálogo em `src/data/products.ts`, cada item com: id, nome, categoria (iPhone, Android, Acessórios, Smartwatch, Fones, Outros), modelo, armazenamento, cor, condição (Lacrado ou Seminovo), garantia (derivada da condição), preço ou null (exibe "Consulte"), imagens (de `assets/`), selo (Mais vendido, Lançamento, Últimas unidades) e destaque (boolean).
+- Monte o catálogo inicial a partir das imagens de `assets/`, identificando cada produto pelo nome do arquivo e pela foto. O que não der para identificar com segurança vira item marcado [CONFIRMAR] e entra no relatório.
+- Seção "Mais vendidos" logo após o hero, com estes modelos, nesta ordem: iPhone 18 Pro Max, iPhone 18 Pro, iPhone 17 Pro Max, iPhone 15 Pro Max, iPhone 14 Pro Max, iPhone 14 Pro, iPhone 14, iPhone 13 Pro e iPhone 13. Cards grandes, imagens 2D em HD, selo "Mais vendido". Carrossel com arrasto no celular e grade no desktop.
+- Vitrine completa: filtros por categoria e condição (Lacrado ou Seminovo), busca por nome e ordenação. Grade de 2 colunas no celular.
+- Card: foto HD com lazy loading, nome, armazenamento e cor, condição com a garantia ("Seminovo • 3 meses de garantia"), preço ou "Consulte", selo e botão "Quero este", que abre o WhatsApp com a mensagem do produto.
+- Clique no card abre um modal com galeria de fotos 2D, as formas de pagamento e o mesmo CTA. Na vitrine, o iPhone 18 Pro Max também é 2D.
+
+# 6. DEMAIS SEÇÕES
+
+Siga a ordem e os textos do protótipo, ajustados aos dados oficiais da seção 1:
+
+1. Header fixo: logo (de `assets/`), menu (iPhones, Vitrine, Loja, Contato) e botão de WhatsApp. Fica translúcido com blur ao rolar.
+2. Hero 3D (seção 4).
+3. Faixa de benefícios com ícones: "1 ano de garantia nos lacrados", "3 meses de garantia nos seminovos", "Até 18x no cartão", "Pix, débito e dinheiro", "Entregamos na região".
+4. Mais vendidos.
+5. Vitrine completa.
+6. A loja / Por que comprar na Vellari: use as fotos da loja que estiverem em `assets/` (fachada, entrada, balcão, atendimento). Se não houver, deixe um bloco placeholder e liste no relatório.
+7. Clientes Vellari: galeria com as fotos de clientes de `assets/`. Depoimentos só se forem reais; senão, placeholders marcados.
+8. Entregamos na sua cidade: lista das cidades da seção 1 em chips, com o texto "Atendemos Santa Fé do Sul e região" e CTA "Consultar entrega no WhatsApp". Prazo e taxa ficam [CONFIRMAR].
+9. Instagram: chamada para seguir @vellari_phone.
+10. FAQ em acordeão, com respostas baseadas só na seção 1:
+    - Qual a garantia? (lacrados 1 ano, seminovos 3 meses)
+    - Quais as formas de pagamento? (Pix, débito, dinheiro, crédito em até 18x com juros)
+    - Vocês entregam? (lista das cidades; detalhes pelo WhatsApp)
+    - Qual o horário? (segunda a sábado, 08:00 às 18:00; domingo fechado)
+    - Aceitam iPhone usado na troca? [CONFIRMAR: só inclua esta pergunta se eu confirmar]
+11. CTA final e rodapé com: endereço completo, horário, WhatsApp, e-mail, Instagram, mapa do Google (carregado só quando entra na tela, buscando pelo endereço da seção 1), CNPJ 41.253.575/0001-01, aviso de marca e crédito da agência.
+
+Animações de entrada suaves e discretas (IntersectionObserver), desligadas com `prefers-reduced-motion`.
+
+# 7. WHATSAPP E CONVERSÃO
+
+- Links no formato `https://wa.me/5517997220015?text=<mensagem codificada>`. Número e templates vêm de `store.ts`.
+- Mensagens diferentes por origem:
+  - Hero: "Olá! Vi o iPhone 18 Pro Max {cor} no site da Vellari e quero saber valores e condições."
+  - Produto: "Olá! Tenho interesse no {nome} {armazenamento} {cor} ({condição}) que vi no site."
+  - Entrega: "Olá! Sou de {cidade} e quero saber como funciona a entrega."
+  - Geral: "Olá! Vim pelo site da Vellari Phone e quero tirar uma dúvida."
+- Botão flutuante de WhatsApp no canto inferior direito, com animação discreta, sem cobrir conteúdo nem CTAs no celular.
+- Fora do horário (domingo, ou antes das 08:00 e depois das 18:00, no fuso de São Paulo), o botão continua funcionando e mostra a nota "Respondemos a partir das 08:00".
+- Rastreamento opcional: GA4 e Meta Pixel com IDs em `store.ts` ([GA4_ID] e [PIXEL_ID]). Só carregam se o ID estiver preenchido e o visitante aceitar o banner de cookies (LGPD). Dispare um evento de lead em todo clique de WhatsApp, com a origem e o produto.
+
+# 8. SEO LOCAL
+
+- Title e meta description com "loja de iPhone em Santa Fé do Sul" e variações naturais. Cite as cidades atendidas no texto da seção de entrega, de forma natural.
+- JSON-LD `MobilePhoneStore` com: nome, endereço (Rua 19, Centro, Santa Fé do Sul, SP, 15775-057, BR), telefone +55 17 99722-0015, e-mail, horário (Mo-Sa 08:00-18:00), formas de pagamento, `areaServed` com as cidades da seção 1 e `sameAs` com o Instagram. `Product` só para itens com preço definido.
+- Open Graph e Twitter Card com imagem de 1200x630 feita a partir de `assets/`, para a prévia ficar bonita no WhatsApp.
+- HTML semântico, um único h1, alt descritivo em todas as imagens, sitemap.xml, robots.txt, favicon e manifest.
+
+# 9. QUALIDADE
+
+- Lighthouse mobile: Performance ≥ 85, Acessibilidade ≥ 95, Boas práticas ≥ 95, SEO 100.
+- LCP < 2,5 s em 4G e CLS < 0,1. O Three.js não entra no bundle inicial.
+- Contraste AA, foco visível, navegação por teclado, áreas de toque de pelo menos 44 px. Hotspots e seletor de cores acessíveis por teclado e leitor de tela.
+- Funciona em Safari iOS, Chrome Android e Chrome, Edge, Safari e Firefox no desktop.
+- Nenhum erro no console.
+
+# 10. FLUXO DE TRABALHO
+
+Trabalhe em fases. Nos pontos marcados com ⏸, pare e espere a minha aprovação.
+
+- Fase 0, Reconhecimento: leia o protótipo inteiro e liste tudo em `assets/`. Me entregue os tokens de design extraídos, o mapa de seções do protótipo, o inventário de imagens (produto ou foto identificada → arquivo), se existe modelo 3D, quais dos modelos mais vendidos têm foto e o que está faltando. ⏸
+- Fase 1, Plano: arquitetura, estrutura de pastas, abordagem do 3D (A ou B) e riscos. ⏸
+- Fase 2, Setup: projeto Vite + TS, tokens, pipeline de imagens, `store.ts` com os dados da seção 1, `products.ts` e `CLAUDE.md`.
+- Fase 3, Hero 3D completo (seção 4). Gere screenshots do hero em 375 px e 1440 px. ⏸
+- Fase 4, Mais vendidos, vitrine e modal.
+- Fase 5, Demais seções, WhatsApp e rastreamento.
+- Fase 6, SEO, acessibilidade e performance.
+- Fase 7, QA: build de produção, Lighthouse, screenshots em 375, 768 e 1440 px (Playwright, se disponível), teste de todos os links de WhatsApp (número 5517997220015 e mensagens) e da rolagem no celular. Confira se nenhum texto diz "sem juros". Corrija tudo que falhar.
+
+# 11. ENTREGA FINAL
+
+1. Site rodando com `npm run dev` e build de produção em `dist/` com `npm run build`.
+2. README em português: como editar produtos, preços, dados da loja e textos; como trocar fotos; como publicar em [SUA HOSPEDAGEM] (e alternativas como Netlify ou Vercel).
+3. Relatório final com: placeholders pendentes, produtos marcados [CONFIRMAR], imagens faltando, fotos de clientes para confirmar autorização, resultados do Lighthouse e qualquer decisão que eu precise tomar.

@@ -1,0 +1,64 @@
+/* Design tokens extraídos do protótipo aprovado (index.html.txt).
+   Paleta: só preto, branco e azul. Azul é ação. */
+:root {
+  /* Marca */
+  --azul: #074DFF;               /* botões, seleção */
+  --azul-hover: #0237C9;
+  --azul-pressionado: #022EA8;
+  --azul-brilho: #1E8CFF;        /* ponta do arco; nunca em texto */
+  --sempre-branco: #FFFFFF;
+  --sempre-preto: #050505;
+
+  /* Tema escuro (padrão do site) */
+  --bg: #050505;
+  --tx: #FFFFFF;
+  --texto-2: rgba(255, 255, 255, .64);
+  --linha: rgba(255, 255, 255, .10);
+  --linha-2: rgba(255, 255, 255, .22);
+  --borda-campo: rgba(255, 255, 255, .42);
+  --placeholder: rgba(255, 255, 255, .42);
+  --azul-tx: #3F7BFF;            /* azul para texto e ícones sobre o preto (5,3:1) */
+  --azul-tinta: rgba(63, 123, 255, .14);
+  --superficie: #0B0C10;         /* cards */
+  --poco: radial-gradient(circle at 50% 42%, rgba(7, 77, 255, .22), rgba(7, 77, 255, 0) 68%), #0D0F15; /* fundo da foto */
+  --topo-bg: rgba(5, 5, 5, .82);
+  --anel-cor: rgba(255, 255, 255, .3);
+  --gradiente-arco: linear-gradient(90deg, #0237C9 0%, #074DFF 55%, #1E8CFF 100%);
+
+  /* Tipografia */
+  --fonte-marca: "Archivo Variable", "Archivo", "Arial", system-ui, sans-serif;
+  --fonte-mono: "JetBrains Mono Variable", "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* Forma */
+  --raio-sm: 10px;
+  --raio-md: 12px;
+  --raio-lg: 18px;
+  --raio-xl: 22px;
+  --raio-2xl: 28px;
+  --raio-pill: 999px;
+
+  /* Sombras */
+  --sombra-1: 0 1px 2px rgba(5, 5, 5, .04), 0 8px 24px -12px rgba(5, 5, 5, .12);
+  --sombra-azul: 0 18px 36px -18px rgba(7, 77, 255, .45);
+  --sombra-3: 0 32px 64px -24px rgba(5, 5, 5, .35);
+
+  /* Movimento */
+  --curva: cubic-bezier(.2, .7, .2, 1);
+  --rapido: 160ms;
+  --medio: 240ms;
+
+  /* Grid */
+  --gutter: 16px;
+  --altura-topo: 60px;
+  --secao: 64px;
+  --container: 1200px;
+
+  color-scheme: dark;
+}
+
+@media (min-width: 640px) {
+  :root { --gutter: 24px; --secao: 80px; --altura-topo: 68px; }
+}
+@media (min-width: 1024px) {
+  :root { --gutter: 32px; --secao: 112px; }
+}

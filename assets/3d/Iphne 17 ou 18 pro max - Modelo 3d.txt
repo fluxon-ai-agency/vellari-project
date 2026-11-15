@@ -1,0 +1,342 @@
+/**
+ * iphone-model.js — modelo procedural de smartphone premium (padrão "Pro Max")
+ * Geometria 100% gerada em código. Sem .glb, sem atribuição, sem licença de terceiros.
+ *
+ * Requer: three@0.160+
+ *
+ * USO BÁSICO:
+ *
+ *   import * as THREE from 'three';
+ *   import { createPhone, FINISHES } from './iphone-model.js';
+ *
+ *   const phone = createPhone({ finish: 'titanioNatural', screenTexture: minhaTextura });
+ *   scene.add(phone);
+ *
+ * IMPORTANTE — reflexos:
+ *   Titânio sem environment map fica cinza chapado. Configure assim:
+ *
+ *   import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
+ *   const pmrem = new THREE.PMREMGenerator(renderer);
+ *   scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+ *   renderer.toneMapping = THREE.ACESFilmicToneMapping;
+ *   renderer.toneMappingExposure = 1.1;
+ *
+ * ESCALA: 1 unidade = 1 metro. O aparelho tem ~0.163 x 0.078 x 0.0087.
+ * Posicione a câmera em z ≈ 0.35 com fov 35.
+ */
+
+import * as THREE from 'three';
+
+/* ─────────────────────────── Acabamentos ─────────────────────────── */
+
+export const FINISHES = {
+  titanioNatural: { frame: 0xb8b2a7, back: 0xc9c4ba, roughness: 0.30 },
+  titanioPreto:   { frame: 0x3a3a3c, back: 0x2c2c2e, roughness: 0.34 },
+  titanioBranco:  { frame: 0xe6e3dd, back: 0xf2f0ec, roughness: 0.28 },
+  titanioAzul:    { frame: 0x5b6b7c, back: 0x6b7b8c, roughness: 0.30 },
+  laranjaCosmico: { frame: 0xd4733a, back: 0xe08347, roughness: 0.32 },
+};
+
+/* ─────────────────── Dimensões reais (em metros) ─────────────────── */
+
+const D = {
+  width:        0.0780,
+  height:       0.1630,
+  depth:        0.0087,
+  cornerRadius: 0.0125,
+  bezel:        0.0021,   // moldura preta ao redor da tela
+  screenInset:  0.00035,  // quanto a tela afunda em relação ao vidro
+  islandW:      0.0380,
+  islandH:      0.0380,
+  islandR:      0.0105,
+  islandDepth:  0.0022,
+  lensRadius:   0.0068,
+  lensDepth:    0.0014,
+};
+
+/* ──────────────────────── Helpers de geometria ───────────────────── */
+
+/** Retângulo com cantos contínuos (squircle aproximado por curvas quadráticas). */
+function roundedRectShape(w, h, r) {
+  const shape = new THREE.Shape();
+  const x = -w / 2, y = -h / 2;
+  // fator > 1 alonga a curva, aproximando o contorno contínuo da Apple
+  const k = r * 0.42;
+
+  shape.moveTo(x + r, y);
+  shape.lineTo(x + w - r, y);
+  shape.bezierCurveTo(x + w - k, y, x + w, y + k, x + w, y + r);
+  shape.lineTo(x + w, y + h - r);
+  shape.bezierCurveTo(x + w, y + h - k, x + w - k, y + h, x + w - r, y + h);
+  shape.lineTo(x + r, y + h);
+  shape.bezierCurveTo(x + k, y + h, x, y + h - k, x, y + h - r);
+  shape.lineTo(x, y + r);
+  shape.bezierCurveTo(x, y + k, x + k, y, x + r, y);
+
+  return shape;
+}
+
+function extruded(shape, depth, bevel = 0) {
+  const geo = new THREE.ExtrudeGeometry(shape, {
+    depth: depth - bevel * 2,
+    bevelEnabled: bevel > 0,
+    bevelThickness: bevel,
+    bevelSize: bevel,
+    bevelSegments: 8,
+    curveSegments: 64,
+  });
+  geo.translate(0, 0, -(depth - bevel * 2) / 2);
+  geo.computeVertexNormals();
+  return geo;
+}
+
+/* ──────────────────────────── Materiais ──────────────────────────── */
+
+function makeMaterials(finish) {
+  const f = FINISHES[finish] ?? FINISHES.titanioNatural;
+
+  return {
+    // Chassi de titânio escovado
+    frame: new THREE.MeshPhysicalMaterial({
+      color: f.frame,
+      metalness: 1.0,
+      roughness: f.roughness,
+      envMapIntensity: 1.4,
+    }),
+
+    // Vidro traseiro fosco
+    back: new THREE.MeshPhysicalMaterial({
+      color: f.back,
+      metalness: 0.15,
+      roughness: 0.42,
+      clearcoat: 1.0,
+      clearcoatRoughness: 0.25,
+      envMapIntensity: 1.0,
+    }),
+
+    // Vidro frontal (Ceramic Shield) — fino e muito reflexivo
+    glass: new THREE.MeshPhysicalMaterial({
+      color: 0x000000,
+      metalness: 0.0,
+      roughness: 0.04,
+      transmission: 0.0,
+      clearcoat: 1.0,
+      clearcoatRoughness: 0.02,
+      envMapIntensity: 2.2,
+      opacity: 0.22,
+      transparent: true,
+    }),
+
+    // Painel OLED
+    screen: new THREE.MeshBasicMaterial({ color: 0x0a0a0a, toneMapped: false }),
+
+    // Moldura preta do display
+    bezel: new THREE.MeshPhysicalMaterial({
+      color: 0x050505,
+      metalness: 0.0,
+      roughness: 0.3,
+    }),
+
+    // Lente
+    lensGlass: new THREE.MeshPhysicalMaterial({
+      color: 0x0b1118,
+      metalness: 0.1,
+      roughness: 0.03,
+      clearcoat: 1.0,
+      clearcoatRoughness: 0.0,
+      envMapIntensity: 3.0,
+    }),
+
+    // Anel metálico da lente
+    lensRing: new THREE.MeshPhysicalMaterial({
+      color: f.frame,
+      metalness: 1.0,
+      roughness: 0.18,
+      envMapIntensity: 1.6,
+    }),
+  };
+}
+
+/* ────────────────────── Módulo de câmera traseiro ────────────────── */
+
+function buildCameraIsland(M) {
+  const island = new THREE.Group();
+
+  // Plateau elevado
+  const plateau = new THREE.Mesh(
+    extruded(roundedRectShape(D.islandW, D.islandH, D.islandR), D.islandDepth, 0.0004),
+    M.back
+  );
+  plateau.position.z = -(D.depth / 2 + D.islandDepth / 2);
+  island.add(plateau);
+
+  // Três lentes em triângulo
+  const o = 0.0098;
+  const positions = [
+    [-o,  o],   // superior esquerda
+    [ o,  o],   // superior direita
+    [-o, -o],   // inferior esquerda
+  ];
+
+  for (const [lx, ly] of positions) {
+    const lens = new THREE.Group();
+    const z = -(D.depth / 2 + D.islandDepth);
+
+    const ring = new THREE.Mesh(
+      new THREE.CylinderGeometry(D.lensRadius, D.lensRadius * 0.94, D.lensDepth, 48),
+      M.lensRing
+    );
+    ring.rotation.x = Math.PI / 2;
+    ring.position.set(lx, ly, z - D.lensDepth / 2);
+    lens.add(ring);
+
+    const glass = new THREE.Mesh(
+      new THREE.SphereGeometry(D.lensRadius * 0.74, 48, 32, 0, Math.PI * 2, 0, Math.PI / 2.4),
+      M.lensGlass
+    );
+    glass.rotation.x = Math.PI / 2;
+    glass.position.set(lx, ly, z - D.lensDepth);
+    glass.scale.z = 0.45;
+    lens.add(glass);
+
+    island.add(lens);
+  }
+
+  // Flash + sensor LiDAR
+  const flash = new THREE.Mesh(
+    new THREE.CylinderGeometry(0.0026, 0.0026, 0.0006, 32),
+    new THREE.MeshPhysicalMaterial({ color: 0xfff4e0, roughness: 0.2, metalness: 0.1 })
+  );
+  flash.rotation.x = Math.PI / 2;
+  flash.position.set(o, -o, -(D.depth / 2 + D.islandDepth + 0.0003));
+  island.add(flash);
+
+  return island;
+}
+
+/* ──────────────────────── Botões laterais ────────────────────────── */
+
+function buildButtons(M) {
+  const g = new THREE.Group();
+  const h = D.depth * 0.62;
+  const out = 0.0004;
+
+  const mk = (len, y, side) => {
+    const b = new THREE.Mesh(new THREE.BoxGeometry(0.0012, len, h), M.frame);
+    b.position.set(side * (D.width / 2 + out), y, 0);
+    g.add(b);
+  };
+
+  mk(0.0135, 0.0340, -1);  // silencioso / Ação
+  mk(0.0180, 0.0120, -1);  // volume +
+  mk(0.0180, -0.0090, -1); // volume −
+  mk(0.0230, 0.0180,  1);  // power / Controle da Câmera
+
+  return g;
+}
+
+/* ─────────────────────────── Montagem ────────────────────────────── */
+
+/**
+ * @param {Object}  opts
+ * @param {string}  opts.finish         Chave de FINISHES. Padrão: 'titanioNatural'
+ * @param {THREE.Texture} opts.screenTexture  Print do app/site para exibir na tela
+ * @param {boolean} opts.dynamicIsland  Desenha o recorte da Dynamic Island. Padrão: true
+ */
+export function createPhone({
+  finish = 'titanioNatural',
+  screenTexture = null,
+  dynamicIsland = true,
+} = {}) {
+  const M = makeMaterials(finish);
+  const phone = new THREE.Group();
+  phone.name = 'phone';
+
+  // 1. Chassi
+  const body = new THREE.Mesh(
+    extruded(roundedRectShape(D.width, D.height, D.cornerRadius), D.depth, 0.0011),
+    M.frame
+  );
+  phone.add(body);
+
+  // 2. Vidro traseiro
+  const back = new THREE.Mesh(
+    extruded(
+      roundedRectShape(D.width - 0.0016, D.height - 0.0016, D.cornerRadius - 0.0008),
+      0.0006
+    ),
+    M.back
+  );
+  back.position.z = -(D.depth / 2 - 0.0001);
+  phone.add(back);
+
+  // 3. Moldura preta frontal
+  const bezel = new THREE.Mesh(
+    extruded(
+      roundedRectShape(D.width - 0.0016, D.height - 0.0016, D.cornerRadius - 0.0008),
+      0.0005
+    ),
+    M.bezel
+  );
+  bezel.position.z = D.depth / 2 - 0.0003;
+  phone.add(bezel);
+
+  // 4. Display
+  const sw = D.width - D.bezel * 2;
+  const sh = D.height - D.bezel * 2;
+  const screenMat = screenTexture
+    ? new THREE.MeshBasicMaterial({ map: screenTexture, toneMapped: false })
+    : M.screen;
+
+  const screen = new THREE.Mesh(
+    new THREE.ShapeGeometry(roundedRectShape(sw, sh, D.cornerRadius - D.bezel), 64),
+    screenMat
+  );
+  screen.position.z = D.depth / 2 - D.screenInset;
+  screen.name = 'screen';
+  phone.add(screen);
+
+  // 5. Dynamic Island
+  if (dynamicIsland) {
+    const di = new THREE.Mesh(
+      new THREE.ShapeGeometry(roundedRectShape(0.0250, 0.0072, 0.0036), 32),
+      M.bezel
+    );
+    di.position.set(0, sh / 2 - 0.0082, D.depth / 2 - D.screenInset + 0.00004);
+    phone.add(di);
+  }
+
+  // 6. Vidro frontal por cima de tudo (dá o reflexo)
+  const glass = new THREE.Mesh(
+    new THREE.ShapeGeometry(
+      roundedRectShape(D.width - 0.0016, D.height - 0.0016, D.cornerRadius - 0.0008),
+      64
+    ),
+    M.glass
+  );
+  glass.position.z = D.depth / 2 + 0.00012;
+  glass.renderOrder = 10;
+  phone.add(glass);
+
+  // 7. Câmeras e botões
+  phone.add(buildCameraIsland(M));
+  phone.add(buildButtons(M));
+
+  // API auxiliar
+  phone.userData.setScreenTexture = (tex) => {
+    screen.material.map = tex;
+    screen.material.needsUpdate = true;
+  };
+  phone.userData.setFinish = (name) => {
+    const f = FINISHES[name];
+    if (!f) return;
+    M.frame.color.setHex(f.frame);
+    M.frame.roughness = f.roughness;
+    M.back.color.setHex(f.back);
+    M.lensRing.color.setHex(f.frame);
+  };
+
+  return phone;
+}
+
+export { D as PHONE_DIMENSIONS };

@@ -1,0 +1,1422 @@
+{
+  "logo-vellari": {
+    "alt": "Vellari Phone",
+    "largura": 480,
+    "altura": 231,
+    "assinatura": "46cb138f7b48",
+    "avif": [
+      {
+        "w": 160,
+        "src": "/img/logo-vellari-160.avif"
+      },
+      {
+        "w": 320,
+        "src": "/img/logo-vellari-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/logo-vellari-480.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 160,
+        "src": "/img/logo-vellari-160.webp"
+      },
+      {
+        "w": 320,
+        "src": "/img/logo-vellari-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/logo-vellari-480.webp"
+      }
+    ]
+  },
+  "iphone-17-pro-max": {
+    "alt": "Caixas lacradas do iPhone 17 Pro Max nas cores azul e prata",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "c751d6542dfc",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-17-pro-max-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-17-pro-max-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-17-pro-max-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-17-pro-max-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-17-pro-max-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-17-pro-max-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-17-pro-max-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-17-pro-max-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-17-pro-max-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-17-pro-max-1280.webp"
+      }
+    ]
+  },
+  "iphone-17-pro-max-cores": {
+    "alt": "Três iPhone 17 Pro Max nas cores laranja, azul e prata",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "c733221a92f3",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-17-pro-max-cores-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-17-pro-max-cores-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-17-pro-max-cores-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-17-pro-max-cores-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-17-pro-max-cores-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-17-pro-max-cores-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-17-pro-max-cores-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-17-pro-max-cores-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-17-pro-max-cores-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-17-pro-max-cores-1280.webp"
+      }
+    ]
+  },
+  "iphone-17-pro-max-laranja": {
+    "alt": "iPhone 17 Pro Max laranja ao lado da caixa",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "6ff24b149730",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-17-pro-max-laranja-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-17-pro-max-laranja-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-17-pro-max-laranja-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-17-pro-max-laranja-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-17-pro-max-laranja-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-17-pro-max-laranja-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-17-pro-max-laranja-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-17-pro-max-laranja-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-17-pro-max-laranja-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-17-pro-max-laranja-1280.webp"
+      }
+    ]
+  },
+  "iphone-14-pro-max": {
+    "alt": "iPhone 14 Pro Max prateado com a caixa",
+    "largura": 640,
+    "altura": 640,
+    "assinatura": "6f360a3476aa",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-pro-max-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-pro-max-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-pro-max-640.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-pro-max-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-pro-max-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-pro-max-640.webp"
+      }
+    ]
+  },
+  "iphone-14": {
+    "alt": "Dois iPhone 14 na cor meia-noite",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "aa143defcd05",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-14-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-14-1280.webp"
+      }
+    ]
+  },
+  "iphone-14-roxo": {
+    "alt": "iPhone 14 roxo em um suporte",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "52b086933c8b",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-roxo-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-roxo-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-roxo-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-roxo-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-14-roxo-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-roxo-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-roxo-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-roxo-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-roxo-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-14-roxo-1280.webp"
+      }
+    ]
+  },
+  "iphone-14-plus": {
+    "alt": "iPhone 14 Plus na cor meia-noite",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "18826cb23372",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-plus-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-plus-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-plus-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-plus-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-14-plus-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-plus-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-plus-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-plus-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-plus-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-14-plus-1280.webp"
+      }
+    ]
+  },
+  "iphone-13-pro": {
+    "alt": "iPhone 13 Pro prateado",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "a8a1a40d1d1e",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-pro-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-pro-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-pro-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-pro-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-13-pro-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-pro-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-pro-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-pro-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-pro-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-13-pro-1280.webp"
+      }
+    ]
+  },
+  "iphone-13": {
+    "alt": "iPhone 13 azul",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "01117819ba49",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-13-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-13-1280.webp"
+      }
+    ]
+  },
+  "iphone-13-pro-max": {
+    "alt": "iPhone 13 Pro Max dourado em um suporte",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "a6a8b0dd80ec",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-pro-max-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-pro-max-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-pro-max-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-pro-max-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-13-pro-max-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-pro-max-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-pro-max-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-pro-max-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-pro-max-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-13-pro-max-1280.webp"
+      }
+    ]
+  },
+  "iphone-13-pro-max-azul": {
+    "alt": "iPhone 13 Pro Max azul-sierra",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "1345079f0e00",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-pro-max-azul-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-pro-max-azul-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-pro-max-azul-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-pro-max-azul-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-13-pro-max-azul-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-pro-max-azul-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-pro-max-azul-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-pro-max-azul-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-pro-max-azul-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-13-pro-max-azul-1280.webp"
+      }
+    ]
+  },
+  "iphone-15-pro": {
+    "alt": "iPhone 15 Pro branco com a caixa",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "de12fca9f0a1",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-15-pro-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-15-pro-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-15-pro-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-15-pro-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-15-pro-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-15-pro-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-15-pro-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-15-pro-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-15-pro-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-15-pro-1280.webp"
+      }
+    ]
+  },
+  "iphone-12": {
+    "alt": "iPhone 12 branco em um suporte",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "321616ebcf0d",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-12-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-12-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-12-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-12-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-12-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-12-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-12-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-12-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-12-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-12-1280.webp"
+      }
+    ]
+  },
+  "iphone-11-pro-max": {
+    "alt": "iPhone 11 Pro Max verde",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "15b017da740a",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-11-pro-max-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-11-pro-max-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-11-pro-max-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-11-pro-max-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-11-pro-max-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-11-pro-max-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-11-pro-max-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-11-pro-max-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-11-pro-max-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/iphone-11-pro-max-1280.webp"
+      }
+    ]
+  },
+  "iphone-11": {
+    "alt": "iPhone 11 em cinco cores",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "8ff901353d23",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-11-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-11-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-11-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-11-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-11-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-11-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-11-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-11-960.webp"
+      }
+    ]
+  },
+  "redmi-14c": {
+    "alt": "Redmi 14C nas cores verde e azul",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "f81a1e9ba2e3",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/redmi-14c-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/redmi-14c-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/redmi-14c-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/redmi-14c-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/redmi-14c-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/redmi-14c-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/redmi-14c-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/redmi-14c-960.webp"
+      }
+    ]
+  },
+  "redmi-note-14": {
+    "alt": "Caixa do Redmi Note 14",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "a756b1b49b04",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/redmi-note-14-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/redmi-note-14-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/redmi-note-14-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/redmi-note-14-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/redmi-note-14-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/redmi-note-14-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/redmi-note-14-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/redmi-note-14-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/redmi-note-14-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/redmi-note-14-1280.webp"
+      }
+    ]
+  },
+  "redmi-note-14-pro": {
+    "alt": "Caixa do Redmi Note 14 Pro 5G",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "630eedcabdf9",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/redmi-note-14-pro-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/redmi-note-14-pro-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/redmi-note-14-pro-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/redmi-note-14-pro-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/redmi-note-14-pro-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/redmi-note-14-pro-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/redmi-note-14-pro-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/redmi-note-14-pro-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/redmi-note-14-pro-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/redmi-note-14-pro-1280.webp"
+      }
+    ]
+  },
+  "redmi-note-17": {
+    "alt": "Caixa do Redmi Note 17",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "2e88a5b75d5e",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/redmi-note-17-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/redmi-note-17-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/redmi-note-17-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/redmi-note-17-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/redmi-note-17-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/redmi-note-17-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/redmi-note-17-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/redmi-note-17-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/redmi-note-17-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/redmi-note-17-1280.webp"
+      }
+    ]
+  },
+  "poco-x7-pro": {
+    "alt": "Caixa do Poco X7 Pro",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "d36ffdddf1f6",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/poco-x7-pro-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/poco-x7-pro-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/poco-x7-pro-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/poco-x7-pro-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/poco-x7-pro-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/poco-x7-pro-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/poco-x7-pro-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/poco-x7-pro-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/poco-x7-pro-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/poco-x7-pro-1280.webp"
+      }
+    ]
+  },
+  "realme-c63": {
+    "alt": "Caixa do Realme C63",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "1cff593f7bad",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/realme-c63-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/realme-c63-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/realme-c63-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/realme-c63-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/realme-c63-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/realme-c63-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/realme-c63-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/realme-c63-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/realme-c63-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/realme-c63-1280.webp"
+      }
+    ]
+  },
+  "realme-c73": {
+    "alt": "Caixa do Realme C73",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "42cd752d0a36",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/realme-c73-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/realme-c73-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/realme-c73-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/realme-c73-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/realme-c73-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/realme-c73-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/realme-c73-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/realme-c73-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/realme-c73-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/realme-c73-1280.webp"
+      }
+    ]
+  },
+  "apple-watch": {
+    "alt": "Apple Watch na caixa aberta",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "60b2cec4a25c",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/apple-watch-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/apple-watch-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/apple-watch-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/apple-watch-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/apple-watch-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/apple-watch-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/apple-watch-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/apple-watch-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/apple-watch-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/apple-watch-1280.webp"
+      }
+    ]
+  },
+  "apple-watch-series-9": {
+    "alt": "Apple Watch Series 9 de 45 mm com a caixa",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "f52ebf32aec9",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/apple-watch-series-9-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/apple-watch-series-9-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/apple-watch-series-9-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/apple-watch-series-9-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/apple-watch-series-9-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/apple-watch-series-9-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/apple-watch-series-9-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/apple-watch-series-9-960.webp"
+      }
+    ]
+  },
+  "jbl-boombox-4": {
+    "alt": "Caixa da JBL Boombox 4",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "9236d7ec2c23",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/jbl-boombox-4-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/jbl-boombox-4-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/jbl-boombox-4-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/jbl-boombox-4-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/jbl-boombox-4-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/jbl-boombox-4-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/jbl-boombox-4-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/jbl-boombox-4-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/jbl-boombox-4-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/jbl-boombox-4-1280.webp"
+      }
+    ]
+  },
+  "power-bank": {
+    "alt": "Carregadores portáteis na embalagem",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "ac1d7d29438d",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/power-bank-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/power-bank-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/power-bank-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/power-bank-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/power-bank-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/power-bank-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/power-bank-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/power-bank-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/power-bank-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/power-bank-1280.webp"
+      }
+    ]
+  },
+  "carregador-20w": {
+    "alt": "Caixas do carregador USB-C de 20W",
+    "largura": 640,
+    "altura": 640,
+    "assinatura": "1dbe5204b2f4",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/carregador-20w-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/carregador-20w-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/carregador-20w-640.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/carregador-20w-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/carregador-20w-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/carregador-20w-640.webp"
+      }
+    ]
+  },
+  "cliente-01": {
+    "alt": "Cliente da Vellari Phone com o celular novo",
+    "largura": 1280,
+    "altura": 1280,
+    "assinatura": "72f100e8d439",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/cliente-01-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/cliente-01-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/cliente-01-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/cliente-01-960.avif"
+      },
+      {
+        "w": 1280,
+        "src": "/img/cliente-01-1280.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/cliente-01-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/cliente-01-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/cliente-01-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/cliente-01-960.webp"
+      },
+      {
+        "w": 1280,
+        "src": "/img/cliente-01-1280.webp"
+      }
+    ]
+  },
+  "cliente-02": {
+    "alt": "Cliente da Vellari Phone com o iPhone novo",
+    "largura": 960,
+    "altura": 1199,
+    "assinatura": "8b6822da98f8",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/cliente-02-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/cliente-02-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/cliente-02-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/cliente-02-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/cliente-02-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/cliente-02-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/cliente-02-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/cliente-02-960.webp"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2063 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vellari Phone | Loja de iPhone em Santa Fé do Sul - SP</title>
+
+<!-- =====================================================================
+     VELLARI PHONE · site (landing page + vitrine)
+     Versão 1.0 · novembro de 2026 · segue o Design System Vellari 1.0
+
+     COMO EDITAR (sem mexer no layout):
+     1. Dados da loja (WhatsApp, horário, logo, garantia...): objeto CONFIG,
+        no bloco de script no fim do arquivo.
+     2. Produtos da vitrine: lista PRODUTOS, logo abaixo do CONFIG.
+     3. Depoimentos e posts do Instagram: CONFIG.depoimentos e CONFIG.instagram.
+     4. SEO: troque "SEU-DOMINIO.com.br" e os campos [ENTRE COLCHETES] desta
+        seção <head> (canonical, Open Graph e schema.org).
+     ===================================================================== -->
+
+<!-- SEO local -->
+<meta name="description" content="Loja de iPhone em Santa Fé do Sul - SP. iPhones 100% originais, celulares e eletrônicos com garantia, até 18x no cartão e seu usado na troca. Chama no WhatsApp.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#050505">
+<meta name="geo.region" content="BR-SP">
+<meta name="geo.placename" content="Santa Fé do Sul">
+<link rel="canonical" href="https://SEU-DOMINIO.com.br/">
+
+<!-- Open Graph (link compartilhado no WhatsApp e Instagram) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Vellari Phone">
+<meta property="og:title" content="Vellari Phone · Loja de iPhone em Santa Fé do Sul">
+<meta property="og:description" content="iPhones 100% originais com garantia, até 18x no cartão e seu usado na troca. Chama no WhatsApp.">
+<meta property="og:url" content="https://SEU-DOMINIO.com.br/">
+<!-- Imagem de 1200 × 630 px. Suba o arquivo e ajuste o caminho -->
+<meta property="og:image" content="https://SEU-DOMINIO.com.br/assets/og-vellari.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- schema.org: MobilePhoneStore é o tipo de "Store" para loja de celulares.
+     Preencha telefone, CEP, horário e formas de pagamento (campos entre colchetes). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobilePhoneStore",
+  "name": "Vellari Phone",
+  "description": "Loja de iPhone em Santa Fé do Sul - SP: iPhones 100% originais, celulares e eletrônicos com garantia, parcelamento em até 18x e troca do seu usado.",
+  "url": "https://SEU-DOMINIO.com.br/",
+  "image": "https://SEU-DOMINIO.com.br/assets/og-vellari.jpg",
+  "logo": "https://SEU-DOMINIO.com.br/assets/logo-vellari.png",
+  "telephone": "[+55 17 9XXXX-XXXX]",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua 19, 655, 2º andar, Centro",
+    "addressLocality": "Santa Fé do Sul",
+    "addressRegion": "SP",
+    "postalCode": "[CEP]",
+    "addressCountry": "BR"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Santa Fé do Sul" },
+    { "@type": "AdministrativeArea", "name": "Noroeste Paulista" }
+  ],
+  "openingHours": "[ex.: Mo-Fr 09:00-18:00, Sa 09:00-13:00]",
+  "paymentAccepted": "[ex.: Pix, cartão de crédito]",
+  "currenciesAccepted": "BRL",
+  "sameAs": ["https://www.instagram.com/vellari_phone/"]
+}
+</script>
+
+<!-- Fontes: Archivo (marca) + JetBrains Mono (etiquetas técnicas) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap">
+
+<style>
+/* Layout: página toda branca; preto para texto e estrutura, azul só para ação e destaque.
+   Linhas finas e etiquetas em fonte mono dão o tom técnico. Visual fixo, sem tema escuro. */
+:root {
+  /* Paleta: só preto, branco e azul. Tema escuro no site todo. */
+  --azul: #074DFF;               /* ação: botões, seleção */
+  --azul-hover: #0237C9;
+  --azul-pressionado: #022EA8;
+  --sempre-branco: #FFFFFF;
+  --sempre-preto: #050505;
+
+  /* Tema escuro (padrão) */
+  --bg: #050505;                 /* fundo da página */
+  --tx: #FFFFFF;                 /* texto principal */
+  --texto-2: rgba(255,255,255,.64);
+  --linha: rgba(255,255,255,.10);
+  --linha-2: rgba(255,255,255,.22);
+  --borda-campo: rgba(255,255,255,.42);
+  --placeholder: rgba(255,255,255,.42);
+  --azul-tx: #3F7BFF;            /* azul para texto e ícones sobre o preto (5,3:1) */
+  --azul-tinta: rgba(63,123,255,.14);
+  --superficie: #0B0C10;         /* cards */
+  --poco: radial-gradient(circle at 50% 42%, rgba(7,77,255,.22), rgba(7,77,255,0) 68%), #0D0F15; /* fundo da foto */
+  --topo-bg: rgba(5,5,5,.82);
+  --anel-cor: rgba(255,255,255,.3);
+  --seta-select: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+  /* Tipografia */
+  --fonte-marca: "Archivo", "Arial", system-ui, sans-serif;
+  --fonte-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* Forma e movimento */
+  --raio-sm: 10px; --raio-md: 12px; --raio-lg: 18px; --raio-xl: 22px; --raio-2xl: 28px; --raio-pill: 999px;
+  --sombra-1: 0 1px 2px rgba(5,5,5,.04), 0 8px 24px -12px rgba(5,5,5,.12);
+  --sombra-azul: 0 18px 36px -18px rgba(7,77,255,.45);
+  --sombra-3: 0 32px 64px -24px rgba(5,5,5,.35);
+  --curva: cubic-bezier(.2,.7,.2,1);
+  --rapido: 160ms;
+  --medio: 240ms;
+
+  /* Grid */
+  --gutter: 16px;
+  --altura-topo: 68px;
+  --secao: 64px;
+  color-scheme: dark;
+}
+/* Tema claro (opcional): adicione a classe tema-claro a uma seção para deixá-la branca */
+.tema-claro {
+  --bg: #FFFFFF; --tx: #050505; --texto-2: rgba(5,5,5,.62);
+  --linha: rgba(5,5,5,.09); --linha-2: rgba(5,5,5,.16); --borda-campo: rgba(5,5,5,.42); --placeholder: rgba(5,5,5,.45);
+  --azul-tx: #074DFF; --azul-tinta: #EEF3FF; --superficie: #FFFFFF; --poco: #F5F8FF;
+  --anel-cor: rgba(5,5,5,.2);
+  --seta-select: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23050505' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background: var(--bg); color: var(--tx); color-scheme: light;
+}
+@media (min-width: 640px)  { :root { --gutter: 24px; --secao: 80px; } }
+@media (min-width: 1024px) { :root { --gutter: 32px; --secao: 112px; } }
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; background: var(--bg); }
+body {
+  margin: 0; background: var(--bg); color: var(--tx);
+  font-family: var(--fonte-marca); font-size: 16px; line-height: 1.6;
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 60; background: var(--bg);
+}
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+h1, h2, h3, h4, p, ul, ol, figure, blockquote { margin: 0; }
+ul, ol { padding: 0; }
+[hidden] { display: none !important; }
+[id] { scroll-margin-top: calc(var(--altura-topo) + 12px); }
+:focus-visible { outline: 2px solid var(--azul); outline-offset: 3px; border-radius: 4px; }
+::selection { background: var(--azul); color: var(--sempre-branco); }
+.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.pular {
+  position: fixed; left: 16px; top: -80px; z-index: 100; background: var(--tx); color: var(--bg);
+  padding: 12px 16px; border-radius: var(--raio-md); font-weight: 700; text-decoration: none;
+}
+.pular:focus { top: calc(12px + env(safe-area-inset-top, 0px)); }
+
+.container {
+  width: 100%; max-width: calc(1200px + 2 * var(--gutter)); margin-inline: auto;
+  padding-left: max(var(--gutter), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--gutter), env(safe-area-inset-right, 0px));
+}
+.secao { padding-block: var(--secao); border-top: 1px solid var(--linha); }
+.secao.sem-linha { border-top: 0; }
+
+/* ---------- Tipografia ---------- */
+.t-display {
+  display: block; font-size: clamp(25px, 7.6vw, 40px); font-weight: 800; font-stretch: 100%;
+  line-height: 1; letter-spacing: -.04em; text-wrap: balance;
+}
+.t-h2 { font-size: 30px; font-weight: 800; font-stretch: 108%; line-height: 1.05; letter-spacing: -.035em; text-wrap: balance; }
+.t-h3 { font-size: 22px; font-weight: 750; line-height: 1.15; letter-spacing: -.02em; text-wrap: balance; }
+.t-h4 { font-size: 18px; font-weight: 700; line-height: 1.25; letter-spacing: -.01em; }
+.t-oferta { font-size: 34px; font-weight: 800; font-stretch: 108%; line-height: 1; letter-spacing: -.04em; text-wrap: balance; }
+.lead { font-size: 17px; line-height: 1.6; max-width: 56ch; color: var(--texto-2); }
+.corpo-p { font-size: 14px; font-weight: 500; line-height: 1.5; }
+.legenda { font-size: 12px; font-weight: 500; line-height: 1.45; }
+/* Etiqueta técnica (mono) com ponto azul */
+.selo-phone {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--fonte-mono); font-size: 11px; font-weight: 500; line-height: 1.3;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--tx);
+}
+.selo-phone::before { content: ""; flex: none; width: 6px; height: 6px; border-radius: 50%; background: var(--azul); }
+.texto-2 { color: var(--texto-2); }
+@media (min-width: 900px) {
+  .t-display { font-size: clamp(52px, 5.6vw, 78px); font-stretch: 110%; letter-spacing: -.045em; line-height: .96; }
+  .t-h2 { font-size: 44px; }
+  .t-h3 { font-size: 28px; }
+  .t-h4 { font-size: 20px; }
+  .t-oferta { font-size: 52px; }
+  .lead { font-size: 19px; }
+  .selo-phone { font-size: 12px; letter-spacing: .14em; }
+}
+
+/* ---------- Ícones ---------- */
+.ic { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.ic-20 { width: 20px; height: 20px; }
+.ic-16 { width: 16px; height: 16px; }
+
+/* ---------- Botões ---------- */
+.btn {
+  --altura: 48px;
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: var(--altura); padding: 0 22px; border-radius: var(--raio-pill); border: 1.5px solid transparent;
+  font-family: var(--fonte-marca); font-size: 15px; font-weight: 650; line-height: 1; letter-spacing: -.005em;
+  text-decoration: none; white-space: nowrap; cursor: pointer; user-select: none;
+  transition: background-color var(--rapido) var(--curva), box-shadow var(--rapido) var(--curva), transform var(--rapido) var(--curva), color var(--rapido) var(--curva), border-color var(--rapido) var(--curva);
+}
+.btn .ic { width: 20px; height: 20px; }
+.btn-p { --altura: 40px; padding: 0 16px; font-size: 14px; }
+.btn-g { --altura: 54px; padding: 0 26px; font-size: 16px; }
+.btn-bloco { width: 100%; white-space: normal; text-align: center; line-height: 1.2; padding-block: 10px; }
+.btn:focus-visible { outline: 2px solid var(--azul); outline-offset: 3px; border-radius: var(--raio-pill); }
+.btn-primario { background: var(--azul); color: var(--sempre-branco); }
+.btn-primario:hover { background: var(--azul-hover); box-shadow: var(--sombra-azul); }
+.btn-primario:active { background: var(--azul-pressionado); transform: translateY(1px); }
+.btn-primario[aria-disabled="true"] { background: var(--linha-2); color: var(--texto-2); box-shadow: none; cursor: not-allowed; }
+.btn-escuro { background: var(--tx); color: var(--bg); }
+.btn-escuro:hover { opacity: .86; }
+.btn-escuro:active { transform: translateY(1px); }
+.btn-inverso { background: var(--bg); color: var(--tx); }
+.btn-inverso:hover { background: var(--azul-tinta); }
+.btn-contorno { background: transparent; border-color: var(--linha-2); color: var(--tx); }
+.btn-contorno:hover { border-color: var(--tx); }
+.btn-texto {
+  background: none; border: 0; padding: 0; min-height: 0; cursor: pointer;
+  color: var(--azul-tx); font-weight: 650; text-decoration: none; font-size: inherit;
+}
+.btn-texto:hover { text-decoration: underline; text-underline-offset: 3px; }
+.btn-icone {
+  display: inline-grid; place-items: center; position: relative; width: 44px; height: 44px; padding: 0;
+  border-radius: var(--raio-pill); border: 1.5px solid transparent; background: transparent; cursor: pointer;
+  transition: background-color var(--rapido) var(--curva);
+}
+.btn-icone .ic { width: 22px; height: 22px; }
+.btn-icone:hover { background: var(--azul-tinta); }
+.btn .giro { display: none; width: 18px; height: 18px; border-radius: 50%; border: 2px solid currentColor; border-right-color: transparent; animation: girar .8s linear infinite; }
+.btn.carregando .giro { display: inline-block; }
+.btn.carregando .ic { display: none; }
+@keyframes girar { to { transform: rotate(360deg); } }
+
+/* ---------- Selos ---------- */
+.selo {
+  display: inline-flex; align-items: center; padding: 5px 9px; border-radius: var(--raio-pill);
+  font-family: var(--fonte-mono); font-size: 10px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; line-height: 1; white-space: nowrap;
+}
+.selo-lancamento   { background: var(--azul); color: var(--sempre-branco); }
+.selo-mais-vendido { background: var(--tx); color: var(--bg); }
+.selo-novo         { background: var(--bg); color: var(--tx); box-shadow: inset 0 0 0 1px var(--linha-2); }
+.selo-seminovo     { background: var(--bg); color: var(--azul-tx); box-shadow: inset 0 0 0 1px var(--azul); }
+.selo-ultimas      { background: var(--bg); color: var(--tx); box-shadow: inset 0 0 0 1.5px var(--tx); }
+.selo-esgotado     { background: var(--bg); color: var(--texto-2); box-shadow: inset 0 0 0 1px var(--linha-2); }
+
+/* ---------- Barra de avisos + cabeçalho ---------- */
+.avisos { background: var(--bg); color: var(--tx); border-bottom: 1px solid var(--linha); font-family: var(--fonte-mono); font-size: 11px; letter-spacing: .04em; }
+.avisos .container { min-height: 34px; display: flex; align-items: center; justify-content: center; gap: 6px 22px; flex-wrap: wrap; }
+.avisos span { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.avisos .ic { width: 14px; height: 14px; color: var(--azul-tx); }
+.avisos .so-largo { display: none; }
+@media (min-width: 720px) { .avisos .so-largo { display: inline-flex; } }
+
+.topo {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50;
+  background: var(--topo-bg); -webkit-backdrop-filter: saturate(180%) blur(16px); backdrop-filter: saturate(180%) blur(16px);
+  border-bottom: 1px solid var(--linha); color: var(--tx);
+}
+.topo-inner { height: var(--altura-topo); display: flex; align-items: center; gap: 16px; }
+.logo { display: inline-flex; align-items: center; text-decoration: none; color: var(--tx); flex: none; }
+.logo img { height: 32px; width: auto; }
+.logo-temp { display: inline-flex; flex-direction: column; align-items: center; line-height: 1; }
+.logo-temp b { font-size: 20px; font-weight: 800; font-stretch: 125%; letter-spacing: .02em; }
+.logo-temp b i { font-style: normal; color: var(--azul-tx); }
+.logo-temp small { display: flex; align-items: center; gap: 6px; margin-top: 4px; font-size: 8px; font-weight: 700; letter-spacing: .5em; color: var(--tx); }
+.logo-temp small::before, .logo-temp small::after { content: ""; width: 14px; height: 1px; background: currentColor; }
+.nav { display: none; margin-left: 20px; gap: 2px; }
+.nav a { padding: 10px 14px; border-radius: var(--raio-pill); text-decoration: none; font-size: 15px; font-weight: 550; color: var(--texto-2); transition: color var(--rapido) var(--curva); }
+.nav a:hover { color: var(--tx); }
+.topo-acoes { margin-left: auto; display: flex; align-items: center; gap: 6px; }
+.topo .btn-whats { display: none; }
+.contador {
+  position: absolute; top: 2px; right: 0; min-width: 18px; height: 18px; padding: 0 5px; border-radius: var(--raio-pill);
+  background: var(--azul); color: var(--sempre-branco); font-family: var(--fonte-mono); font-size: 10px; font-weight: 600; line-height: 18px; text-align: center;
+  box-shadow: 0 0 0 2px var(--bg);
+}
+@media (min-width: 900px) { .nav { display: flex; } .topo .btn-whats { display: inline-flex; } .topo .btn-menu { display: none; } }
+.menu-mobile { border-top: 1px solid var(--linha); background: var(--bg); }
+.menu-mobile .container { padding-block: 8px 20px; display: grid; gap: 0; }
+.menu-mobile a.link-menu {
+  display: flex; align-items: center; justify-content: space-between; min-height: 54px; padding: 0 2px;
+  text-decoration: none; font-size: 18px; font-weight: 700; letter-spacing: -.02em; border-bottom: 1px solid var(--linha); color: var(--tx);
+}
+.menu-mobile a.link-menu .ic { color: var(--azul-tx); }
+.menu-mobile .btn { margin-top: 16px; }
+@media (min-width: 900px) { .menu-mobile { display: none !important; } }
+
+/* ---------- Hero: título à esquerda, iPhone à direita em todas as telas ---------- */
+.hero { padding-block: 32px 44px; position: relative; overflow: hidden; }
+.hero .destaque { color: var(--azul-tx); }
+.hero-grid {
+  display: grid; align-items: center;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  grid-template-areas: "titulo visual" "texto texto";
+  gap: 22px 10px;
+}
+.hero-titulo { grid-area: titulo; min-width: 0; display: grid; gap: 14px; }
+.hero h1 { display: grid; gap: 14px; }
+.hero-visual { grid-area: visual; min-width: 0; position: relative; display: grid; gap: 8px; justify-items: center; }
+.hero-texto { grid-area: texto; min-width: 0; display: grid; gap: 22px; }
+.arco { width: 120px; height: auto; overflow: visible; }
+.arco .traco, .arco .ponta { fill: none; stroke: url(#grad-arco); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+.arco .traco { stroke-dasharray: 1; stroke-dashoffset: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .arco .traco { animation: desenhar 1.1s var(--curva) .25s both; }
+  .arco .ponta { animation: aparecer .3s var(--curva) 1.2s both; }
+}
+@keyframes desenhar { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes aparecer { from { opacity: 0; } to { opacity: 1; } }
+/* Palco do aparelho: círculo azul bem claro + anel fino, sem tirar o branco da página */
+.hero-palco { position: relative; width: 100%; max-width: 540px; aspect-ratio: 1; }
+.hero-palco::before {
+  content: ""; position: absolute; inset: 6%; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(7,77,255,.42), rgba(7,77,255,0) 100%);
+}
+.hero-palco::after {
+  content: ""; position: absolute; inset: 1%; border-radius: 50%; border: 1px solid var(--linha);
+}
+.hero-aparelhos { position: absolute; inset: 0; z-index: 1; }
+.hero-aparelhos img { position: absolute; inset: 3%; width: 94%; height: 94%; object-fit: contain; filter: drop-shadow(0 24px 36px rgba(0,0,0,.6)); }
+.hero-aparelhos .ap { position: absolute; top: 2%; left: 50%; width: 82%; margin-left: -41%; }
+.hero-aparelhos .ap svg { width: 100%; height: auto; }
+.hero-aparelhos .ap-tras { transform: translateX(-17%) rotate(-9deg); }
+.hero-aparelhos .ap-frente { transform: translateX(17%) translateY(4%) rotate(7deg); }
+.hero-legenda { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 8px; text-align: center; font-size: 12px; font-weight: 650; line-height: 1.3; }
+.hero-ctas { display: grid; gap: 10px; }
+.mini-confianca { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 18px; font-family: var(--fonte-mono); font-size: 11.5px; letter-spacing: .02em; color: var(--tx); }
+.mini-confianca li { display: inline-flex; align-items: center; gap: 6px; }
+.mini-confianca .ic { width: 15px; height: 15px; color: var(--azul-tx); stroke-width: 2.2; }
+@media (max-width: 559px) { .hero-ctas .btn { width: 100%; } }
+@media (min-width: 560px) { .hero-ctas { grid-auto-flow: column; justify-content: start; } .arco { width: 180px; } .hero-legenda { font-size: 13px; } }
+@media (min-width: 900px) {
+  .hero { padding-block: 80px 96px; }
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+    grid-template-areas: "titulo visual" "texto visual";
+    column-gap: 56px; row-gap: 28px; align-items: end;
+  }
+  .hero-texto { align-self: start; }
+  .hero-visual { align-self: center; }
+  .arco { width: 240px; }
+}
+
+/* Faixa de benefícios: 4 colunas com divisórias finas */
+.faixa-beneficios { padding-block: 8px 0; }
+.beneficios { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); }
+.beneficio { display: grid; gap: 8px; align-content: start; padding: 22px 14px 26px 0; min-width: 0; }
+.beneficio:nth-child(2n) { padding-left: 14px; border-left: 1px solid var(--linha); }
+.beneficio:nth-child(n+3) { border-top: 1px solid var(--linha); }
+.beneficio .circ { width: 40px; height: 40px; border-radius: var(--raio-sm); display: grid; place-items: center; background: var(--azul-tinta); color: var(--azul-tx); }
+.beneficio .circ .ic { width: 22px; height: 22px; }
+.beneficio h3 { font-size: 16px; font-weight: 700; line-height: 1.3; letter-spacing: -.01em; margin-top: 4px; }
+.beneficio p { font-size: 14px; line-height: 1.5; color: var(--texto-2); }
+@media (min-width: 900px) {
+  .faixa-beneficios { padding-block: 16px 8px; }
+  .beneficios { grid-template-columns: repeat(4, minmax(0,1fr)); }
+  .beneficio, .beneficio:nth-child(2n) { padding: 32px 24px 36px; border-left: 1px solid var(--linha); border-top: 0; }
+  .beneficio:first-child { padding-left: 0; border-left: 0; }
+  .beneficio:nth-child(n+3) { border-top: 0; }
+}
+
+/* ---------- Cabeçalho de seção + faixa de confiança ---------- */
+.cabecalho-secao { display: grid; gap: 14px; max-width: 720px; margin-bottom: 32px; }
+.faixa-confianca { list-style: none; display: flex; flex-wrap: wrap; gap: 10px 22px; font-size: 14px; font-weight: 600; color: var(--tx); }
+.faixa-confianca li { display: inline-flex; align-items: center; gap: 8px; }
+.faixa-confianca .ic { width: 20px; height: 20px; color: var(--azul-tx); }
+
+/* ---------- Cards de produto ---------- */
+.card-produto {
+  position: relative; container-type: inline-size; display: flex; flex-direction: column; min-width: 0;
+  background: var(--superficie); color: var(--tx); border-radius: var(--raio-xl); padding: 8px;
+  border: 1px solid var(--linha);
+  transition: transform var(--rapido) var(--curva), box-shadow var(--rapido) var(--curva), border-color var(--rapido) var(--curva);
+}
+@media (hover: hover) { .card-produto:hover { transform: translateY(-3px); border-color: rgba(7,77,255,.35); box-shadow: var(--sombra-1); } }
+.card-produto:has(.card-link:focus-visible) { outline: 2px solid var(--azul); outline-offset: 3px; }
+.card-midia {
+  position: relative; aspect-ratio: 1; max-width: 100%; border-radius: 14px; overflow: hidden;
+  background: var(--poco); display: grid; place-items: center;
+}
+.card-midia > svg, .card-midia > img { width: 82%; height: 82%; object-fit: contain; }
+.card-midia .selo { position: absolute; top: 10px; left: 10px; z-index: 1; }
+.card-produto.esgotado .card-midia > svg, .card-produto.esgotado .card-midia > img { opacity: .4; filter: grayscale(1); }
+.card-corpo { display: flex; flex-direction: column; gap: 6px; padding: 14px 8px 8px; flex: 1; min-width: 0; }
+.card-nome { font-size: 18px; font-weight: 700; line-height: 1.25; letter-spacing: -.02em; }
+.card-link { all: unset; cursor: pointer; }
+.card-link::after { content: ""; position: absolute; inset: 0; border-radius: var(--raio-xl); }
+.card-opcoes { font-family: var(--fonte-mono); font-size: 12px; line-height: 1.5; color: var(--texto-2); }
+.bolinhas { list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 2px; }
+.bolinhas li { width: 12px; height: 12px; border-radius: 50%; background: var(--c); box-shadow: inset 0 0 0 1px var(--anel-cor); }
+.bolinhas li.mais { width: auto; height: auto; background: none; box-shadow: none; font-size: 12px; font-weight: 600; color: var(--texto-2); }
+.card-preco { margin-top: auto; padding-top: 12px; display: grid; gap: 2px; }
+.preco { font-size: 24px; font-weight: 800; line-height: 1.1; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.preco-dia { font-size: 16px; font-weight: 700; line-height: 1.25; letter-spacing: -.01em; }
+.parcela { font-size: 13px; font-weight: 500; line-height: 1.4; color: var(--texto-2); font-variant-numeric: tabular-nums; }
+.card-acoes { display: flex; gap: 8px; margin-top: 14px; position: relative; z-index: 2; }
+.card-acoes .btn { flex: 1; min-width: 0; padding-inline: 14px; position: relative; z-index: 2; }
+.card-acoes .btn-mais { position: relative; z-index: 2; }
+.btn-mais { background: var(--superficie); border-color: var(--linha-2); color: var(--tx); }
+.btn-mais:hover { background: var(--azul); border-color: var(--azul); color: var(--sempre-branco); }
+@container (max-width: 210px) {
+  .card-acoes { position: static; }
+  .card-acoes .btn-mais { position: absolute; z-index: 2; top: calc(100cqw - 44px); right: 16px; border-color: var(--linha); box-shadow: var(--sombra-1); }
+  .card-acoes .btn { font-size: 14px; padding-inline: 10px; }
+  .card-corpo { padding: 12px 4px 4px; }
+  .card-nome { font-size: 16px; }
+  .preco-dia { font-size: 14px; }
+  .parcela { font-size: 12px; }
+}
+@media (min-width: 900px) { .preco { font-size: 28px; } .card-nome { font-size: 19px; } }
+
+.grade-produtos { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }
+@media (min-width: 640px)  { .grade-produtos { gap: 16px; } }
+@media (min-width: 900px)  { .grade-produtos { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; } }
+@media (min-width: 1100px) { .grade-produtos { grid-template-columns: repeat(4, minmax(0,1fr)); } }
+
+/* ---------- Mais vendidos ---------- */
+.grade-destaques {
+  display: grid; grid-auto-flow: column; grid-auto-columns: min(84%, 340px); gap: 12px;
+  overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 10px; margin-top: 28px;
+  scrollbar-width: thin; scrollbar-color: var(--linha-2) transparent;
+}
+.grade-destaques > * { scroll-snap-align: start; }
+.card-produto.grande .card-midia { aspect-ratio: 4 / 3.4; }
+.card-produto.grande .card-nome { font-size: 22px; font-weight: 750; letter-spacing: -.03em; }
+.specs { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); margin: 8px 0 4px; border-top: 1px solid var(--linha); border-bottom: 1px solid var(--linha); }
+.spec { display: grid; gap: 6px; align-content: start; min-width: 0; padding: 12px 8px 12px 0; }
+.spec + .spec { padding-left: 10px; border-left: 1px solid var(--linha); }
+.spec .quad { color: var(--azul-tx); }
+.spec .quad .ic { width: 20px; height: 20px; }
+.spec strong { display: block; font-size: 14px; font-weight: 700; line-height: 1.2; letter-spacing: -.01em; }
+.spec span { display: block; font-family: var(--fonte-mono); font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--texto-2); }
+.card-produto.grande .layout-grande { display: flex; flex-direction: column; flex: 1; }
+@media (min-width: 760px) {
+  .grade-destaques { grid-auto-flow: row; grid-auto-columns: auto; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; overflow: visible; padding-bottom: 0; }
+}
+@media (min-width: 1024px) { .grade-destaques { gap: 20px; } }
+@container (min-width: 500px) {
+  .card-produto.grande .layout-grande { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1fr); gap: 8px; height: 100%; }
+  .card-produto.grande .card-midia { aspect-ratio: auto; height: 100%; min-height: 300px; }
+  .card-produto.grande .card-corpo { padding: 16px 12px 8px 16px; }
+  .card-produto.grande .card-nome { font-size: 28px; }
+}
+
+/* ---------- Vitrine: busca e categorias ---------- */
+.ferramentas { display: grid; gap: 14px; margin-bottom: 20px; }
+.busca { position: relative; max-width: 520px; }
+.busca .ic { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); color: var(--texto-2); pointer-events: none; }
+.busca input {
+  width: 100%; height: 52px; border-radius: var(--raio-pill); border: 1.5px solid var(--borda-campo);
+  background: var(--bg); padding: 0 18px 0 50px; font: inherit; font-size: 16px; color: var(--tx);
+}
+.busca input::placeholder { color: var(--texto-2); }
+.busca input:focus { outline: none; border-color: var(--azul); box-shadow: 0 0 0 4px rgba(7,77,255,.18); }
+.categorias { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 8px; scrollbar-width: none; }
+.categorias::-webkit-scrollbar { display: none; }
+.cat {
+  display: inline-flex; align-items: center; gap: 8px; flex: none; min-height: 42px; padding: 0 16px;
+  border-radius: var(--raio-pill); border: 1px solid var(--linha-2); background: var(--bg);
+  font-size: 14px; font-weight: 600; cursor: pointer; color: var(--tx);
+  transition: border-color var(--rapido) var(--curva), background-color var(--rapido) var(--curva), color var(--rapido) var(--curva);
+}
+.cat .ic { width: 18px; height: 18px; }
+.cat:hover { border-color: var(--tx); }
+.cat[aria-pressed="true"] { border-color: var(--tx); background: var(--tx); color: var(--bg); }
+.contagem { font-family: var(--fonte-mono); font-size: 12px; letter-spacing: .04em; color: var(--texto-2); margin-bottom: 14px; }
+.vazio { display: grid; gap: 14px; justify-items: start; padding: 28px; border-radius: var(--raio-lg); border: 1px solid var(--linha); max-width: 560px; }
+
+/* ---------- Por que comprar (Sobre) ---------- */
+.sobre-grid { display: grid; gap: 40px; }
+.motivos { list-style: none; display: grid; margin-top: 28px; border-top: 1px solid var(--linha); }
+.motivo { display: grid; grid-template-columns: 40px minmax(0,1fr); gap: 14px; align-items: start; padding: 18px 0; border-bottom: 1px solid var(--linha); }
+.motivo .circ { width: 40px; height: 40px; border-radius: var(--raio-sm); display: grid; place-items: center; background: var(--azul-tinta); color: var(--azul-tx); }
+.motivo .circ .ic { width: 22px; height: 22px; }
+.motivo h3 { font-size: 16px; font-weight: 700; line-height: 1.35; letter-spacing: -.01em; }
+.motivo p { font-size: 14px; line-height: 1.5; color: var(--texto-2); margin-top: 2px; }
+.numeros { display: flex; flex-wrap: wrap; gap: 24px 40px; margin-top: 28px; }
+.numeros div { display: grid; }
+.numeros strong { font-size: 36px; font-weight: 800; line-height: 1; letter-spacing: -.04em; font-variant-numeric: tabular-nums; }
+.numeros span { font-size: 14px; color: var(--texto-2); }
+.loja-fisica { display: grid; gap: 12px; align-content: start; }
+.foto-loja { position: relative; aspect-ratio: 4 / 3; max-width: 100%; border-radius: var(--raio-2xl); overflow: hidden; background: var(--poco); }
+.foto-loja img { width: 100%; height: 100%; object-fit: cover; }
+.placeholder-foto {
+  position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 10px; text-align: center;
+  padding: 24px; color: var(--texto-2); border: 1px dashed var(--linha-2); border-radius: inherit;
+}
+.placeholder-foto .ic { width: 30px; height: 30px; color: var(--azul-tx); }
+.placeholder-foto strong { color: var(--tx); font-size: 14px; font-family: var(--fonte-mono); font-weight: 500; letter-spacing: .02em; }
+.endereco-card { display: grid; grid-template-columns: 40px minmax(0,1fr); gap: 14px; padding: 20px; border-radius: var(--raio-lg); border: 1px solid var(--linha); }
+.endereco-card .circ { width: 40px; height: 40px; border-radius: var(--raio-sm); display: grid; place-items: center; background: var(--azul); color: var(--sempre-branco); }
+.endereco-card strong { display: block; font-size: 16px; font-weight: 700; }
+.endereco-card p { font-size: 14px; color: var(--texto-2); }
+.endereco-card a { display: inline-block; margin-top: 6px; font-size: 14px; }
+@media (min-width: 900px) {
+  .sobre-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 72px; align-items: start; }
+  .motivos { grid-template-columns: repeat(2, minmax(0,1fr)); column-gap: 32px; }
+}
+
+/* ---------- Troca: o único bloco azul da página ---------- */
+.banner { display: grid; gap: 12px; padding: 12px; border-radius: var(--raio-2xl); color: var(--sempre-branco); background: var(--azul); overflow: hidden; position: relative; }
+.banner-texto { position: relative; display: grid; gap: 16px; align-content: start; padding: 24px 12px 12px; min-width: 0; }
+.banner .selo-phone { color: var(--sempre-branco); }
+.banner .selo-phone::before { background: var(--sempre-branco); }
+.banner-texto > p:not(.selo-phone) { font-size: 17px; line-height: 1.55; max-width: 46ch; color: rgba(255,255,255,.88); }
+.passos { list-style: none; counter-reset: passo; display: grid; margin-top: 4px; border-top: 1px solid rgba(255,255,255,.25); }
+.passos li { counter-increment: passo; display: grid; grid-template-columns: 34px minmax(0,1fr); gap: 10px; align-items: center; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.25); font-weight: 600; }
+.passos li::before { content: "0" counter(passo); font-family: var(--fonte-mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; color: rgba(255,255,255,.8); }
+.form-troca { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; padding: 22px; border-radius: var(--raio-lg); background: var(--bg); color: var(--tx); min-width: 0; }
+.form-troca h3 { font-size: 20px; font-weight: 750; line-height: 1.25; letter-spacing: -.02em; }
+.form-linha { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+@media (min-width: 900px) { .banner { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); align-items: center; } .banner-texto { padding: 40px 28px 40px 40px; } }
+@media (max-width: 380px) { .form-linha { grid-template-columns: 1fr; } }
+
+/* ---------- Campos ---------- */
+.campo { display: grid; gap: 6px; min-width: 0; }
+.campo > label, .campo > .rotulo, fieldset.campo > legend { font-size: 14px; font-weight: 600; line-height: 1.3; padding: 0; }
+.campo input, .campo select {
+  width: 100%; height: 48px; border-radius: var(--raio-md); border: 1.5px solid var(--borda-campo);
+  background: var(--bg); padding: 0 14px; font: inherit; font-size: 16px; color: var(--tx);
+  transition: border-color var(--rapido) var(--curva), box-shadow var(--rapido) var(--curva);
+}
+.campo select {
+  appearance: none; -webkit-appearance: none; padding-right: 40px;
+  background-image: var(--seta-select);
+  background-repeat: no-repeat; background-position: right 12px center; background-size: 18px;
+}
+.campo input::placeholder { color: var(--placeholder); }
+.campo input:focus, .campo select:focus { outline: none; border-color: var(--azul); box-shadow: 0 0 0 4px rgba(7,77,255,.18); }
+.campo.com-erro input { border-color: var(--tx); border-width: 2px; }
+.ajuda { font-size: 13px; line-height: 1.4; color: var(--texto-2); }
+.msg-erro { display: flex; align-items: flex-start; gap: 6px; font-size: 13px; font-weight: 700; line-height: 1.4; color: var(--tx); }
+.msg-erro .ic { width: 16px; height: 16px; margin-top: 1px; color: var(--azul-tx); }
+fieldset.campo { border: 0; margin: 0; padding: 0; min-width: 0; }
+fieldset.campo > legend { margin-bottom: 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { position: relative; display: inline-flex; }
+.chip input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.chip span {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: var(--raio-md);
+  border: 1.5px solid var(--linha-2); background: var(--bg); font-size: 15px; font-weight: 600;
+  transition: border-color var(--rapido) var(--curva), background-color var(--rapido) var(--curva), color var(--rapido) var(--curva);
+}
+.chip input:checked + span { border-color: var(--azul); background: var(--azul-tinta); color: var(--tx); }
+.chip input:focus-visible + span { outline: 2px solid var(--azul); outline-offset: 3px; }
+.check { display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 15px; font-weight: 600; cursor: pointer; }
+.check input { width: 20px; height: 20px; margin: 0; accent-color: var(--azul); }
+.amostras { display: flex; flex-wrap: wrap; gap: 4px; }
+.amostra { position: relative; display: grid; place-items: center; width: 44px; height: 44px; cursor: pointer; }
+.amostra input { position: absolute; inset: 0; margin: 0; opacity: 0; cursor: pointer; }
+.amostra span { width: 30px; height: 30px; border-radius: 50%; background: var(--c); box-shadow: inset 0 0 0 1px var(--anel-cor); transition: box-shadow var(--rapido) var(--curva); }
+.amostra input:checked + span { box-shadow: inset 0 0 0 1px var(--anel-cor), 0 0 0 2px var(--bg), 0 0 0 4px var(--azul); }
+.amostra input:focus-visible + span { outline: 2px solid var(--azul); outline-offset: 5px; }
+
+/* ---------- Depoimentos ---------- */
+.depoimentos { display: grid; grid-auto-flow: column; grid-auto-columns: min(78%, 300px); gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; list-style: none; }
+.depoimentos > li { scroll-snap-align: start; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.foto-cliente { position: relative; aspect-ratio: 4 / 5; max-width: 100%; border-radius: var(--raio-lg); overflow: hidden; background: var(--poco); }
+.foto-cliente img { width: 100%; height: 100%; object-fit: cover; }
+.depoimentos blockquote { font-size: 17px; font-weight: 600; line-height: 1.45; letter-spacing: -.01em; }
+.depoimentos cite { font-style: normal; display: grid; font-size: 14px; }
+.depoimentos cite strong { font-weight: 700; }
+.depoimentos cite span { font-family: var(--fonte-mono); font-size: 12px; color: var(--texto-2); }
+@media (min-width: 760px) { .depoimentos { grid-auto-flow: row; grid-auto-columns: auto; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; overflow: visible; } }
+
+/* ---------- Instagram ---------- */
+.insta-topo { display: grid; gap: 18px; align-items: end; margin-bottom: 24px; }
+.insta-topo .cabecalho-secao { margin-bottom: 0; }
+.insta-grade { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px; }
+.insta-grade a {
+  position: relative; display: grid; place-items: center; aspect-ratio: 1; max-width: 100%; overflow: hidden;
+  border-radius: var(--raio-md); background: var(--superficie); border: 1px solid var(--linha); color: var(--tx); text-decoration: none;
+  transition: transform var(--rapido) var(--curva);
+}
+.insta-grade a:hover { transform: translateY(-3px); }
+.insta-grade a::before { content: ""; position: absolute; left: 12%; right: 12%; bottom: 14%; height: 3px; border-radius: 2px; background: var(--azul); }
+.insta-grade img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.insta-grade .post-titulo { position: relative; padding: 8px; text-align: center; font-size: clamp(13px, 3.8vw, 26px); font-weight: 800; letter-spacing: -.03em; line-height: 1; overflow-wrap: anywhere; }
+.insta-grade .ic-insta { position: absolute; top: 8px; right: 8px; width: 18px; height: 18px; opacity: .8; }
+@media (min-width: 640px) { .insta-topo { grid-template-columns: minmax(0,1fr) auto; } .insta-grade { gap: 16px; } .insta-grade a { border-radius: var(--raio-lg); } }
+
+/* ---------- FAQ ---------- */
+.faq-grid { display: grid; gap: 28px; }
+.faq-lista { display: grid; border-top: 1px solid var(--linha); }
+.faq-lista details { border-bottom: 1px solid var(--linha); }
+.faq-lista summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; padding: 16px 0;
+  font-size: 16px; font-weight: 700; line-height: 1.35; letter-spacing: -.01em; cursor: pointer; list-style: none;
+}
+.faq-lista summary::-webkit-details-marker { display: none; }
+.faq-lista summary .ic { width: 20px; height: 20px; flex: none; color: var(--azul-tx); transition: transform var(--rapido) var(--curva); }
+.faq-lista details[open] summary .ic { transform: rotate(180deg); }
+.faq-lista .resposta { padding: 0 0 20px; font-size: 15px; line-height: 1.6; color: var(--texto-2); max-width: 62ch; }
+.faq-lista .resposta p + p { margin-top: 8px; }
+.faq-cta { display: grid; gap: 14px; justify-items: start; align-content: start; }
+@media (min-width: 900px) { .faq-grid { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 72px; } .faq-cta { position: sticky; top: calc(var(--altura-topo) + 32px); } }
+
+/* ---------- CTA final ---------- */
+.cta-final-inner { display: grid; gap: 22px; max-width: 780px; }
+.cta-botoes { display: grid; gap: 10px; }
+@media (min-width: 560px) { .cta-botoes { grid-auto-flow: column; justify-content: start; } }
+
+/* ---------- Rodapé ---------- */
+.rodape { background: var(--bg); color: var(--tx); border-top: 1px solid var(--linha); }
+.rodape-grid { display: grid; gap: 32px; padding-block: 48px 32px; }
+.rodape h2 { font-family: var(--fonte-mono); font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--texto-2); margin-bottom: 14px; }
+.rodape p, .rodape li { font-size: 15px; line-height: 1.55; }
+.rodape ul { list-style: none; display: grid; gap: 10px; }
+.rodape .linha-ic { display: grid; grid-template-columns: 20px minmax(0,1fr); gap: 10px; align-items: start; }
+.rodape .linha-ic .ic { width: 20px; height: 20px; color: var(--azul-tx); margin-top: 2px; }
+.rodape a.btn-texto { font-size: 15px; }
+.rodape .marca p { color: var(--texto-2); margin-top: 14px; max-width: 36ch; }
+.mapa { position: relative; aspect-ratio: 4 / 3; max-width: 100%; border-radius: var(--raio-lg); overflow: hidden; border: 1px solid var(--linha); background: var(--bg); }
+.mapa iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.mapa-estatico {
+  position: absolute; inset: 0; display: grid; align-content: center; justify-items: start; gap: 8px; padding: 20px;
+  background-image: linear-gradient(var(--linha) 1px, transparent 1px), linear-gradient(90deg, var(--linha) 1px, transparent 1px);
+  background-size: 24px 24px; background-color: var(--bg);
+}
+.mapa-estatico .pino { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--azul); color: var(--sempre-branco); box-shadow: var(--sombra-azul); }
+.mapa-estatico strong { font-size: 15px; }
+.mapa-estatico span { font-size: 13px; color: var(--texto-2); }
+.rodape-base { border-top: 1px solid var(--linha); padding-block: 20px calc(20px + 72px); display: grid; gap: 6px; color: var(--texto-2); font-family: var(--fonte-mono); font-size: 11px; letter-spacing: .02em; }
+@media (min-width: 900px) { .rodape-grid { grid-template-columns: 1.1fr 1fr 1fr 1.2fr; gap: 40px; padding-block: 72px 48px; } .rodape-base { padding-bottom: 24px; } }
+
+/* ---------- Botão flutuante do WhatsApp ---------- */
+.wa-flutuante {
+  position: fixed; z-index: 40; right: calc(16px + env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px; width: 56px; height: 56px; border-radius: var(--raio-pill);
+  background: var(--azul); color: var(--sempre-branco); text-decoration: none; box-shadow: var(--sombra-azul), 0 2px 6px rgba(5,5,5,.12);
+  transition: background-color var(--rapido) var(--curva), opacity var(--medio) var(--curva), transform var(--medio) var(--curva), visibility var(--medio);
+}
+.wa-flutuante .ic { width: 28px; height: 28px; }
+.wa-flutuante:hover { background: var(--azul-hover); }
+.wa-flutuante .texto { display: none; font-weight: 650; font-size: 15px; }
+@media (min-width: 900px) { .wa-flutuante { width: auto; padding: 0 22px 0 18px; } .wa-flutuante .texto { display: inline; } .wa-flutuante .ic { width: 24px; height: 24px; } }
+@media (prefers-reduced-motion: no-preference) { .wa-flutuante { animation: chamar 1.6s var(--curva) 3.5s 2; } }
+@keyframes chamar { 0% { box-shadow: var(--sombra-azul), 0 0 0 0 rgba(7,77,255,.45); } 100% { box-shadow: var(--sombra-azul), 0 0 0 18px rgba(7,77,255,0); } }
+body:has(dialog[open]) { overflow: hidden; }
+body:has(dialog[open]) .wa-flutuante { opacity: 0; visibility: hidden; transform: translateY(12px); }
+
+/* ---------- Toast ---------- */
+.toast {
+  position: fixed; z-index: 70; left: calc(16px + env(safe-area-inset-left, 0px)); right: calc(88px + env(safe-area-inset-right, 0px));
+  bottom: calc(18px + env(safe-area-inset-bottom, 0px)); display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  max-width: 420px; padding: 12px 12px 12px 16px; border-radius: var(--raio-md); background: var(--sempre-branco); color: var(--sempre-preto);
+  box-shadow: var(--sombra-3); font-size: 14px; font-weight: 600;
+}
+.toast .ic { width: 20px; height: 20px; color: var(--azul); }
+.toast .btn-texto { color: var(--azul); font-size: 14px; min-height: 36px; padding: 0 6px; }
+@media (min-width: 900px) { .toast { left: 50%; right: auto; transform: translateX(-50%); width: max-content; } }
+@media (prefers-reduced-motion: no-preference) { .toast:not([hidden]) { animation: subir var(--medio) var(--curva); } }
+
+/* ---------- Modal do produto e gaveta do pedido ---------- */
+dialog { padding: 0; border: 0; background: transparent; color: inherit; max-width: none; max-height: none; }
+dialog::backdrop { background: rgba(0,0,0,.66); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.modal { width: 100%; margin: auto 0 0; }
+.modal-caixa {
+  position: relative; display: flex; flex-direction: column; gap: 4px; padding: 12px 12px calc(16px + env(safe-area-inset-bottom, 0px));
+  background: var(--superficie); color: var(--tx); border-radius: var(--raio-2xl) var(--raio-2xl) 0 0; border: 1px solid var(--linha);
+  max-height: 92dvh; overflow-y: auto; overscroll-behavior: contain; box-shadow: var(--sombra-3);
+}
+.modal .fechar { position: absolute; top: 20px; right: 20px; z-index: 2; background: var(--bg); border-color: var(--linha); }
+.mp-midia { position: relative; flex: none; aspect-ratio: 4 / 3; max-width: 100%; border-radius: var(--raio-lg); overflow: hidden; background: var(--poco); display: grid; place-items: center; }
+.mp-midia > svg, .mp-midia > img { width: 78%; height: 86%; object-fit: contain; }
+.mp-midia .selo { position: absolute; top: 14px; left: 14px; }
+.mp-info { display: grid; gap: 18px; padding: 16px 8px 4px; min-width: 0; }
+.mp-topo { display: grid; gap: 6px; }
+.mp-resumo { font-family: var(--fonte-mono); font-size: 12px; color: var(--texto-2); }
+.mp-preco { display: grid; gap: 4px; padding: 16px 0; border-top: 1px solid var(--linha); border-bottom: 1px solid var(--linha); }
+.mp-preco .motivo-preco { font-size: 13px; color: var(--texto-2); }
+.mp-confianca { font-size: 13px; gap: 8px 16px; }
+.mp-confianca .ic { width: 18px; height: 18px; }
+.mp-acoes { display: grid; gap: 10px; }
+.mp-bateria { font-family: var(--fonte-mono); font-size: 12px; color: var(--azul-tx); }
+@media (min-width: 760px) {
+  .modal { width: min(940px, calc(100% - 48px)); margin: auto; }
+  .modal-caixa { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); align-items: stretch; gap: 12px; border-radius: var(--raio-2xl); max-height: calc(100dvh - 48px); padding: 12px; }
+  .mp-midia { aspect-ratio: auto; min-height: 100%; }
+  .mp-info { padding: 20px 16px 12px 8px; }
+  .modal .fechar { top: 22px; right: 22px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .modal[open] .modal-caixa { animation: subir var(--medio) var(--curva); }
+  .gaveta[open] .gaveta-caixa { animation: entrar-direita var(--medio) var(--curva); }
+}
+@keyframes subir { from { transform: translateY(24px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes entrar-direita { from { transform: translateX(32px); opacity: 0; } to { transform: none; opacity: 1; } }
+.gaveta { width: min(460px, 100%); height: 100%; max-height: 100dvh; margin: 0 0 0 auto; }
+.gaveta-caixa { display: grid; grid-template-rows: auto minmax(0,1fr) auto; height: 100dvh; background: var(--superficie); color: var(--tx); border-left: 1px solid var(--linha); box-shadow: var(--sombra-3); padding-top: env(safe-area-inset-top, 0px); }
+.gaveta-topo { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 16px 12px 24px; border-bottom: 1px solid var(--linha); }
+.gaveta-corpo { overflow-y: auto; overscroll-behavior: contain; padding: 16px 24px 24px; display: grid; gap: 22px; align-content: start; }
+.gaveta-rodape { padding: 16px 24px calc(16px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--linha); display: grid; gap: 10px; background: var(--superficie); }
+.gaveta-rodape p { font-size: 13px; color: var(--texto-2); }
+.itens { list-style: none; display: grid; gap: 10px; }
+.item { display: grid; grid-template-columns: 64px minmax(0,1fr); gap: 12px; align-items: center; padding: 10px; border-radius: var(--raio-lg); border: 1px solid var(--linha); }
+.item-mini { width: 64px; height: 64px; border-radius: var(--raio-md); background: var(--poco); display: grid; place-items: center; }
+.item-mini svg, .item-mini img { width: 80%; height: 80%; object-fit: contain; }
+.item-info { display: grid; gap: 2px; min-width: 0; }
+.item-info strong { font-size: 15px; line-height: 1.3; }
+.item-info span { font-size: 13px; color: var(--texto-2); }
+.item-ctrl { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 6px; }
+.qtd { display: inline-flex; align-items: center; border: 1px solid var(--linha-2); border-radius: var(--raio-pill); background: var(--bg); }
+.qtd button { width: 36px; height: 36px; border: 0; background: none; cursor: pointer; display: grid; place-items: center; border-radius: 50%; }
+.qtd button .ic { width: 16px; height: 16px; }
+.qtd output { min-width: 22px; text-align: center; font-weight: 700; font-variant-numeric: tabular-nums; }
+.item-ctrl .btn-texto { font-size: 13px; color: var(--texto-2); min-height: 36px; }
+.pedido-vazio { display: grid; gap: 12px; justify-items: start; padding: 20px; border-radius: var(--raio-lg); border: 1px dashed var(--linha-2); }
+.form-pedido { display: grid; gap: 16px; }
+.form-pedido h3 { font-size: 16px; font-weight: 700; }
+
+/* Revelar ao rolar */
+@media (prefers-reduced-motion: no-preference) { .revelar.entrando { animation: subir .6s var(--curva) both; } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- Sprite de ícones (traço Lucide, 24px) -->
+<svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+  <symbol id="i-medalha" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+  <symbol id="i-escudo" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-cartao" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/></symbol>
+  <symbol id="i-troca" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol>
+  <symbol id="i-caminhao" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/><path d="M21 16v2a4 4 0 0 1-4 4h-5"/></symbol>
+  <symbol id="i-loja" viewBox="0 0 24 24"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"/></symbol>
+  <symbol id="i-bateria" viewBox="0 0 24 24"><rect width="16" height="10" x="2" y="7" rx="2"/><path d="M22 11v2"/><path d="M6 11v2"/><path d="M10 11v2"/></symbol>
+  <symbol id="i-busca" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+  <symbol id="i-mais" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+  <symbol id="i-menos" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-sacola" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></symbol>
+  <symbol id="i-fechar" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  <symbol id="i-seta-baixo" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-seta-direita" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-pino" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-chip" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+  <symbol id="i-celular" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol>
+  <symbol id="i-grade" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></symbol>
+  <symbol id="i-smartwatch" viewBox="0 0 24 24"><rect width="12" height="12" x="6" y="6" rx="3"/><path d="m16.13 6-.81-3.4A2 2 0 0 0 13.37 1h-2.74a2 2 0 0 0-1.95 1.6L7.87 6"/><path d="m7.88 18 .8 3.4a2 2 0 0 0 1.95 1.6h2.74a2 2 0 0 0 1.95-1.6l.81-3.4"/></symbol>
+  <symbol id="i-fone" viewBox="0 0 24 24"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></symbol>
+  <symbol id="i-caixa-som" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M12 6h.01"/><circle cx="12" cy="14" r="4"/><path d="M12 14h.01"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-alerta" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+</svg>
+
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ============ BARRA DE AVISOS ============ -->
+<div class="avisos" role="note" aria-label="Diferenciais da loja">
+  <div class="container">
+    <span><svg class="ic"><use href="#i-medalha"/></svg>100% originais</span>
+    <span class="so-largo"><svg class="ic"><use href="#i-escudo"/></svg>Garantia e suporte</span>
+    <span class="so-largo"><svg class="ic"><use href="#i-cartao"/></svg>Até 18x</span>
+    <span><svg class="ic"><use href="#i-troca"/></svg>Aceitamos seu usado</span>
+  </div>
+</div>
+
+<!-- ============ CABEÇALHO ============ -->
+<header class="topo" id="topo">
+  <div class="container topo-inner">
+    <a class="logo" href="#inicio" aria-label="Vellari Phone, voltar ao início">
+      <!-- Logotipo provisório. Coloque o arquivo oficial (versão para fundo escuro) em CONFIG.logo -->
+      <span class="logo-temp" aria-hidden="true"><b>VELL<i>A</i>RI</b><small>PHONE</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#iphones">iPhones</a>
+      <a href="#vitrine">Vitrine</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="topo-acoes">
+      <button class="btn-icone" type="button" id="abrir-pedido" aria-label="Abrir seu pedido">
+        <svg class="ic"><use href="#i-sacola"/></svg>
+        <span class="contador" id="contador" hidden>0</span>
+      </button>
+      <a class="btn btn-primario btn-p btn-whats" data-wa="cabecalho" href="#" target="_blank" rel="noopener">
+        <svg class="ic"><use href="#i-whatsapp"/></svg>Falar no WhatsApp
+      </a>
+      <button class="btn-icone btn-menu" type="button" id="botao-menu" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu">
+        <svg class="ic"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="menu-mobile" id="menu-mobile" aria-label="Menu" hidden>
+    <div class="container">
+      <a class="link-menu" href="#iphones">iPhones <svg class="ic ic-20"><use href="#i-seta-direita"/></svg></a>
+      <a class="link-menu" href="#vitrine">Vitrine <svg class="ic ic-20"><use href="#i-seta-direita"/></svg></a>
+      <a class="link-menu" href="#sobre">Sobre <svg class="ic ic-20"><use href="#i-seta-direita"/></svg></a>
+      <a class="link-menu" href="#contato">Contato <svg class="ic ic-20"><use href="#i-seta-direita"/></svg></a>
+      <a class="btn btn-primario btn-g btn-bloco" data-wa="cabecalho" href="#" target="_blank" rel="noopener">
+        <svg class="ic"><use href="#i-whatsapp"/></svg>Falar no WhatsApp
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main id="conteudo">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio" aria-labelledby="titulo-hero">
+    <div class="container hero-grid">
+      <div class="hero-titulo">
+        <h1 id="titulo-hero">
+          <span class="selo-phone">iPhones em Santa Fé do Sul</span>
+          <span class="t-display">Novo iPhone, <span class="destaque">novas conquistas.</span></span>
+        </h1>
+        <!-- Arco Vellari: um por tela, sempre subindo da esquerda para a direita -->
+        <svg class="arco" viewBox="0 0 260 46" aria-hidden="true">
+          <defs>
+            <linearGradient id="grad-arco" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="260" y2="0">
+              <stop offset="0" stop-color="#0237C9"/><stop offset=".55" stop-color="#074DFF"/><stop offset="1" stop-color="#1E8CFF"/>
+            </linearGradient>
+          </defs>
+          <path class="traco" pathLength="1" d="M6 40 C 80 42, 160 32, 240 11"/>
+          <path class="ponta" d="M223 4.6 L240 11 L228.2 24.6"/>
+        </svg>
+      </div>
+
+      <!-- iPhone 18 Pro ao lado do título (foto em CONFIG.heroImagem) -->
+      <div class="hero-visual">
+        <div class="hero-palco">
+          <div class="hero-aparelhos" id="hero-aparelhos" role="img" aria-label="iPhone 18 Pro e iPhone 18 Pro Max"></div>
+        </div>
+        <p class="hero-legenda"><span class="selo selo-lancamento">Lançamento</span><span>iPhone 18 Pro e Pro Max</span></p>
+      </div>
+
+      <div class="hero-texto">
+        <p class="lead">iPhones 100% originais, com garantia e suporte de quem está aqui na cidade. Parcele em até 18x e use seu usado como parte do pagamento.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primario btn-g" data-wa="hero" href="#" target="_blank" rel="noopener">
+            <svg class="ic"><use href="#i-whatsapp"/></svg><span class="giro" aria-hidden="true"></span><span class="rotulo">Chama no WhatsApp</span>
+          </a>
+          <a class="btn btn-contorno btn-g" href="#iphones">Ver iPhones</a>
+        </div>
+        <ul class="mini-confianca">
+          <li><svg class="ic"><use href="#i-check"/></svg>100% originais</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Garantia e suporte</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Loja física no Centro</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============ FAIXA DE BENEFÍCIOS ============ -->
+  <section class="faixa-beneficios" aria-label="Por que comprar com a gente">
+    <div class="container">
+      <ul class="beneficios">
+        <li class="beneficio">
+          <span class="circ"><svg class="ic"><use href="#i-medalha"/></svg></span>
+          <h3>100% originais</h3>
+          <p>Só aparelhos originais. Nada de réplica ou similar.</p>
+        </li>
+        <li class="beneficio">
+          <span class="circ"><svg class="ic"><use href="#i-escudo"/></svg></span>
+          <h3>Garantia e suporte</h3>
+          <p>Suporte direto com a loja, antes e depois da compra.</p>
+        </li>
+        <li class="beneficio">
+          <span class="circ"><svg class="ic"><use href="#i-cartao"/></svg></span>
+          <h3>Até 18x no cartão</h3>
+          <p>Parcele o iPhone novo do jeito que cabe no mês.</p>
+        </li>
+        <li class="beneficio">
+          <span class="circ"><svg class="ic"><use href="#i-troca"/></svg></span>
+          <h3>Aceitamos seu usado</h3>
+          <p>Seu aparelho atual entra como parte do pagamento.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ MAIS VENDIDOS (iPhones) ============ -->
+  <section class="secao" id="iphones" aria-labelledby="titulo-iphones">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <p class="selo-phone">Mais vendidos</p>
+        <h2 class="t-h2" id="titulo-iphones">Os iPhones que mais saem da loja</h2>
+        <p class="lead">Escolha o modelo, a cor e o armazenamento. O preço do dia chega na hora pelo WhatsApp.</p>
+      </div>
+      <ul class="faixa-confianca" aria-label="Garantias da compra">
+        <li><svg class="ic"><use href="#i-medalha"/></svg>100% originais</li>
+        <li><svg class="ic"><use href="#i-escudo"/></svg>Garantia e suporte</li>
+        <li><svg class="ic"><use href="#i-cartao"/></svg>Até 18x</li>
+        <li><svg class="ic"><use href="#i-troca"/></svg>Aceitamos seu usado</li>
+      </ul>
+      <div class="grade-destaques" id="grade-destaques" aria-label="iPhones em destaque"></div>
+    </div>
+  </section>
+
+  <!-- ============ VITRINE COMPLETA ============ -->
+  <section class="secao" id="vitrine" aria-labelledby="titulo-vitrine">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <p class="selo-phone">Vitrine</p>
+        <h2 class="t-h2" id="titulo-vitrine">Tudo o que tem na loja</h2>
+        <p class="lead">iPhones novos e seminovos, Android, smartwatches, fones e acessórios.</p>
+      </div>
+      <div class="ferramentas">
+        <div class="busca">
+          <label class="sr-only" for="busca">Buscar produto</label>
+          <svg class="ic"><use href="#i-busca"/></svg>
+          <input id="busca" type="search" placeholder="Buscar iPhone 17 Pro, Air, JBL…" autocomplete="off" enterkeyhint="search">
+        </div>
+        <div class="categorias" id="categorias" role="group" aria-label="Filtrar por categoria"></div>
+      </div>
+      <p class="contagem" id="contagem" aria-live="polite"></p>
+      <div class="grade-produtos" id="grade-produtos"></div>
+      <div class="vazio" id="vitrine-vazia" hidden>
+        <h3 class="t-h4">Não achou o que procurava?</h3>
+        <p class="texto-2">A vitrine mostra uma parte do estoque. Manda o modelo que você quer e a gente procura pra você.</p>
+        <a class="btn btn-primario" data-wa="busca" href="#" target="_blank" rel="noopener"><svg class="ic"><use href="#i-whatsapp"/></svg>Perguntar no WhatsApp</a>
+      </div>
+      <noscript><p>Ative o JavaScript para ver a vitrine, ou chame a loja pelo WhatsApp.</p></noscript>
+    </div>
+  </section>
+
+  <!-- ============ POR QUE COMPRAR NA VELLARI (SOBRE) ============ -->
+  <section class="secao" id="sobre" aria-labelledby="titulo-sobre">
+    <div class="container sobre-grid">
+      <div>
+        <div class="cabecalho-secao" style="margin-bottom:0">
+          <p class="selo-phone">Por que a Vellari</p>
+          <h2 class="t-h2" id="titulo-sobre">Comprar iPhone com segurança, aqui em Santa Fé do Sul</h2>
+          <p class="lead">Loja física no Centro, atendimento pelo WhatsApp e aparelho na sua mão sem complicação.</p>
+        </div>
+        <ul class="motivos">
+          <li class="motivo"><span class="circ"><svg class="ic"><use href="#i-medalha"/></svg></span><div><h3>100% originais</h3><p>Todo aparelho vendido é original. É a regra da casa.</p></div></li>
+          <li class="motivo"><span class="circ"><svg class="ic"><use href="#i-escudo"/></svg></span><div><h3>Garantia e suporte</h3><p>Se precisar de ajuda depois da compra, é só chamar a loja.</p></div></li>
+          <li class="motivo"><span class="circ"><svg class="ic"><use href="#i-bateria"/></svg></span><div><h3>Seminovos com transparência</h3><p>Foto real do aparelho e a saúde da bateria antes de você decidir.</p></div></li>
+          <li class="motivo"><span class="circ"><svg class="ic"><use href="#i-troca"/></svg></span><div><h3>Seu usado na troca</h3><p>Avaliamos seu aparelho e o valor entra no pagamento do novo.</p></div></li>
+          <li class="motivo"><span class="circ"><svg class="ic"><use href="#i-caminhao"/></svg></span><div><h3>Retire ou receba</h3><p>Retire na loja ou combine a entrega pelo WhatsApp.</p></div></li>
+          <li class="motivo"><span class="circ"><svg class="ic"><use href="#i-headset"/></svg></span><div><h3>Atendimento de verdade</h3><p>Gente da loja respondendo, do primeiro oi ao pós-venda.</p></div></li>
+        </ul>
+        <!-- Números da loja: só aparecem quando preenchidos em CONFIG.numeros -->
+        <div class="numeros" id="numeros" hidden></div>
+      </div>
+      <aside class="loja-fisica" aria-label="Loja física">
+        <div class="foto-loja" id="foto-loja">
+          <div class="placeholder-foto">
+            <svg class="ic"><use href="#i-camera"/></svg>
+            <strong>[FOTO DA FACHADA OU DO BALCÃO DA LOJA]</strong>
+            <span class="legenda">Foto real, horizontal. Preencha CONFIG.fotoLoja</span>
+          </div>
+        </div>
+        <div class="endereco-card">
+          <span class="circ"><svg class="ic"><use href="#i-pino"/></svg></span>
+          <div>
+            <strong>Vellari Phone</strong>
+            <p data-config="endereco">Rua 19, nº 655, Centro, 2º andar · Santa Fé do Sul - SP</p>
+            <p data-config="horario">[HORÁRIO DE FUNCIONAMENTO]</p>
+            <a class="btn-texto" data-maps href="#" target="_blank" rel="noopener">Como chegar no Google Maps</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ TROCA (banner de oferta) ============ -->
+  <section class="secao" id="troca" aria-labelledby="titulo-troca">
+    <div class="container">
+      <div class="banner">
+        <div class="banner-texto">
+          <p class="selo-phone">Troca</p>
+          <h2 class="t-oferta" id="titulo-troca">Fazemos upgrade. A hora é agora.</h2>
+          <p>Seu iPhone ou Android usado vale como parte do pagamento do novo. Mande os dados e receba a avaliação pelo WhatsApp.</p>
+          <ol class="passos">
+            <li>Preencha os dados do seu aparelho</li>
+            <li>Receba a avaliação no WhatsApp</li>
+            <li>Use o valor no seu iPhone novo</li>
+          </ol>
+        </div>
+        <form class="form-troca" id="form-troca" novalidate>
+          <h3>Quanto vale meu usado?</h3>
+          <div class="campo" id="campo-modelo">
+            <label for="troca-modelo">Modelo do aparelho</label>
+            <input id="troca-modelo" name="modelo" type="text" placeholder="Ex.: iPhone 15 Pro" autocomplete="off" required>
+            <p class="msg-erro" hidden><svg class="ic"><use href="#i-alerta"/></svg>Digite o modelo. Ex.: iPhone 13 ou Galaxy S24</p>
+          </div>
+          <div class="form-linha">
+            <div class="campo">
+              <label for="troca-armazenamento">Armazenamento</label>
+              <select id="troca-armazenamento" name="armazenamento">
+                <option value="">Não sei</option>
+                <option>64 GB</option><option>128 GB</option><option>256 GB</option><option>512 GB</option><option>1 TB</option><option>2 TB</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="troca-bateria">Saúde da bateria</label>
+              <input id="troca-bateria" name="bateria" type="text" inputmode="numeric" maxlength="3" placeholder="Ex.: 87">
+            </div>
+          </div>
+          <p class="ajuda">No iPhone: Ajustes &gt; Bateria &gt; Saúde da bateria.</p>
+          <div class="campo">
+            <label for="troca-estado">Estado do aparelho</label>
+            <select id="troca-estado" name="estado">
+              <option>Perfeito, sem marcas</option>
+              <option>Marcas leves de uso</option>
+              <option>Tela ou traseira trincada</option>
+              <option>Com defeito</option>
+            </select>
+          </div>
+          <a class="btn btn-primario btn-g btn-bloco" id="enviar-troca" href="#" target="_blank" rel="noopener">
+            <svg class="ic"><use href="#i-whatsapp"/></svg><span class="giro" aria-hidden="true"></span><span class="rotulo">Enviar para avaliação no WhatsApp</span>
+          </a>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEPOIMENTOS ============ -->
+  <section class="secao" id="clientes" aria-labelledby="titulo-clientes">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <p class="selo-phone">Clientes</p>
+        <h2 class="t-h2" id="titulo-clientes">Quem já fez upgrade com a gente</h2>
+        <p class="lead">Fotos e palavras de clientes reais, do destaque "Clientes" do nosso Instagram.</p>
+      </div>
+      <ul class="depoimentos" id="depoimentos"></ul>
+    </div>
+  </section>
+
+  <!-- ============ INSTAGRAM ============ -->
+  <section class="secao" id="instagram" aria-labelledby="titulo-insta">
+    <div class="container">
+      <div class="insta-topo">
+        <div class="cabecalho-secao">
+          <p class="selo-phone">Instagram</p>
+          <h2 class="t-h2" id="titulo-insta">Siga @vellari_phone</h2>
+          <p class="lead">Lançamentos, novidades da semana e clientes com o iPhone novo na mão.</p>
+        </div>
+        <a class="btn btn-contorno btn-g" data-instagram href="https://www.instagram.com/vellari_phone/" target="_blank" rel="noopener">
+          <svg class="ic"><use href="#i-instagram"/></svg>Seguir no Instagram
+        </a>
+      </div>
+      <ul class="insta-grade" id="insta-grade"></ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="secao" id="duvidas" aria-labelledby="titulo-faq">
+    <div class="container faq-grid">
+      <div class="faq-cta">
+        <p class="selo-phone">Dúvidas</p>
+        <h2 class="t-h2" id="titulo-faq">Perguntas frequentes</h2>
+        <p class="texto-2">Não achou sua resposta? A gente responde rapidinho pelo WhatsApp.</p>
+        <a class="btn btn-primario btn-g" data-wa="faq" href="#" target="_blank" rel="noopener">
+          <svg class="ic"><use href="#i-whatsapp"/></svg><span class="giro" aria-hidden="true"></span><span class="rotulo">Tirar dúvida no WhatsApp</span>
+        </a>
+      </div>
+      <div class="faq-lista">
+        <details>
+          <summary>Os aparelhos são originais?<svg class="ic"><use href="#i-seta-baixo"/></svg></summary>
+          <div class="resposta"><p>Sim. Todos os aparelhos da Vellari Phone são 100% originais. Nos seminovos, você vê fotos reais do aparelho e a saúde da bateria antes de fechar.</p></div>
+        </details>
+        <details>
+          <summary>Qual é a garantia?<svg class="ic"><use href="#i-seta-baixo"/></svg></summary>
+          <div class="resposta"><p data-config="garantia">Aparelhos novos: [PRAZO DE GARANTIA DOS NOVOS]. Seminovos: [PRAZO DE GARANTIA DOS SEMINOVOS]. Depois da compra, o suporte é direto com a loja.</p></div>
+        </details>
+        <details>
+          <summary>Quais são as formas de pagamento?<svg class="ic"><use href="#i-seta-baixo"/></svg></summary>
+          <div class="resposta"><p data-config="pagamento">Cartão de crédito em até 18x e [OUTRAS FORMAS DE PAGAMENTO, ex.: Pix e dinheiro]. Seu usado também pode entrar como parte do pagamento.</p></div>
+        </details>
+        <details>
+          <summary>Vocês entregam ou eu retiro na loja?<svg class="ic"><use href="#i-seta-baixo"/></svg></summary>
+          <div class="resposta"><p>Você pode retirar na loja: Rua 19, nº 655, Centro, 2º andar, em Santa Fé do Sul.</p><p data-config="entrega">Entrega em Santa Fé do Sul e região: [CONDIÇÕES DE ENTREGA, ex.: cidades atendidas e prazo]. Combine pelo WhatsApp.</p></div>
+        </details>
+        <details>
+          <summary>Vocês aceitam meu aparelho usado na troca?<svg class="ic"><use href="#i-seta-baixo"/></svg></summary>
+          <div class="resposta"><p>Sim. Mande o modelo, o armazenamento, a saúde da bateria e o estado do aparelho. A avaliação sai pelo WhatsApp e o valor entra no pagamento do novo. <a class="btn-texto" href="#troca">Avaliar meu usado</a></p></div>
+        </details>
+        <details>
+          <summary>Por que o preço não aparece no site?<svg class="ic"><use href="#i-seta-baixo"/></svg></summary>
+          <div class="resposta"><p>O preço dos iPhones acompanha o dólar e muda com frequência. Para você não ver um valor desatualizado, passamos o preço do dia pelo WhatsApp, na hora.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="secao cta-final" aria-labelledby="titulo-cta">
+    <div class="container">
+      <div class="cta-final-inner">
+        <p class="selo-phone">Atendimento</p>
+        <h2 class="t-h2" id="titulo-cta">Seu próximo iPhone está a uma mensagem de distância</h2>
+        <p class="lead">Fala qual modelo você quer. A gente passa cores, armazenamento, preço do dia e parcelamento, e já avalia seu usado.</p>
+        <div class="cta-botoes">
+          <a class="btn btn-primario btn-g" data-wa="cta-final" href="#" target="_blank" rel="noopener">
+            <svg class="ic"><use href="#i-whatsapp"/></svg><span class="giro" aria-hidden="true"></span><span class="rotulo">Chama no WhatsApp</span>
+          </a>
+          <a class="btn btn-contorno btn-g" href="#vitrine">Ver a vitrine</a>
+        </div>
+        <ul class="faixa-confianca">
+          <li><svg class="ic"><use href="#i-medalha"/></svg>100% originais</li>
+          <li><svg class="ic"><use href="#i-escudo"/></svg>Garantia e suporte</li>
+          <li><svg class="ic"><use href="#i-cartao"/></svg>Até 18x</li>
+          <li><svg class="ic"><use href="#i-troca"/></svg>Aceitamos seu usado</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ RODAPÉ ============ -->
+<footer class="rodape" id="contato">
+  <div class="container rodape-grid">
+    <div class="marca">
+      <a class="logo" href="#inicio" aria-label="Vellari Phone, voltar ao início">
+        <span class="logo-temp" aria-hidden="true"><b>VELL<i>A</i>RI</b><small>PHONE</small></span>
+      </a>
+      <p>Loja de iPhones, celulares e eletrônicos em Santa Fé do Sul - SP. Tecnologia sempre com você.</p>
+    </div>
+    <div>
+      <h2>Loja</h2>
+      <ul>
+        <li class="linha-ic"><svg class="ic"><use href="#i-pino"/></svg><span data-config="endereco">Rua 19, nº 655, Centro, 2º andar · Santa Fé do Sul - SP</span></li>
+        <li class="linha-ic"><svg class="ic"><use href="#i-relogio"/></svg><span data-config="horario">[HORÁRIO DE FUNCIONAMENTO]</span></li>
+        <li><a class="btn-texto" data-maps href="#" target="_blank" rel="noopener">Abrir no Google Maps</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Atendimento</h2>
+      <ul>
+        <li class="linha-ic"><svg class="ic"><use href="#i-whatsapp"/></svg><span data-config="whatsapp-texto">[WHATSAPP COM DDD]</span></li>
+        <li class="linha-ic"><svg class="ic"><use href="#i-instagram"/></svg><a class="btn-texto" data-instagram href="https://www.instagram.com/vellari_phone/" target="_blank" rel="noopener">@vellari_phone</a></li>
+        <li style="margin-top:8px"><a class="btn btn-primario" data-wa="rodape" href="#" target="_blank" rel="noopener"><svg class="ic"><use href="#i-whatsapp"/></svg>Chama no WhatsApp</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Como chegar</h2>
+      <div class="mapa" id="mapa">
+        <div class="mapa-estatico">
+          <span class="pino"><svg class="ic"><use href="#i-pino"/></svg></span>
+          <strong>Rua 19, nº 655 · 2º andar</strong>
+          <span>Centro · Santa Fé do Sul - SP</span>
+          <a class="btn-texto" data-maps href="#" target="_blank" rel="noopener">Ver no Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container rodape-base">
+    <p>© <span id="ano">2026</span> Vellari Phone · CNPJ <span data-config="cnpj">[CNPJ]</span></p>
+    <p>iPhone e Apple Watch são marcas da Apple Inc. A Vellari Phone é uma loja independente.</p>
+  </div>
+</footer>
+
+<!-- Botão flutuante do WhatsApp -->
+<a class="wa-flutuante" data-wa="flutuante" href="#" target="_blank" rel="noopener" aria-label="Chama no WhatsApp">
+  <svg class="ic"><use href="#i-whatsapp"/></svg><span class="texto">Chama no WhatsApp</span>
+</a>
+
+<!-- Aviso "adicionado ao pedido" -->
+<div class="toast" id="toast" role="status" aria-live="polite" hidden>
+  <span style="display:inline-flex;align-items:center;gap:8px"><svg class="ic"><use href="#i-check"/></svg><span id="toast-texto">Adicionado ao pedido</span></span>
+  <button class="btn-texto" type="button" id="toast-ver">Ver pedido</button>
+</div>
+
+<!-- ============ MODAL: OPÇÕES DO PRODUTO ============ -->
+<dialog class="modal" id="modal-produto" aria-labelledby="mp-nome">
+  <div class="modal-caixa">
+    <button class="btn-icone fechar" type="button" data-fechar aria-label="Fechar"><svg class="ic"><use href="#i-fechar"/></svg></button>
+    <div class="mp-midia" id="mp-midia"></div>
+    <div class="mp-info">
+      <div class="mp-topo">
+        <h2 class="t-h3" id="mp-nome">Produto</h2>
+        <p class="mp-resumo" id="mp-resumo"></p>
+        <p class="mp-bateria" id="mp-bateria" hidden></p>
+      </div>
+      <fieldset class="campo" id="mp-campo-cor">
+        <legend>Cor: <strong id="mp-cor-nome"></strong></legend>
+        <div class="amostras" id="mp-cores"></div>
+      </fieldset>
+      <fieldset class="campo" id="mp-campo-opcao">
+        <legend id="mp-opcao-rotulo">Armazenamento</legend>
+        <div class="chips" id="mp-opcoes"></div>
+      </fieldset>
+      <div class="mp-preco" id="mp-preco"></div>
+      <ul class="faixa-confianca mp-confianca">
+        <li><svg class="ic"><use href="#i-medalha"/></svg>100% original</li>
+        <li><svg class="ic"><use href="#i-escudo"/></svg>Garantia</li>
+        <li><svg class="ic"><use href="#i-cartao"/></svg>Até 18x</li>
+        <li><svg class="ic"><use href="#i-troca"/></svg>Aceitamos seu usado</li>
+      </ul>
+      <div class="mp-acoes" id="mp-acoes">
+        <a class="btn btn-primario btn-g" id="mp-comprar" href="#" target="_blank" rel="noopener">
+          <svg class="ic"><use href="#i-whatsapp"/></svg><span class="giro" aria-hidden="true"></span><span class="rotulo">Comprar pelo WhatsApp</span>
+        </a>
+        <button class="btn btn-contorno btn-g" type="button" id="mp-adicionar"><svg class="ic"><use href="#i-mais"/></svg>Adicionar ao pedido</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<!-- ============ GAVETA: SEU PEDIDO ============ -->
+<dialog class="gaveta" id="pedido" aria-labelledby="titulo-pedido">
+  <div class="gaveta-caixa">
+    <div class="gaveta-topo">
+      <h2 class="t-h3" id="titulo-pedido">Seu pedido</h2>
+      <button class="btn-icone" type="button" data-fechar aria-label="Fechar pedido"><svg class="ic"><use href="#i-fechar"/></svg></button>
+    </div>
+    <div class="gaveta-corpo">
+      <ul class="itens" id="itens-pedido"></ul>
+      <div class="pedido-vazio" id="pedido-vazio">
+        <strong>Seu pedido está vazio</strong>
+        <p class="texto-2 corpo-p">Toque no "+" de um produto para montar o pedido e fechar tudo numa mensagem só.</p>
+        <a class="btn btn-escuro" href="#vitrine" data-fechar>Ver a vitrine</a>
+      </div>
+      <form class="form-pedido" id="form-pedido" novalidate>
+        <h3>Seus dados</h3>
+        <div class="campo" id="campo-nome">
+          <label for="pedido-nome">Nome</label>
+          <input id="pedido-nome" name="nome" type="text" autocomplete="name" placeholder="Ex.: Ana Souza" required>
+          <p class="msg-erro" hidden><svg class="ic"><use href="#i-alerta"/></svg>Digite seu nome para a gente te atender.</p>
+        </div>
+        <div class="campo" id="campo-cidade">
+          <label for="pedido-cidade">Cidade</label>
+          <input id="pedido-cidade" name="cidade" type="text" autocomplete="address-level2" placeholder="Ex.: Santa Fé do Sul" required>
+          <p class="msg-erro" hidden><svg class="ic"><use href="#i-alerta"/></svg>Digite sua cidade. Ex.: Santa Fé do Sul</p>
+        </div>
+        <fieldset class="campo">
+          <legend>Entrega</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="entrega" value="Retirar na loja" checked><span>Retirar na loja</span></label>
+            <label class="chip"><input type="radio" name="entrega" value="Entrega na minha cidade"><span>Receber em casa</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="campo">
+          <legend>Pagamento</legend>
+          <div class="chips" id="opcoes-pagamento"></div>
+        </fieldset>
+        <label class="check"><input type="checkbox" id="pedido-troca" name="troca"> Tenho um usado para dar na troca</label>
+      </form>
+    </div>
+    <div class="gaveta-rodape">
+      <p>Sem cadastro e sem pagamento no site. A gente confirma valores e fecha tudo com você pelo WhatsApp.</p>
+      <a class="btn btn-primario btn-g btn-bloco" id="finalizar" href="#" target="_blank" rel="noopener">
+        <svg class="ic"><use href="#i-whatsapp"/></svg><span class="giro" aria-hidden="true"></span><span class="rotulo">Finalizar pedido no WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</dialog>
+
+<script>
+/* =====================================================================
+   CONFIG · dados da loja. Edite aqui, o layout se ajusta sozinho.
+   Tudo o que está [ENTRE COLCHETES] ainda precisa ser preenchido.
+   ===================================================================== */
+const CONFIG = {
+  // WhatsApp: só números, com 55 + DDD. Ex.: "5517999999999".
+  // Enquanto estiver vazio, os botões abrem o WhatsApp sem destinatário (bom para testar).
+  whatsapp: "",
+  whatsappTexto: "[WHATSAPP COM DDD]",   // como o número aparece no rodapé. Ex.: "(17) 99999-9999"
+
+  endereco: "Rua 19, nº 655, Centro, 2º andar · Santa Fé do Sul - SP",
+  enderecoMapa: "Rua 19, 655, Centro, Santa Fé do Sul - SP",   // texto usado na busca do Google Maps
+  mapaEmbed: "",   // opcional: cole o link "src" do iframe do Google Maps (Compartilhar > Incorporar um mapa)
+  horario: "[HORÁRIO DE FUNCIONAMENTO]",  // Ex.: "Seg a sex, 9h às 18h · Sáb, 9h às 13h"
+  cnpj: "[CNPJ]",
+  instagram: "https://www.instagram.com/vellari_phone/",
+
+  // Textos do FAQ que dependem da loja (deixe "" para manter o texto padrão com colchetes)
+  garantia: "",    // Ex.: "Aparelhos novos: 1 ano de garantia Apple. Seminovos: 90 dias de garantia da loja. Depois da compra, o suporte é direto com a loja."
+  pagamento: "",   // Ex.: "Pix, dinheiro e cartão de crédito em até 18x. Seu usado também pode entrar como parte do pagamento."
+  entrega: "",     // Ex.: "Entregamos em Santa Fé do Sul no mesmo dia e em cidades da região a combinar."
+
+  // Formas de pagamento oferecidas na gaveta do pedido
+  pagamentos: ["Pix", "Cartão em até 18x"],   // [CONFIRMAR]
+  parcelas: 18,   // número máximo de parcelas mostrado nos cards
+
+  // Imagens (caminhos relativos ao site, ex.: "assets/logo-vellari-branco.svg")
+  logo: "",          // versão para fundo escuro (logo branco com o A azul)
+  heroImagem: "imagens/iphone-18-pro-bordo.webp",   // foto do iPhone em destaque, sem fundo (WebP ou PNG)
+  fotoLoja: "",      // foto real da fachada ou do balcão
+
+  // Números da loja: só aparecem quando preenchidos. Nunca invente.
+  numeros: [
+    // { valor: "[X]", rotulo: "anos em Santa Fé do Sul" },
+    // { valor: "[X]", rotulo: "clientes atendidos" },
+  ],
+
+  // Depoimentos reais (destaque "Clientes" do Instagram). foto: caminho da imagem 4:5
+  depoimentos: [
+    { foto: "", nome: "[NOME DO CLIENTE]", modelo: "[MODELO COMPRADO]", frase: "[Frase curta do cliente, do jeito que ele falou.]" },
+    { foto: "", nome: "[NOME DO CLIENTE]", modelo: "[MODELO COMPRADO]", frase: "[Frase curta do cliente, do jeito que ele falou.]" },
+    { foto: "", nome: "[NOME DO CLIENTE]", modelo: "[MODELO COMPRADO]", frase: "[Frase curta do cliente, do jeito que ele falou.]" },
+  ],
+
+  // Posts do Instagram exibidos na seção. imagem: print do post (1:1); link: URL do post
+  posts: [
+    { titulo: "Fazemos upgrade!", imagem: "", link: "" },
+    { titulo: "3 motivos", imagem: "", link: "" },
+    { titulo: "Comparativo iPhone 18", imagem: "", link: "" },
+  ],
+
+  // Mensagens prontas do WhatsApp, por origem do clique
+  mensagens: {
+    cabecalho:  "Olá, Vellari Phone! Vim pelo site e quero atendimento.",
+    flutuante:  "Olá, Vellari Phone! Vim pelo site e quero atendimento.",
+    hero:       "Olá, Vellari Phone! Vi o site e quero saber os iPhones disponíveis e o preço do dia.",
+    faq:        "Olá, Vellari Phone! Vim pelo site e tenho uma dúvida:",
+    "cta-final":"Olá, Vellari Phone! Quero escolher meu próximo iPhone. Pode me ajudar?",
+    rodape:     "Olá, Vellari Phone! Vi o endereço no site e quero combinar uma visita à loja.",
+    busca:      "Olá, Vellari Phone! Procurei no site e não achei o que eu queria. Vocês têm",
+  },
+};
+
+/* =====================================================================
+   PRODUTOS · lista da vitrine. Para adicionar, copie um bloco e edite.
+
+   id            texto único, sem espaço (ex.: "iphone-17-256")
+   nome          nome que aparece no card
+   categoria     "iphone" | "android" | "acessorios" | "smartwatches" | "fones" | "outros"
+   condicao      "novo" | "seminovo"
+   armazenamento lista de opções. Para relógio ou fone, use "rotuloOpcoes" (ex.: "Tamanho")
+   cores         lista de { nome, hex }. hex é só a cor da bolinha
+   preco         número (ex.: 7999) ou null para "Preço do dia no WhatsApp"
+   parcela       opcional: valor da parcela, se o 18x tiver juros (ex.: 499.94)
+   imagem        caminho da foto (WebP ou PNG sem fundo, quadrada, ~800 px). Vazio = ilustração provisória
+                 A primeira cor da lista deve ser a cor que aparece na foto
+   fotos         opcional: uma foto por cor, { "Nome da cor": "imagens/arquivo.webp" }
+   destaque      true = aparece também em "Mais vendidos"
+   selo          "lancamento" | "mais-vendido" | "novo" | "seminovo" | "" (no máximo um)
+   estoque       número ou null. 1 ou 2 = "Últimas unidades"; 0 = "Esgotado"
+   bateria       só seminovo: saúde da bateria (ex.: "89%")
+   specs         opcional, para os cards grandes: [{ icone: "tela"|"chip"|"camera"|"bateria", valor, rotulo }]
+   ===================================================================== */
+const CORES_18_PRO = [
+  { nome: "Bordô", hex: "#5C1F2D" }, { nome: "Glacial", hex: "#CFDCE6" },
+  { nome: "Prateado", hex: "#DADCE0" }, { nome: "Preto", hex: "#2A2B30" },
+];
+// Uma foto para cada cor do iPhone 18 Pro (a troca acontece ao escolher a cor em "Ver opções")
+const FOTOS_18_PRO = {
+  "Bordô": "imagens/iphone-18-pro-bordo.webp", "Glacial": "imagens/iphone-18-pro-glacial.webp",
+  "Prateado": "imagens/iphone-18-pro-prateado.webp", "Preto": "imagens/iphone-18-pro-preto.webp",
+};
+const CORES_17_PRO = [
+  { nome: "Laranja-cósmico", hex: "#D9692E" }, { nome: "Azul-intenso", hex: "#2E3A55" }, { nome: "Prateado", hex: "#DADCE0" },
+];
+
+const PRODUTOS = [
+  // ----- iPhones (linha 18 Pro: lançamento de setembro de 2026) -----
+  {
+    id: "iphone-18-pro-max", nome: "iPhone 18 Pro Max", categoria: "iphone", condicao: "novo",
+    armazenamento: ["256 GB", "512 GB", "1 TB", "2 TB"], cores: CORES_18_PRO,
+    preco: null, fotos: FOTOS_18_PRO, imagem: "imagens/iphone-18-pro-bordo.webp", destaque: true, selo: "lancamento", estoque: null,
+    specs: [ { icone: "tela", valor: "6,9\" 120 Hz", rotulo: "Tela" }, { icone: "chip", valor: "A20 Pro", rotulo: "Chip" }, { icone: "camera", valor: "48 Mpx", rotulo: "Câmera" } ],
+  },
+  {
+    id: "iphone-18-pro", nome: "iPhone 18 Pro", categoria: "iphone", condicao: "novo",
+    armazenamento: ["256 GB", "512 GB", "1 TB", "2 TB"], cores: CORES_18_PRO,
+    preco: null, fotos: FOTOS_18_PRO, imagem: "imagens/iphone-18-pro-bordo.webp", destaque: true, selo: "lancamento", estoque: null,
+    specs: [ { icone: "tela", valor: "6,3\" 120 Hz", rotulo: "Tela" }, { icone: "chip", valor: "A20 Pro", rotulo: "Chip" }, { icone: "camera", valor: "48 Mpx", rotulo: "Câmera" } ],
+  },
+  {
+    // EXEMPLO de selo "Mais vendido": confirme qual modelo realmente mais vende na loja
+    id: "iphone-17-pro-max", nome: "iPhone 17 Pro Max", categoria: "iphone", condicao: "novo",
+    armazenamento: ["256 GB", "512 GB", "1 TB", "2 TB"], cores: CORES_17_PRO,
+    preco: null, imagem: "imagens/iphone-17-pro-laranja.webp", destaque: true, selo: "mais-vendido", estoque: null,
+    specs: [ { icone: "tela", valor: "6,9\" 120 Hz", rotulo: "Tela" }, { icone: "chip", valor: "A19 Pro", rotulo: "Chip" }, { icone: "camera", valor: "48 Mpx", rotulo: "Câmera" } ],
+  },
+  {
+    id: "iphone-17", nome: "iPhone 17", categoria: "iphone", condicao: "novo",
+    armazenamento: ["256 GB", "512 GB"],
+    cores: [ { nome: "Lavanda", hex: "#C9B9DE" }, { nome: "Preto", hex: "#2A2B30" }, { nome: "Branco", hex: "#F2F2F0" }, { nome: "Azul-névoa", hex: "#9DB3CC" }, { nome: "Sálvia", hex: "#A9B79A" } ],
+    preco: null, imagem: "imagens/iphone-17-lavanda.webp", destaque: true, selo: "novo", estoque: null,
+    specs: [ { icone: "tela", valor: "6,3\" 120 Hz", rotulo: "Tela" }, { icone: "chip", valor: "A19", rotulo: "Chip" }, { icone: "camera", valor: "48 Mpx", rotulo: "Câmera" } ],
+  },
+  {
+    id: "iphone-17-pro", nome: "iPhone 17 Pro", categoria: "iphone", condicao: "novo",
+    armazenamento: ["256 GB", "512 GB", "1 TB"], cores: CORES_17_PRO,
+    preco: null, imagem: "imagens/iphone-17-pro-laranja.webp", destaque: false, selo: "novo", estoque: null,
+  },
+  {
+    id: "iphone-air", nome: "iPhone Air", categoria: "iphone", condicao: "novo",
+    armazenamento: ["256 GB", "512 GB", "1 TB"],
+    cores: [ { nome: "Azul-céu", hex: "#BFD5EA" }, { nome: "Preto-espacial", hex: "#26272B" }, { nome: "Branco-nuvem", hex: "#F3F2EE" }, { nome: "Dourado-claro", hex: "#E9D8B8" } ],
+    preco: null, imagem: "imagens/iphone-air-azul-ceu.webp", destaque: false, selo: "novo", estoque: null,
+  },
+  {
+    id: "iphone-16", nome: "iPhone 16", categoria: "iphone", condicao: "novo",
+    armazenamento: ["128 GB", "256 GB", "512 GB"],
+    cores: [ { nome: "Ultramarino", hex: "#5B6FD6" }, { nome: "Preto", hex: "#2A2B30" }, { nome: "Branco", hex: "#F2F2F0" }, { nome: "Rosa", hex: "#F0BFD0" }, { nome: "Verde-acinzentado", hex: "#A8C6BE" } ],
+    preco: null, imagem: "imagens/iphone-16-ultramarino.webp", destaque: false, selo: "novo", estoque: null,
+  },
+  {
+    // EXEMPLO de seminovo: troque pelos aparelhos que você tem e informe a bateria real
+    id: "iphone-15-pro-seminovo", nome: "iPhone 15 Pro", categoria: "iphone", condicao: "seminovo",
+    armazenamento: ["128 GB", "256 GB"],
+    cores: [ { nome: "Titânio-natural", hex: "#BEB6AA" }, { nome: "Titânio-azul", hex: "#3E4757" }, { nome: "Titânio-preto", hex: "#36373A" } ],
+    preco: null, imagem: "imagens/iphone-15-pro-titanio-natural.webp", destaque: false, selo: "seminovo", estoque: null, bateria: "[XX]%",
+  },
+  {
+    // EXEMPLO de seminovo
+    id: "iphone-14-seminovo", nome: "iPhone 14", categoria: "iphone", condicao: "seminovo",
+    armazenamento: ["128 GB"],
+    cores: [ { nome: "Azul", hex: "#A9BCD3" }, { nome: "Meia-noite", hex: "#25282F" }, { nome: "Estelar", hex: "#EFE8DD" } ],
+    preco: null, imagem: "imagens/iphone-14-azul.webp", destaque: false, selo: "seminovo", estoque: null, bateria: "[XX]%",
+  },
+
+  // ----- Android (EXEMPLOS: ajuste conforme o estoque) -----
+  {
+    id: "galaxy-s26-ultra", nome: "Galaxy S26 Ultra", categoria: "android", condicao: "novo",
+    armazenamento: ["256 GB", "512 GB", "1 TB"], cores: [],
+    preco: null, imagem: "imagens/galaxy-s26-ultra.webp", destaque: false, selo: "novo", estoque: null,
+  },
+  {
+    id: "galaxy-s26", nome: "Galaxy S26", categoria: "android", condicao: "novo",
+    armazenamento: ["256 GB", "512 GB"], cores: [],
+    preco: null, imagem: "imagens/galaxy-s26.webp", destaque: false, selo: "novo", estoque: null,
+  },
+
+  // ----- Smartwatches (EXEMPLOS) -----
+  {
+    id: "apple-watch-series-11", nome: "Apple Watch Series 11", categoria: "smartwatches", condicao: "novo",
+    armazenamento: ["42 mm", "46 mm"], rotuloOpcoes: "Tamanho",
+    cores: [ { nome: "Preto", hex: "#2A2B30" }, { nome: "Prateado", hex: "#DADCE0" }, { nome: "Ouro rosé", hex: "#E8C4B8" } ],
+    preco: null, imagem: "imagens/apple-watch-series-11.webp", destaque: false, selo: "", estoque: null,
+  },
+  {
+    id: "apple-watch-se-3", nome: "Apple Watch SE 3", categoria: "smartwatches", condicao: "novo",
+    armazenamento: ["40 mm", "44 mm"], rotuloOpcoes: "Tamanho",
+    cores: [ { nome: "Meia-noite", hex: "#25282F" }, { nome: "Estelar", hex: "#EFE8DD" } ],
+    preco: null, imagem: "imagens/apple-watch-se-3.webp", destaque: false, selo: "", estoque: null,
+  },
+
+  // ----- Fones (EXEMPLOS) -----
+  {
+    id: "airpods-pro-3", nome: "AirPods Pro 3", categoria: "fones", condicao: "novo",
+    armazenamento: [], cores: [], preco: null, imagem: "imagens/airpods-pro-3.webp", destaque: false, selo: "", estoque: null,
+  },
+  {
+    id: "airpods-4", nome: "AirPods 4", categoria: "fones", condicao: "novo",
+    armazenamento: ["Padrão", "Com cancelamento de ruído"], rotuloOpcoes: "Versão",
+    cores: [], preco: null, imagem: "imagens/airpods-4.webp", destaque: false, selo: "", estoque: null,
+  },
+
+  // ----- Acessórios (EXEMPLOS) -----
+  {
+    id: "carregador-20w", nome: "Carregador USB-C 20W", categoria: "acessorios", condicao: "novo", tipo: "carregador",
+    armazenamento: [], cores: [], preco: null, imagem: "imagens/carregador-20w.webp", destaque: false, selo: "", estoque: null,
+  },
+  {
+    id: "capa-magsafe", nome: "Capa com MagSafe", categoria: "acessorios", condicao: "novo", tipo: "capa",
+    armazenamento: ["iPhone 18 Pro", "iPhone 18 Pro Max", "iPhone 17", "iPhone 17 Pro", "iPhone 17 Pro Max"], rotuloOpcoes: "Modelo",
+    cores: [ { nome: "Transparente", hex: "#E6EBF5" }, { nome: "Preto", hex: "#2A2B30" }, { nome: "Azul", hex: "#2E3A55" } ],
+    preco: null, imagem: "imagens/capa-magsafe-18-pro.webp", destaque: false, selo: "", estoque: null,
+  },
+  {
+    id: "pelicula-vidro", nome: "Película de vidro", categoria: "acessorios", condicao: "novo", tipo: "pelicula",
+    armazenamento: ["iPhone 18 Pro", "iPhone 18 Pro Max", "iPhone 17", "iPhone 17 Pro", "iPhone 17 Pro Max", "iPhone 16"], rotuloOpcoes: "Modelo",
+    cores: [], preco: null, imagem: "", destaque: false, selo: "", estoque: null,
+  },
+
+  // ----- Outros (EXEMPLOS) -----
+  {
+    id: "jbl-flip-7", nome: "JBL Flip 7", categoria: "outros", condicao: "novo", tipo: "caixa-som",
+    armazenamento: [], cores: [ { nome: "Vermelho", hex: "#C2363B" }, { nome: "Preto", hex: "#24262B" }, { nome: "Azul", hex: "#2D5DB8" } ],
+    preco: null, imagem: "imagens/jbl-flip-7-vermelho.webp", destaque: false, selo: "", estoque: null,
+  },
+  {
+    id: "ipad-a16", nome: "iPad (A16)", categoria: "outros", condicao: "novo", tipo: "tablet",
+    armazenamento: ["128 GB", "256 GB", "512 GB"],
+    cores: [ { nome: "Azul", hex: "#AFC4DD" }, { nome: "Rosa", hex: "#EFC3CF" }, { nome: "Amarelo", hex: "#F1DD8E" }, { nome: "Prateado", hex: "#DADCE0" } ],
+    preco: null, imagem: "imagens/ipad-a16-azul.webp", destaque: false, selo: "", estoque: null,
+  },
+];
+
+const CATEGORIAS = [
+  { id: "todos",        nome: "Todos",        icone: "grade" },
+  { id: "iphone",       nome: "iPhones",      icone: "celular" },
+  { id: "android",      nome: "Android",      icone: "celular" },
+  { id: "acessorios",   nome: "Acessórios",   icone: "plug" },
+  { id: "smartwatches", nome: "Smartwatches", icone: "smartwatch" },
+  { id: "fones",        nome: "Fones",        icone: "fone" },
+  { id: "outros",       nome: "Outros",       icone: "caixa-som" },
+];
+
+/* =====================================================================
+   A partir daqui é o funcionamento do site. Não precisa editar.
+   ===================================================================== */
+(function () {
+  "use strict";
+  document.documentElement.classList.add("js");
+
+  const $ = (s, el = document) => el.querySelector(s);
+  const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const normal = (s) => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const icone = (nome, cls = "ic") => `<svg class="${cls}" aria-hidden="true"><use href="#i-${nome}"/></svg>`;
+  const brl = (v) => new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL", minimumFractionDigits: Number.isInteger(v) ? 0 : 2, maximumFractionDigits: 2 }).format(v);
+  const brlCentavos = (v) => new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(v);
+  const porId = (id) => PRODUTOS.find((p) => p.id === id);
+
+  /* ---------- Armazenamento local (pedido salvo no navegador) ---------- */
+  const local = {
+    ler(chave, padrao) { try { const v = localStorage.getItem(chave); return v ? JSON.parse(v) : padrao; } catch (e) { return padrao; } },
+    gravar(chave, valor) { try { localStorage.setItem(chave, JSON.stringify(valor)); } catch (e) { /* sem armazenamento: segue sem salvar */ } },
+  };
+
+  /* ---------- WhatsApp ---------- */
+  function linkWhats(msg) {
+    const numero = String(CONFIG.whatsapp || "").replace(/\D/g, "");
+    const texto = encodeURIComponent(msg);
+    return numero ? `https://wa.me/${numero}?text=${texto}` : `https://api.whatsapp.com/send?text=${texto}`;
+  }
+  function linkMaps() {
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CONFIG.enderecoMapa)}`;
+  }
+  // Estado "Abrindo WhatsApp…" (DS 3.1), sem mudar a largura do botão
+  function carregando(botao) {
+    const rotulo = $(".rotulo", botao);
+    if (!rotulo || botao.classList.contains("carregando")) return;
+    const original = rotulo.textContent;
+    botao.style.minWidth = botao.offsetWidth + "px";
+    botao.classList.add("carregando");
+    rotulo.textContent = "Abrindo WhatsApp…";
+    setTimeout(() => { botao.classList.remove("carregando"); rotulo.textContent = original; botao.style.minWidth = ""; }, 2200);
+  }
+
+  /* ---------- Ilustrações provisórias (troque por fotos reais em "imagem") ---------- */
+  let uid = 0;
+  function tom(hex, f) {
+    const n = parseInt(String(hex).replace("#", ""), 16);
+    if (Number.isNaN(n)) return hex;
+    let r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+    const alvo = f < 0 ? 0 : 255, p = Math.abs(f);
+    r = Math.round((alvo - r) * p + r); g = Math.round((alvo - g) * p + g); b = Math.round((alvo - b) * p + b);
+    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+  }
+  function tipoDe(p) {
+    if (p.tipo) return p.tipo;
+    return { iphone: "celular", android: "android", smartwatches: "relogio", fones: "fone", acessorios: "carregador", outros: "caixa-som" }[p.categoria] || "celular";
+  }
+  function ilustracao(p, corHex, rotulo) {
+    const id = "il" + (++uid);
+    const tipo = tipoDe(p);
+    const padrao = { relogio: "#2B2F38", fone: "#FFFFFF", carregador: "#FFFFFF", pelicula: "#DDE6F3", android: "#2B2F38", tablet: "#DADCE0" }[tipo] || "#2B2F38";
+    const c = corHex || (p.cores && p.cores[0] && p.cores[0].hex) || padrao;
+    const esc1 = tom(c, -0.3), cla = tom(c, 0.4);
+    const aria = `role="img" aria-label="${esc(rotulo || p.nome)}"`;
+    const defs = `<defs>
+      <linearGradient id="${id}a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${cla}"/><stop offset=".5" stop-color="${c}"/><stop offset="1" stop-color="${esc1}"/></linearGradient>
+      <radialGradient id="${id}s"><stop offset="0" stop-color="#0A206C" stop-opacity=".28"/><stop offset="1" stop-color="#0A206C" stop-opacity="0"/></radialGradient>
+      <radialGradient id="${id}t" cx=".3" cy=".25" r=".9"><stop offset="0" stop-color="#5B8CFF" stop-opacity=".7"/><stop offset=".5" stop-color="#0A206C"/><stop offset="1" stop-color="#070A12"/></radialGradient>
+    </defs>`;
+    const chao = `<ellipse cx="100" cy="188" rx="56" ry="7" fill="url(#${id}s)"/>`;
+    const lente = (x, y) => `<circle cx="${x}" cy="${y}" r="7.4" fill="#16181E" stroke="${tom(c, -0.45)}" stroke-width="2"/><circle cx="${x}" cy="${y}" r="3.2" fill="#24304D"/><circle cx="${x - 1.6}" cy="${y - 1.8}" r="1.2" fill="#fff" fill-opacity=".45"/>`;
+    let corpo = "";
+    if (tipo === "celular" || tipo === "android") {
+      const pro = /pro/i.test(p.nome);
+      const modulo = tipo === "android"
+        ? `${lente(78, 36)}${lente(78, 56)}${lente(78, 76)}<circle cx="96" cy="36" r="2.4" fill="#F5EED8" fill-opacity=".8"/>`
+        : `<rect x="68" y="24" width="40" height="40" rx="12" fill="${esc1}" fill-opacity=".5" stroke="${cla}" stroke-opacity=".55"/>
+           ${pro ? lente(79, 35) + lente(79, 53) + lente(97, 44) : lente(79, 35) + lente(79, 53)}
+           <circle cx="${pro ? 98 : 97}" cy="${pro ? 30 : 38}" r="2.2" fill="#F5EED8" fill-opacity=".85"/>`;
+      corpo = `<rect x="58" y="14" width="84" height="170" rx="19" fill="url(#${id}a)" stroke="${esc1}" stroke-width="1.5"/>
+        <rect x="61.5" y="17.5" width="77" height="163" rx="16" fill="none" stroke="#fff" stroke-opacity=".28"/>
+        <rect x="141" y="58" width="2.5" height="22" rx="1.2" fill="${esc1}"/>${modulo}`;
+    } else if (tipo === "relogio") {
+      corpo = `<rect x="76" y="10" width="48" height="56" rx="9" fill="url(#${id}a)"/><rect x="76" y="134" width="48" height="56" rx="9" fill="url(#${id}a)"/>
+        <rect x="58" y="46" width="84" height="108" rx="26" fill="#2B2F38" stroke="#14171D" stroke-width="2"/>
+        <rect x="66" y="54" width="68" height="92" rx="19" fill="url(#${id}t)"/>
+        <circle cx="100" cy="100" r="20" fill="none" stroke="#5B8CFF" stroke-width="5" stroke-dasharray="90 40" stroke-linecap="round"/>
+        <rect x="140" y="88" width="7" height="20" rx="3" fill="#4A505C"/>`;
+    } else if (tipo === "fone") {
+      corpo = `<rect x="48" y="58" width="104" height="96" rx="36" fill="url(#${id}a)" stroke="#C3CAD8" stroke-width="1.5"/>
+        <path d="M52 92h96" stroke="#C3CAD8" stroke-width="1.5"/><circle cx="100" cy="124" r="2.6" fill="#9AA5BF"/>
+        <rect x="56" y="62" width="88" height="22" rx="11" fill="#fff" fill-opacity=".6"/>`;
+    } else if (tipo === "caixa-som") {
+      corpo = `<pattern id="${id}g" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.4" fill="${esc1}"/></pattern>
+        <rect x="26" y="70" width="148" height="70" rx="35" fill="url(#${id}a)"/>
+        <rect x="40" y="76" width="120" height="58" rx="29" fill="url(#${id}g)" opacity=".75"/>
+        <ellipse cx="34" cy="105" rx="9" ry="30" fill="${esc1}"/><ellipse cx="166" cy="105" rx="9" ry="30" fill="${esc1}"/>`;
+    } else if (tipo === "carregador") {
+      corpo = `<rect x="84" y="36" width="7" height="18" rx="2.5" fill="#B5BDCC"/><rect x="109" y="36" width="7" height="18" rx="2.5" fill="#B5BDCC"/>
+        <rect x="64" y="50" width="72" height="74" rx="16" fill="url(#${id}a)" stroke="#C3CAD8" stroke-width="1.5"/>
+        <rect x="91" y="114" width="18" height="5" rx="2.5" fill="#9AA5BF"/>
+        <path d="M100 124c0 28 46 18 52 52" fill="none" stroke="#C3CAD8" stroke-width="8" stroke-linecap="round"/>
+        <path d="M100 124c0 28 46 18 52 52" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>`;
+    } else if (tipo === "capa") {
+      corpo = `<rect x="58" y="14" width="84" height="170" rx="20" fill="${c}" fill-opacity=".75" stroke="${esc1}" stroke-width="2"/>
+        <rect x="66" y="22" width="42" height="42" rx="13" fill="#F4F6FB" stroke="${esc1}" stroke-width="1.5"/>
+        <circle cx="100" cy="112" r="26" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="3"/>`;
+    } else if (tipo === "pelicula") {
+      corpo = `<rect x="62" y="16" width="80" height="166" rx="18" fill="#C3CAD8" opacity=".5"/>
+        <rect x="56" y="12" width="80" height="166" rx="18" fill="url(#${id}a)" fill-opacity=".85" stroke="#fff" stroke-width="2"/>
+        <path d="M70 60 112 22M70 92l52-48" stroke="#fff" stroke-opacity=".8" stroke-width="5" stroke-linecap="round"/>`;
+    } else if (tipo === "tablet") {
+      corpo = `<rect x="44" y="22" width="112" height="158" rx="14" fill="url(#${id}a)" stroke="${esc1}" stroke-width="1.5"/>
+        <rect x="51" y="29" width="98" height="144" rx="8" fill="url(#${id}t)"/>`;
+    }
+    return `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" ${aria}>${defs}${chao}${corpo}</svg>`;
+  }
+  function midia(p, corIdx, classeImg = "") {
+    const cor = p.cores && p.cores[corIdx];
+    // Foto da cor escolhida (campo "fotos"); senão, a foto principal do produto
+    const fotoCor = cor && p.fotos && p.fotos[cor.nome];
+    const foto = fotoCor || p.imagem;
+    if (foto) {
+      const corFoto = fotoCor ? cor : (p.cores && p.cores[0]);
+      const alt = corFoto ? `${p.nome} na cor ${corFoto.nome}` : p.nome;
+      return `<img src="${esc(foto)}" alt="${esc(alt)}" width="420" height="420" loading="lazy" decoding="async" class="${classeImg}">`;
+    }
+    return ilustracao(p, cor && cor.hex, cor ? `${p.nome}, cor ${cor.nome}` : p.nome);
+  }
+
+  /* ---------- Selo e preço ---------- */
+  const NOMES_SELO = { lancamento: "Lançamento", "mais-vendido": "Mais vendido", novo: "Novo", seminovo: "Seminovo", ultimas: "Últimas unidades", esgotado: "Esgotado" };
+  function seloDe(p) {
+    if (p.estoque === 0) return "esgotado";
+    if (typeof p.estoque === "number" && p.estoque > 0 && p.estoque <= 2) return "ultimas";
+    return p.selo || (p.condicao === "seminovo" ? "seminovo" : "");
+  }
+  const htmlSelo = (s) => (s ? `<span class="selo selo-${s}">${NOMES_SELO[s]}</span>` : "");
+  function htmlPreco(p) {
+    if (typeof p.preco === "number") {
+      const parcela = typeof p.parcela === "number" ? p.parcela : p.preco / CONFIG.parcelas;
+      return `<span class="preco">${brl(p.preco)}</span><span class="parcela">ou ${CONFIG.parcelas}x de ${brlCentavos(parcela)} no cartão</span>`;
+    }
+    return `<span class="preco-dia">Preço do dia no WhatsApp</span><span class="parcela">em até ${CONFIG.parcelas}x no cartão</span>`;
+  }
+  const ICONE_SPEC = { tela: "celular", chip: "chip", camera: "camera", bateria: "bateria" };
+
+  /* ---------- Card de produto ---------- */
+  function htmlCard(p, grande = false) {
+    const selo = seloDe(p);
+    const esgotado = selo === "esgotado";
+    const opcoes = (p.armazenamento || []).join(" · ");
+    const cores = p.cores || [];
+    const bolinhas = cores.length
+      ? `<ul class="bolinhas" aria-label="Cores: ${esc(cores.map((c) => c.nome).join(", "))}">${cores.slice(0, 5).map((c) => `<li style="--c:${esc(c.hex)}"></li>`).join("")}${cores.length > 5 ? `<li class="mais">+${cores.length - 5}</li>` : ""}</ul>`
+      : "";
+    const specs = grande && p.specs ? `<ul class="specs">${p.specs.map((s) => `<li class="spec"><span class="quad">${icone(ICONE_SPEC[s.icone] || "chip")}</span><div><strong>${esc(s.valor)}</strong><span>${esc(s.rotulo)}</span></div></li>`).join("")}</ul>` : "";
+    const acoes = esgotado
+      ? `<a class="btn btn-contorno" href="${linkWhats(`Olá, Vellari Phone! Quero ser avisado quando o ${p.nome} chegar.`)}" target="_blank" rel="noopener">${icone("whatsapp")}Avise-me no WhatsApp</a>`
+      : `<button class="btn btn-escuro" type="button" data-abrir="${esc(p.id)}">Ver opções</button>
+         <button class="btn-icone btn-mais" type="button" data-adicionar="${esc(p.id)}" aria-label="Adicionar ${esc(p.nome)} ao pedido">${icone("mais")}</button>`;
+    const corpo = `
+      <div class="card-midia">${htmlSelo(selo)}${midia(p, 0)}</div>
+      <div class="card-corpo">
+        <h3 class="card-nome">${esgotado ? esc(p.nome) : `<button class="card-link" type="button" data-abrir="${esc(p.id)}">${esc(p.nome)}</button>`}</h3>
+        ${p.condicao === "seminovo" && selo !== "seminovo" ? `<p class="card-opcoes">Seminovo</p>` : ""}
+        ${opcoes ? `<p class="card-opcoes">${esc(opcoes)}</p>` : ""}
+        ${bolinhas}
+        ${specs}
+        <div class="card-preco">${htmlPreco(p)}</div>
+        <div class="card-acoes">${acoes}</div>
+      </div>`;
+    return `<article class="card-produto${grande ? " grande" : ""}${esgotado ? " esgotado" : ""}" data-id="${esc(p.id)}">${grande ? `<div class="layout-grande">${corpo}</div>` : corpo}</article>`;
+  }
+
+  /* ---------- Mais vendidos ---------- */
+  function renderDestaques() {
+    const lista = PRODUTOS.filter((p) => p.destaque);
+    $("#grade-destaques").innerHTML = lista.map((p) => htmlCard(p, true)).join("");
+  }
+
+  /* ---------- Vitrine com filtro e busca ---------- */
+  const filtro = { categoria: "todos", busca: "" };
+  function renderCategorias() {
+    $("#categorias").innerHTML = CATEGORIAS.map((c) => `<button class="cat" type="button" data-cat="${c.id}" aria-pressed="${c.id === filtro.categoria}">${icone(c.icone)}${esc(c.nome)}</button>`).join("");
+  }
+  function renderVitrine() {
+    const termo = normal(filtro.busca.trim());
+    const lista = PRODUTOS.filter((p) => {
+      if (filtro.categoria !== "todos" && p.categoria !== filtro.categoria) return false;
+      if (!termo) return true;
+      const alvo = normal([p.nome, p.categoria, p.condicao, ...(p.armazenamento || []), ...(p.cores || []).map((c) => c.nome)].join(" "));
+      return termo.split(/\s+/).every((t) => alvo.includes(t));
+    });
+    $("#grade-produtos").innerHTML = lista.map((p) => htmlCard(p)).join("");
+    $("#contagem").textContent = lista.length === 1 ? "1 produto" : `${lista.length} produtos`;
+    $("#vitrine-vazia").hidden = lista.length > 0;
+    const busca = $('#vitrine-vazia [data-wa="busca"]');
+    if (busca) busca.href = linkWhats(`${CONFIG.mensagens.busca}${filtro.busca.trim() ? ` "${filtro.busca.trim()}"` : " o modelo que eu procuro"}?`);
+  }
+
+  /* ---------- Modal "Ver opções" ---------- */
+  const modal = $("#modal-produto");
+  const escolha = { id: null, cor: 0, opcao: 0 };
+  function msgProduto(p) {
+    const cor = p.cores && p.cores[escolha.cor];
+    const opc = p.armazenamento && p.armazenamento[escolha.opcao];
+    const partes = [p.nome, cor && cor.nome, opc].filter(Boolean).join(" · ");
+    const valor = typeof p.preco === "number" ? `Vi o valor de ${brl(p.preco)}. Ainda está disponível?` : "Pode me passar o valor do dia?";
+    return `Olá, Vellari Phone! Vi no site e quero comprar: 1x ${partes}${p.condicao === "seminovo" ? " (seminovo)" : ""}. ${valor}`;
+  }
+  function atualizarModal() {
+    const p = porId(escolha.id);
+    if (!p) return;
+    const cor = p.cores && p.cores[escolha.cor];
+    $("#mp-cor-nome").textContent = cor ? cor.nome : "";
+    $("#mp-midia").innerHTML = htmlSelo(seloDe(p)) + midia(p, escolha.cor);
+    $("#mp-comprar").href = linkWhats(msgProduto(p));
+  }
+  function abrirProduto(id) {
+    const p = porId(id);
+    if (!p) return;
+    escolha.id = id; escolha.cor = 0; escolha.opcao = 0;
+    $("#mp-nome").textContent = p.nome;
+    const resumo = [p.condicao === "seminovo" ? "Seminovo revisado" : "Novo", ...(p.specs || []).map((s) => s.valor)].join(" · ");
+    $("#mp-resumo").textContent = resumo;
+    const bat = $("#mp-bateria");
+    bat.hidden = !p.bateria;
+    bat.textContent = p.bateria ? `Saúde da bateria: ${p.bateria}` : "";
+
+    const cores = p.cores || [];
+    $("#mp-campo-cor").hidden = cores.length === 0;
+    $("#mp-cores").innerHTML = cores.map((c, i) => `<label class="amostra" title="${esc(c.nome)}"><input type="radio" name="mp-cor" value="${i}" ${i === 0 ? "checked" : ""}><span style="--c:${esc(c.hex)}"></span><span class="sr-only">${esc(c.nome)}</span></label>`).join("");
+
+    const opcoes = p.armazenamento || [];
+    $("#mp-campo-opcao").hidden = opcoes.length === 0;
+    $("#mp-opcao-rotulo").textContent = p.rotuloOpcoes || "Armazenamento";
+    $("#mp-opcoes").innerHTML = opcoes.map((o, i) => `<label class="chip"><input type="radio" name="mp-opcao" value="${i}" ${i === 0 ? "checked" : ""}><span>${esc(o)}</span></label>`).join("");
+
+    const motivo = typeof p.preco === "number" ? "" : `<span class="motivo-preco">O valor acompanha o dólar, por isso confirmamos o preço do dia no WhatsApp.</span>`;
+    $("#mp-preco").innerHTML = htmlPreco(p) + motivo;
+
+    const esgotado = seloDe(p) === "esgotado";
+    $("#mp-acoes").hidden = esgotado;
+    atualizarModal();
+    if (typeof modal.showModal === "function") modal.showModal(); else modal.setAttribute("open", "");
+    $(".fechar", modal).focus();
+  }
+  modal.addEventListener("change", (e) => {
+    if (e.target.name === "mp-cor") escolha.cor = Number(e.target.value);
+    if (e.target.name === "mp-opcao") escolha.opcao = Number(e.target.value);
+    atualizarModal();
+  });
+  $("#mp-adicionar").addEventListener("click", () => {
+    const p = porId(escolha.id);
+    if (!p) return;
+    adicionar(p, escolha.cor, escolha.opcao);
+    fechar(modal);
+  });
+
+  /* ---------- Pedido (carrinho que fecha no WhatsApp) ---------- */
+  const gaveta = $("#pedido");
+  let pedido = local.ler("vellari-pedido", []).filter((i) => porId(i.id));
+  const chaveItem = (i) => `${i.id}|${i.cor}|${i.opcao}`;
+  function descricaoItem(i) {
+    const p = porId(i.id);
+    const cor = p.cores && p.cores[i.cor];
+    const opc = p.armazenamento && p.armazenamento[i.opcao];
+    return { p, texto: [cor && cor.nome, opc].filter(Boolean).join(" · "), cor };
+  }
+  function salvar() { local.gravar("vellari-pedido", pedido); }
+  function adicionar(p, cor = 0, opcao = 0) {
+    const novo = { id: p.id, cor, opcao, qtd: 1 };
+    const existente = pedido.find((i) => chaveItem(i) === chaveItem(novo));
+    if (existente) existente.qtd += 1; else pedido.push(novo);
+    salvar(); renderPedido();
+    mostrarToast(`${p.nome} no pedido`);
+  }
+  function totalItens() { return pedido.reduce((s, i) => s + i.qtd, 0); }
+  function renderPedido() {
+    const n = totalItens();
+    const contador = $("#contador");
+    contador.hidden = n === 0;
+    contador.textContent = n;
+    $("#abrir-pedido").setAttribute("aria-label", n ? `Abrir seu pedido, ${n} ${n === 1 ? "item" : "itens"}` : "Abrir seu pedido");
+    $("#pedido-vazio").hidden = n > 0;
+    $("#form-pedido").hidden = n === 0;
+    $("#itens-pedido").innerHTML = pedido.map((i, idx) => {
+      const { p, texto, cor } = descricaoItem(i);
+      return `<li class="item">
+        <div class="item-mini">${midia(p, i.cor)}</div>
+        <div class="item-info">
+          <strong>${esc(p.nome)}</strong>
+          ${texto ? `<span>${esc(texto)}</span>` : ""}
+          <div class="item-ctrl">
+            <div class="qtd" role="group" aria-label="Quantidade de ${esc(p.nome)}">
+              <button type="button" data-qtd="-1" data-idx="${idx}" aria-label="Diminuir">${icone("menos")}</button>
+              <output aria-live="polite">${i.qtd}</output>
+              <button type="button" data-qtd="1" data-idx="${idx}" aria-label="Aumentar">${icone("mais")}</button>
+            </div>
+            <button class="btn-texto" type="button" data-remover="${idx}">Remover</button>
+          </div>
+        </div>
+      </li>`;
+    }).join("");
+    atualizarFinalizar();
+  }
+  $("#itens-pedido").addEventListener("click", (e) => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    if (b.dataset.remover !== undefined) pedido.splice(Number(b.dataset.remover), 1);
+    if (b.dataset.qtd) {
+      const item = pedido[Number(b.dataset.idx)];
+      item.qtd += Number(b.dataset.qtd);
+      if (item.qtd <= 0) pedido.splice(Number(b.dataset.idx), 1);
+    }
+    salvar(); renderPedido();
+  });
+  $("#opcoes-pagamento").innerHTML = CONFIG.pagamentos.map((f, i) => `<label class="chip"><input type="radio" name="pagamento" value="${esc(f)}" ${i === 0 ? "checked" : ""}><span>${esc(f)}</span></label>`).join("");
+
+  function dadosPedido() {
+    const f = $("#form-pedido");
+    return {
+      nome: f.nome.value.trim(),
+      cidade: f.cidade.value.trim(),
+      entrega: (f.querySelector('input[name="entrega"]:checked') || {}).value || "",
+      pagamento: (f.querySelector('input[name="pagamento"]:checked') || {}).value || "",
+      troca: f.troca.checked,
+    };
+  }
+  function msgPedido() {
+    const d = dadosPedido();
+    const linhas = pedido.map((i) => {
+      const { p, texto } = descricaoItem(i);
+      return `• ${i.qtd}x ${p.nome}${texto ? " · " + texto : ""}${p.condicao === "seminovo" ? " (seminovo)" : ""}`;
+    });
+    return [
+      "Olá, Vellari Phone! Vim pelo site e quero fechar este pedido:",
+      ...linhas, "",
+      `Nome: ${d.nome || "-"}`,
+      `Cidade: ${d.cidade || "-"}`,
+      `Entrega: ${d.entrega}`,
+      `Pagamento: ${d.pagamento}`,
+      d.troca ? "Tenho um usado para dar na troca." : "",
+      "", "Pode me passar o valor do dia?",
+    ].filter((l, idx, arr) => !(l === "" && arr[idx - 1] === "")).join("\n");
+  }
+  function atualizarFinalizar() {
+    const botao = $("#finalizar");
+    const vazio = pedido.length === 0;
+    botao.setAttribute("aria-disabled", String(vazio));
+    botao.href = vazio ? "#" : linkWhats(msgPedido());
+  }
+  function validarCampo(id, ok) {
+    const campo = $("#" + id);
+    campo.classList.toggle("com-erro", !ok);
+    $(".msg-erro", campo).hidden = ok;
+    $("input", campo).setAttribute("aria-invalid", String(!ok));
+    return ok;
+  }
+  $("#form-pedido").addEventListener("input", (e) => {
+    if (e.target.name === "nome" && e.target.value.trim().length >= 2) validarCampo("campo-nome", true);
+    if (e.target.name === "cidade" && e.target.value.trim().length >= 2) validarCampo("campo-cidade", true);
+    atualizarFinalizar();
+  });
+  $("#form-pedido").addEventListener("change", atualizarFinalizar);
+  $("#form-pedido").addEventListener("submit", (e) => e.preventDefault());
+  $("#finalizar").addEventListener("click", (e) => {
+    if (pedido.length === 0) { e.preventDefault(); return; }
+    const d = dadosPedido();
+    const okNome = validarCampo("campo-nome", d.nome.length >= 2);
+    const okCidade = validarCampo("campo-cidade", d.cidade.length >= 2);
+    if (!okNome || !okCidade) {
+      e.preventDefault();
+      $(!okNome ? "#pedido-nome" : "#pedido-cidade").focus();
+      return;
+    }
+    atualizarFinalizar();
+    carregando(e.currentTarget);
+  });
+
+  /* ---------- Formulário de troca ---------- */
+  function msgTroca() {
+    const f = $("#form-troca");
+    const bateria = f.bateria.value.replace(/\D/g, "");
+    return [
+      "Olá, Vellari Phone! Quero avaliar meu usado para a troca:",
+      `Modelo: ${f.modelo.value.trim() || "-"}`,
+      `Armazenamento: ${f.armazenamento.value || "não sei"}`,
+      `Saúde da bateria: ${bateria ? bateria + "%" : "não sei"}`,
+      `Estado: ${f.estado.value}`,
+    ].join("\n");
+  }
+  const atualizarTroca = () => { $("#enviar-troca").href = linkWhats(msgTroca()); };
+  $("#form-troca").addEventListener("input", (e) => {
+    if (e.target.name === "modelo" && e.target.value.trim().length >= 2) validarCampo("campo-modelo", true);
+    atualizarTroca();
+  });
+  $("#form-troca").addEventListener("change", atualizarTroca);
+  $("#form-troca").addEventListener("submit", (e) => e.preventDefault());
+  $("#enviar-troca").addEventListener("click", (e) => {
+    const ok = validarCampo("campo-modelo", $("#troca-modelo").value.trim().length >= 2);
+    if (!ok) { e.preventDefault(); $("#troca-modelo").focus(); return; }
+    atualizarTroca();
+    carregando(e.currentTarget);
+  });
+
+  /* ---------- Diálogos ---------- */
+  function fechar(d) { if (d.open) d.close(); }
+  $$("dialog").forEach((d) => {
+    d.addEventListener("click", (e) => {
+      if (e.target === d) fechar(d);                       // clique fora da caixa
+      if (e.target.closest("[data-fechar]")) fechar(d);
+    });
+  });
+  function abrirPedido() {
+    renderPedido();
+    if (typeof gaveta.showModal === "function") gaveta.showModal(); else gaveta.setAttribute("open", "");
+  }
+  $("#abrir-pedido").addEventListener("click", abrirPedido);
+
+  /* ---------- Toast ---------- */
+  let tempoToast;
+  function mostrarToast(texto) {
+    const t = $("#toast");
+    $("#toast-texto").textContent = texto;
+    t.hidden = false;
+    clearTimeout(tempoToast);
+    tempoToast = setTimeout(() => { t.hidden = true; }, 4200);
+  }
+  $("#toast-ver").addEventListener("click", () => { $("#toast").hidden = true; abrirPedido(); });
+
+  /* ---------- Cliques nos cards (Ver opções e +) ---------- */
+  document.addEventListener("click", (e) => {
+    const abrir = e.target.closest("[data-abrir]");
+    if (abrir) { abrirProduto(abrir.dataset.abrir); return; }
+    const add = e.target.closest("[data-adicionar]");
+    if (add) { const p = porId(add.dataset.adicionar); if (p) adicionar(p); }
+  });
+
+  /* ---------- Filtro e busca ---------- */
+  $("#categorias").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-cat]");
+    if (!b) return;
+    filtro.categoria = b.dataset.cat;
+    $$("#categorias .cat").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    renderVitrine();
+  });
+  $("#busca").addEventListener("input", (e) => { filtro.busca = e.target.value; renderVitrine(); });
+
+  /* ---------- Menu do celular ---------- */
+  const botaoMenu = $("#botao-menu"), menu = $("#menu-mobile");
+  function alternarMenu(abrir) {
+    menu.hidden = !abrir;
+    botaoMenu.setAttribute("aria-expanded", String(abrir));
+    botaoMenu.setAttribute("aria-label", abrir ? "Fechar menu" : "Abrir menu");
+    botaoMenu.innerHTML = icone(abrir ? "fechar" : "menu");
+  }
+  botaoMenu.addEventListener("click", () => alternarMenu(menu.hidden));
+  menu.addEventListener("click", (e) => { if (e.target.closest("a")) alternarMenu(false); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !menu.hidden) { alternarMenu(false); botaoMenu.focus(); } });
+
+  /* ---------- Links fixos do WhatsApp, mapa e Instagram ---------- */
+  $$("[data-wa]").forEach((a) => {
+    const msg = CONFIG.mensagens[a.dataset.wa];
+    if (msg) a.href = linkWhats(msg);
+    if (a.querySelector(".rotulo")) a.addEventListener("click", () => carregando(a));
+  });
+  $$("[data-maps]").forEach((a) => { a.href = linkMaps(); });
+  $$("[data-instagram]").forEach((a) => { a.href = CONFIG.instagram; });
+  $("#mp-comprar").addEventListener("click", (e) => carregando(e.currentTarget));
+
+  /* ---------- Textos da CONFIG ---------- */
+  $$('[data-config="endereco"]').forEach((el) => { el.textContent = CONFIG.endereco; });
+  $$('[data-config="horario"]').forEach((el) => { el.textContent = CONFIG.horario; });
+  $$('[data-config="cnpj"]').forEach((el) => { el.textContent = CONFIG.cnpj; });
+  $$('[data-config="whatsapp-texto"]').forEach((el) => { el.textContent = CONFIG.whatsappTexto; });
+  ["garantia", "pagamento", "entrega"].forEach((k) => { if (CONFIG[k]) $$(`[data-config="${k}"]`).forEach((el) => { el.textContent = CONFIG[k]; }); });
+  $("#ano").textContent = new Date().getFullYear();
+
+  if (CONFIG.logo) {
+    $$(".logo").forEach((a) => { a.innerHTML = `<img src="${esc(CONFIG.logo)}" alt="Vellari Phone" width="140" height="34">`; });
+  }
+  if (CONFIG.fotoLoja) {
+    $("#foto-loja").innerHTML = `<img src="${esc(CONFIG.fotoLoja)}" alt="Loja da Vellari Phone em Santa Fé do Sul" loading="lazy" decoding="async">`;
+  }
+  if (CONFIG.numeros.length) {
+    const n = $("#numeros");
+    n.innerHTML = CONFIG.numeros.map((x) => `<div><strong>${esc(x.valor)}</strong><span>${esc(x.rotulo)}</span></div>`).join("");
+    n.hidden = false;
+  }
+
+  /* ---------- Hero ---------- */
+  (function hero() {
+    const alvo = $("#hero-aparelhos");
+    if (CONFIG.heroImagem) {
+      alvo.removeAttribute("role"); alvo.removeAttribute("aria-label");
+      alvo.innerHTML = `<img src="${esc(CONFIG.heroImagem)}" alt="iPhone 18 Pro na cor bordô, frente e verso" width="420" height="420" fetchpriority="high" decoding="async">`;
+      return;
+    }
+    const p = porId("iphone-18-pro") || PRODUTOS[0];
+    alvo.innerHTML = `<div class="ap ap-tras">${ilustracao(p, "#CFDCE6", "")}</div><div class="ap ap-frente">${ilustracao(p, "#5C1F2D", "")}</div>`;
+    $$("svg", alvo).forEach((s) => { s.removeAttribute("role"); s.setAttribute("aria-hidden", "true"); });
+  })();
+
+  /* ---------- Depoimentos ---------- */
+  $("#depoimentos").innerHTML = CONFIG.depoimentos.map((d) => `
+    <li>
+      <figure class="foto-cliente">
+        ${d.foto ? `<img src="${esc(d.foto)}" alt="${esc(d.nome)} com o ${esc(d.modelo)}" loading="lazy" decoding="async">`
+                 : `<div class="placeholder-foto">${icone("camera")}<strong>[FOTO DO CLIENTE]</strong><span class="legenda">Cliente com a caixa na mão, 4:5</span></div>`}
+      </figure>
+      <blockquote>${esc(d.frase)}</blockquote>
+      <cite><strong>${esc(d.nome)}</strong><span>${esc(d.modelo)}</span></cite>
+    </li>`).join("");
+
+  /* ---------- Posts do Instagram ---------- */
+  $("#insta-grade").innerHTML = CONFIG.posts.map((post) => `
+    <li><a href="${esc(post.link || CONFIG.instagram)}" target="_blank" rel="noopener" aria-label="Ver post: ${esc(post.titulo)}">
+      ${post.imagem ? `<img src="${esc(post.imagem)}" alt="" loading="lazy" decoding="async">` : `<span class="post-titulo">${esc(post.titulo)}</span>`}
+      ${icone("instagram", "ic ic-insta")}
+    </a></li>`).join("");
+
+  /* ---------- Mapa: carrega o Google Maps só quando chega perto (mais leve) ---------- */
+  (function mapa() {
+    let noTopo = true;
+    try { noTopo = window.top === window.self; } catch (e) { noTopo = false; }
+    if (!noTopo || !("IntersectionObserver" in window)) return;   // dentro de prévias, fica o cartão estático
+    const caixa = $("#mapa");
+    const src = CONFIG.mapaEmbed || `https://www.google.com/maps?q=${encodeURIComponent(CONFIG.enderecoMapa)}&output=embed`;
+    const io = new IntersectionObserver((entradas) => {
+      if (!entradas.some((x) => x.isIntersecting)) return;
+      io.disconnect();
+      const f = document.createElement("iframe");
+      f.src = src; f.title = "Mapa da Vellari Phone em Santa Fé do Sul"; f.loading = "lazy"; f.referrerPolicy = "no-referrer-when-downgrade";
+      caixa.appendChild(f);
+    }, { rootMargin: "300px" });
+    io.observe(caixa);
+  })();
+
+  /* ---------- Animação suave ao rolar (só o que ainda não está na tela) ---------- */
+  function revelar() {
+    if (!("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const alvos = $$(".cabecalho-secao, .beneficio, .grade-destaques > *, .motivo, .loja-fisica, .banner, .depoimentos > li, .insta-grade li, .faq-lista details, .cta-final-inner");
+    const io = new IntersectionObserver((entradas) => {
+      entradas.forEach((x) => { if (x.isIntersecting) { x.target.classList.add("revelar", "entrando"); io.unobserve(x.target); } });
+    }, { threshold: 0.12 });
+    alvos.forEach((el) => { if (el.getBoundingClientRect().top > innerHeight) io.observe(el); });
+  }
+
+  /* ---------- Início ---------- */
+  renderDestaques();
+  renderCategorias();
+  renderVitrine();
+  renderPedido();
+  atualizarTroca();
+  revelar();
+  if (!CONFIG.whatsapp) console.info("[Vellari] Preencha CONFIG.whatsapp com o número da loja (55 + DDD + número).");
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+node_modules/
+dist/
+
+# Originais da loja (1 GB de fotos e vídeos): ficam só na máquina.
+# As versões otimizadas, em public/img/, são versionadas.
+assets/media/
+
+# Folhas de contato da Fase 0 (mostram rostos de clientes)
+docs/fase-0/folhas/
+
+.DS_Store
+Thumbs.db
+*.log
+
+# Cópia do site usada no link de prévia (gerada)
+previa/

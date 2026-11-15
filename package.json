@@ -1,0 +1,32 @@
+{
+  "name": "vellari-phone-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Site da Vellari Phone: loja de iPhone em Santa Fé do Sul - SP",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build && node scripts/check-copy.mjs",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "images": "node scripts/images.mjs",
+    "poster": "node scripts/hero-poster.mjs",
+    "screenshots": "node scripts/screenshots.mjs",
+    "marca": "node scripts/marca.mjs",
+    "qa": "npm run build && node scripts/qa.mjs",
+    "lighthouse": "npm run build && node scripts/lighthouse.mjs"
+  },
+  "dependencies": {
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@fontsource-variable/archivo": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "@types/three": "^0.187.0",
+    "lighthouse": "^13.6.0",
+    "playwright-core": "^1.65.0",
+    "sharp": "^0.35.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}

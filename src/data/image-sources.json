@@ -1,0 +1,306 @@
+{
+  "$comentario": "Fonte de cada imagem do site. src aponta para o original (nunca alterado); recorte = [x, y, largura, altura] em frações de 0 a 1. Rode \"npm run images\" depois de editar.",
+  "imagens": {
+    "logo-vellari": {
+      "src": "vellari-logo-branco-transparente.png",
+      "recorte": null,
+      "alt": "Vellari Phone",
+      "larguras": [
+        160,
+        320,
+        480
+      ],
+      "alfa": true
+    },
+    "iphone-17-pro-max": {
+      "src": "assets/media/stories/202601/17874046524485484.jpg",
+      "recorte": [
+        0,
+        0.2,
+        1,
+        0.5627
+      ],
+      "alt": "Caixas lacradas do iPhone 17 Pro Max nas cores azul e prata"
+    },
+    "iphone-17-pro-max-cores": {
+      "src": "assets/media/stories/202605/18336173845218111.jpg",
+      "recorte": [
+        0,
+        0.3,
+        1,
+        0.5627
+      ],
+      "alt": "Três iPhone 17 Pro Max nas cores laranja, azul e prata"
+    },
+    "iphone-17-pro-max-laranja": {
+      "src": "assets/media/stories/202609/18103029152014607.jpg",
+      "recorte": [
+        0,
+        0.4,
+        1,
+        0.5627
+      ],
+      "alt": "iPhone 17 Pro Max laranja ao lado da caixa"
+    },
+    "iphone-14-pro-max": {
+      "src": "assets/media/stories/202507/18043706426555366.jpg",
+      "recorte": [
+        0.2,
+        0.205,
+        0.8,
+        0.45
+      ],
+      "alt": "iPhone 14 Pro Max prateado com a caixa"
+    },
+    "iphone-14": {
+      "src": "assets/media/stories/202604/17944199076080341.jpg",
+      "recorte": [
+        0,
+        0.4,
+        1,
+        0.5627
+      ],
+      "alt": "Dois iPhone 14 na cor meia-noite"
+    },
+    "iphone-14-roxo": {
+      "src": "assets/media/stories/202609/18166082869482902.jpg",
+      "recorte": [
+        0,
+        0.36,
+        1,
+        0.5627
+      ],
+      "alt": "iPhone 14 roxo em um suporte"
+    },
+    "iphone-14-plus": {
+      "src": "assets/media/stories/202610/18054658610597629.jpg",
+      "recorte": [
+        0,
+        0.36,
+        1,
+        0.5627
+      ],
+      "alt": "iPhone 14 Plus na cor meia-noite"
+    },
+    "iphone-13-pro": {
+      "src": "assets/media/stories/202604/18099157262513858.jpg",
+      "recorte": [
+        0,
+        0.4,
+        1,
+        0.5627
+      ],
+      "alt": "iPhone 13 Pro prateado"
+    },
+    "iphone-13": {
+      "src": "assets/media/stories/202604/18088926407007216.jpg",
+      "recorte": [
+        0,
+        0.33,
+        1,
+        0.5627
+      ],
+      "alt": "iPhone 13 azul"
+    },
+    "iphone-13-pro-max": {
+      "src": "assets/media/stories/202609/18371802847241987.jpg",
+      "recorte": [
+        0,
+        0.36,
+        1,
+        0.5627
+      ],
+      "alt": "iPhone 13 Pro Max dourado em um suporte"
+    },
+    "iphone-13-pro-max-azul": {
+      "src": "assets/media/stories/202605/17886995472508691.jpg",
+      "recorte": [
+        0,
+        0.28,
+        1,
+        0.5627
+      ],
+      "alt": "iPhone 13 Pro Max azul-sierra"
+    },
+    "iphone-15-pro": {
+      "src": "assets/media/stories/202604/18162740374435202.jpg",
+      "recorte": [
+        0,
+        0.3,
+        1,
+        0.5627
+      ],
+      "alt": "iPhone 15 Pro branco com a caixa"
+    },
+    "iphone-12": {
+      "src": "assets/media/stories/202609/17963448801206181.jpg",
+      "recorte": [
+        0,
+        0.38,
+        1,
+        0.5627
+      ],
+      "alt": "iPhone 12 branco em um suporte"
+    },
+    "iphone-11-pro-max": {
+      "src": "assets/media/stories/202604/18108289030810163.jpg",
+      "recorte": [
+        0,
+        0.24,
+        1,
+        0.5627
+      ],
+      "alt": "iPhone 11 Pro Max verde"
+    },
+    "iphone-11": {
+      "src": "assets/media/posts/17913871682735746.jpg",
+      "recorte": [
+        0,
+        0.1,
+        1,
+        0.8
+      ],
+      "alt": "iPhone 11 em cinco cores"
+    },
+    "redmi-14c": {
+      "src": "assets/media/posts/17854145280382763.jpg",
+      "recorte": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "alt": "Redmi 14C nas cores verde e azul"
+    },
+    "redmi-note-14": {
+      "src": "assets/media/stories/202512/18545164549056152.jpg",
+      "recorte": [
+        0,
+        0.2,
+        1,
+        0.5627
+      ],
+      "alt": "Caixa do Redmi Note 14"
+    },
+    "redmi-note-14-pro": {
+      "src": "assets/media/stories/202512/18093107728927970.jpg",
+      "recorte": [
+        0,
+        0.2,
+        1,
+        0.5627
+      ],
+      "alt": "Caixa do Redmi Note 14 Pro 5G"
+    },
+    "redmi-note-17": {
+      "src": "assets/media/stories/202610/17986305756088228.jpg",
+      "recorte": [
+        0,
+        0.38,
+        1,
+        0.5627
+      ],
+      "alt": "Caixa do Redmi Note 17"
+    },
+    "poco-x7-pro": {
+      "src": "assets/media/stories/202512/18082440881169461.jpg",
+      "recorte": [
+        0,
+        0.2,
+        1,
+        0.5627
+      ],
+      "alt": "Caixa do Poco X7 Pro"
+    },
+    "realme-c63": {
+      "src": "assets/media/stories/202512/18069299480123955.jpg",
+      "recorte": [
+        0,
+        0.2,
+        1,
+        0.5627
+      ],
+      "alt": "Caixa do Realme C63"
+    },
+    "realme-c73": {
+      "src": "assets/media/stories/202610/18077483414720983.jpg",
+      "recorte": [
+        0,
+        0.4,
+        1,
+        0.5627
+      ],
+      "alt": "Caixa do Realme C73"
+    },
+    "apple-watch": {
+      "src": "assets/media/stories/202611/18178812742443762.jpg",
+      "recorte": [
+        0,
+        0.25,
+        1,
+        0.5627
+      ],
+      "alt": "Apple Watch na caixa aberta"
+    },
+    "apple-watch-series-9": {
+      "src": "assets/media/stories/202504/17906623077122082.jpg",
+      "recorte": [
+        0,
+        0.225,
+        1,
+        0.5627
+      ],
+      "alt": "Apple Watch Series 9 de 45 mm com a caixa"
+    },
+    "jbl-boombox-4": {
+      "src": "assets/media/posts/18088355780076297.jpg",
+      "recorte": [
+        0,
+        0.12,
+        1,
+        0.75
+      ],
+      "alt": "Caixa da JBL Boombox 4"
+    },
+    "power-bank": {
+      "src": "assets/media/stories/202609/18165052279470180.jpg",
+      "recorte": [
+        0,
+        0.19,
+        1,
+        0.5627
+      ],
+      "alt": "Carregadores portáteis na embalagem"
+    },
+    "carregador-20w": {
+      "src": "assets/media/stories/202403/18055491856561233.jpg",
+      "recorte": [
+        0.1,
+        0.415,
+        0.8,
+        0.45
+      ],
+      "alt": "Caixas do carregador USB-C de 20W"
+    },
+    "cliente-01": {
+      "src": "assets/media/stories/202604/18095873783119613.jpg",
+      "recorte": [
+        0,
+        0.18,
+        1,
+        0.5627
+      ],
+      "alt": "Cliente da Vellari Phone com o celular novo"
+    },
+    "cliente-02": {
+      "src": "assets/media/stories/202609/17989385967103855.jpg",
+      "recorte": [
+        0,
+        0.06,
+        1,
+        0.703
+      ],
+      "alt": "Cliente da Vellari Phone com o iPhone novo"
+    }
+  }
+}
