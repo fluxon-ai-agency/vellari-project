@@ -14,11 +14,14 @@ original está em `PROMPT.md.txt`. As pendências para o cliente estão em `docs
 - Testes: `npm run qa` passa 46 de 46; `npm run screenshots` passa 18 de 18.
 - Lighthouse mobile medido na máquina original: Acessibilidade 100, Boas práticas 100, SEO 100,
   LCP 2,14 s, CLS 0, **Performance 69** (meta 85). O que pesa é a partida do 3D (ver abaixo).
-- Próximo passo combinado: o usuário publica o site na hospedagem dele e manda o endereço. Aí:
+- Hospedagem: Hostinger, domínio vellariphone.com (já em `store.ts`). Em 15/11/2026 o cliente
+  ainda não tinha pago o plano; o usuário avisa quando a Hostinger liberar.
+- Próximo passo combinado: quando liberar, publicar o `dist/` (passo a passo no README, seção
+  "Publicar"; o usuário prefere que eu faça pelo Chrome, no hPanel). Aí:
   1. rodar o PageSpeed Insights (pagespeed.web.dev) no endereço publicado, celular e computador;
   2. conferir no relatório se o 3D chegou a ligar (os servidores do Google provavelmente não têm
      placa de vídeo, e sem ela o site fica no poster de propósito);
-  3. testar os links de WhatsApp no site publicado.
+  3. testar os links de WhatsApp e a prévia do link (imagem `og-vellari.jpg`) no site publicado.
 - Se a Performance oficial ficar abaixo de 85, a alternativa discutida foi atrasar a partida do 3D
   alguns segundos (custo: o poster fica mais tempo na tela). Não foi feita; depende do usuário.
 
@@ -30,8 +33,9 @@ Qualquer uma pode mudar se o usuário pedir.
 1. Fotos de produto: recortes das fotos de story de `assets/` em que o texto ficou de fora; o resto
    usa placeholder "Foto em breve".
 2. Poster do hero: render do próprio modelo 3D, um por cor (não há foto do iPhone 18 Pro Max).
-3. Clientes: só 2 fotos da fase Vellari (`cliente-01`, `cliente-02`), ainda **sem autorização de
-   uso confirmada** (LGPD). As 59 fotos com a marca antiga "Rafa Imports" não são usadas.
+3. Clientes: só 2 fotos da fase Vellari (`cliente-01`, `cliente-02`). O usuário confirmou a
+   autorização de uso (LGPD) em 15/11/2026. As 59 fotos com a marca antiga "Rafa Imports" não
+   são usadas.
 4. Sacola da loja (tem a silhueta de uma maçã): evitada nos recortes.
 5. Sem carrinho, sem seção "Troca" e sem o selo "100% originais" do protótipo, porque não estão nos
    dados oficiais. Voltam se a loja confirmar.

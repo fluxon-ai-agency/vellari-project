@@ -13,7 +13,7 @@ export const store = {
   descricao: 'Loja de iPhones, smartphones e eletrônicos em Santa Fé do Sul - SP.',
 
   /** Domínio sem barra no final. null = ainda não definido. */
-  dominio: null as string | null, // [CONFIRMAR: ex.: "https://vellariphone.com.br"]
+  dominio: 'https://vellariphone.com' as string | null,
 
   whatsapp: {
     /** Só números: 55 + DDD + número. Usado em https://wa.me/<numero> */

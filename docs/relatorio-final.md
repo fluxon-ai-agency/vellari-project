@@ -74,7 +74,6 @@ Estão como `null` em `src/data/store.ts`. O site esconde o campo; nada aparece 
 | Pendência | Onde aparece | Efeito hoje |
 |---|---|---|
 | Número do prédio e complemento | endereço, mapa, dados para o Google | Mostra "Rua 19, Centro" |
-| Domínio | link canônico, prévia no WhatsApp, sitemap | **Sem prévia de imagem ao compartilhar o link** |
 | Link da Fluxon Ai Agency | crédito no rodapé | Crédito sem link |
 | Prazo, taxa e funcionamento da entrega | seção Entrega e FAQ | "Combine pelo WhatsApp" |
 | ID do GA4 e do Meta Pixel | rastreamento | Nada é carregado; sem aviso de cookies |
@@ -83,6 +82,9 @@ Estão como `null` em `src/data/store.ts`. O site esconde o campo; nada aparece 
 
 O protótipo e o design system citam "nº 655, 2º andar". Não usei porque o briefing deixou o
 número em aberto.
+
+**Resolvido em 15/11/2026:** domínio `vellariphone.com`, na Hostinger. Já está no link canônico,
+na prévia do link no WhatsApp, nos dados para o Google e no `sitemap.xml`.
 
 ## 3. Produtos para confirmar
 
@@ -129,17 +131,18 @@ acessórios mostram apenas "Lacrado" ou "Seminovo", sem prazo, até a loja infor
 As fotos de produto são recortes de stories. Fundo, luz e enquadramento variam de uma para
 outra; fotos tiradas para o site deixariam a vitrine mais uniforme.
 
-## 5. Fotos de clientes: confirmar autorização (LGPD)
+## 5. Fotos de clientes (LGPD)
 
-O site usa 2 fotos, ambas da fase Vellari, recortadas para tirar o @ do cliente:
+Autorização de uso confirmada em 15/11/2026. O site usa 2 fotos, ambas da fase Vellari,
+recortadas para tirar o @ do cliente:
 
 | No site | Arquivo original |
 |---|---|
 | `cliente-01` | `assets/media/stories/202604/18095873783119613.jpg` |
 | `cliente-02` | `assets/media/stories/202609/17989385967103855.jpg` |
 
-Se alguma não tiver autorização, apague a entrada em `src/data/image-sources.json` e o nome na
-lista de `clientesSection`, em `src/sections/pagina/template.ts`.
+Se alguma autorização for retirada, apague a entrada em `src/data/image-sources.json` e o nome
+na lista de `clientesSection`, em `src/sections/pagina/template.ts`.
 
 As outras 59 fotos de clientes de `assets/` não foram usadas: mostram a marca antiga
 "Rafa Imports". A lista completa está em `docs/fase-0/inventario-imagens.csv` (tipo `cliente`).
@@ -165,5 +168,6 @@ As outras 59 fotos de clientes de `assets/` não foram usadas: mostram a marca a
 
 1. Abrir no celular e testar: girar o aparelho, rolar por cima dele, trocar a cor e tocar em
    "Quero o iPhone 18 Pro Max".
-2. Preencher o domínio em `store.ts` e gerar o build de novo.
-3. Confirmar os itens das seções 2, 3 e 5.
+2. Confirmar os itens das seções 2 e 3.
+3. Na Hostinger: enviar o conteúdo de `dist/` e ativar "Forçar HTTPS" (passo a passo no README,
+   seção "Publicar"). O domínio e as fotos de clientes já foram resolvidos.

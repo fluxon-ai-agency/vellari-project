@@ -30,7 +30,7 @@ cidades de entrega, Instagram, CNPJ e as mensagens prontas do WhatsApp.
 
 - Campos com `null` ainda não foram confirmados. O site esconde o que está `null`.
 - Para preencher, troque `null` pelo valor entre aspas. Exemplo: `numero: '655'`.
-- Depois de mudar o **domínio** (`dominio: 'https://vellariphone.com.br'`), rode `npm run build`
+- Depois de mudar o **domínio** (hoje `dominio: 'https://vellariphone.com'`), rode `npm run build`
   de novo: o endereço entra nas tags de compartilhamento, no `sitemap.xml` e no `robots.txt`.
 - Rastreamento: preencha `ga4Id` e `metaPixelId`. Eles só carregam depois que o visitante aceita
   o aviso de cookies. Sem ID, o aviso nem aparece.
@@ -123,13 +123,26 @@ Mede Performance, Acessibilidade, Boas práticas e SEO no celular. O relatório 
 
 ## Publicar
 
-O site é 100% estático: basta enviar o conteúdo de `dist/` para a hospedagem.
+O site é 100% estático: basta enviar o conteúdo de `dist/` para a hospedagem. O domínio
+(`vellariphone.com`) já está em `store.ts`.
 
-**Hospedagem comum (cPanel, Hostinger, Locaweb e parecidas)**
+**Hostinger (hospedagem da loja)**
 
 1. Rode `npm run build`.
-2. Envie tudo o que está dentro de `dist/` para a pasta pública do domínio (`public_html`).
-3. Ative o HTTPS do domínio.
+2. No hPanel, abra o **Gerenciador de arquivos** do site e entre em `public_html`. Apague os
+   arquivos de exemplo da Hostinger (como `default.php`), se houver.
+3. Envie tudo o que está **dentro** de `dist/`, inclusive o `.htaccess` (arquivo oculto que cuida
+   do cache). O jeito mais rápido: compactar o conteúdo de `dist/` em `.zip`, enviar e usar
+   **Extrair** no próprio gerenciador.
+4. Em **Segurança > SSL**, confira o certificado e ative **Forçar HTTPS**.
+5. Abra <https://vellariphone.com> e teste.
+
+Para atualizar o site depois, repita os passos 1 a 3.
+
+**Outras hospedagens comuns (cPanel, Locaweb e parecidas)**
+
+Os mesmos passos, enviando para a pasta pública do domínio. O `.htaccess` vale em servidores
+Apache e LiteSpeed.
 
 **Netlify**
 
@@ -141,10 +154,7 @@ O site é 100% estático: basta enviar o conteúdo de `dist/` para a hospedagem.
 - Importe o repositório. Framework: Vite. Comando `npm run build`, saída `dist`.
 
 Nas duas últimas, as fotos originais de `assets/` não precisam subir: as versões otimizadas já
-estão em `public/img/`.
-
-Depois de publicar, preencha o domínio em `store.ts`, gere o build de novo e publique outra vez,
-para a prévia do link no WhatsApp funcionar.
+estão em `public/img/`. Elas ignoram o `.htaccess` e usam o cache padrão delas.
 
 ## Estrutura
 

@@ -44,7 +44,8 @@ Tudo fica em `src/data/store.ts`. Nunca escreva estes dados direto no layout.
   Aparecida do Taboado (MS), Jales e Fernandópolis. Prazo, taxa e funcionamento: [CONFIRMAR]
 - Mais vendidos, nesta ordem: iPhone 18 Pro Max, 18 Pro, 17 Pro Max, 15 Pro Max, 14 Pro Max,
   14 Pro, 14, 13 Pro e 13
-- Domínio e link da agência (Fluxon Ai Agency): [CONFIRMAR]
+- Domínio: vellariphone.com (https://vellariphone.com), hospedagem na Hostinger
+- Link da agência (Fluxon Ai Agency): [CONFIRMAR]
 
 O que está entre colchetes ainda não foi confirmado. No código fica como `null`, o site esconde
 o campo (nunca mostra colchete para o cliente) e o item entra no relatório de pendências.

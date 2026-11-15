@@ -1,0 +1,33 @@
+# Vellari Phone · configuração para Hostinger (LiteSpeed) e outros servidores Apache.
+# Vai para dist/ no build. O HTTPS é forçado no hPanel (Segurança > SSL > Forçar HTTPS),
+# não aqui: assim não há risco de laço de redirecionamento com a CDN da Hostinger.
+
+# Tipos de arquivo que servidores antigos não conhecem
+AddType image/avif .avif
+AddType font/woff2 .woff2
+AddType application/manifest+json .webmanifest
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json application/xml application/manifest+json image/svg+xml
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # HTML, robots.txt, sitemap.xml e manifest: o navegador sempre confere se há versão nova
+  <FilesMatch "\.(html|txt|xml|webmanifest)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+
+  # JS, CSS e fontes do build: o nome muda a cada versão (ex.: index-DuLqeBXX.js), então
+  # podem ficar 1 ano no navegador
+  <FilesMatch "-[\w-]{8}\.(js|css|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Fotos e ícones têm nome fixo (trocar a foto mantém o nome): 7 dias
+  <FilesMatch "\.(avif|webp|jpe?g|png|svg|ico)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+</IfModule>
