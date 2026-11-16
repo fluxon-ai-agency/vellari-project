@@ -71,10 +71,14 @@ Outras decisões:
 
 ## Prévia publicada
 
-Existe uma prévia em https://claude.ai/artifact/1nKW7pBrMaenJmezz3rB7V, publicada pela conta
-original. Outra conta não consegue atualizá-la; se precisar de uma nova prévia, publique outra.
-A cópia usada nela é gerada na pasta `previa/` (fora do git): build com `--base ./`, caminhos
-relativos, só WebP, sem o iframe do Google Maps (bloqueado no claude.ai) e com `noindex`.
+Prévia atual (16/11/2026, com as fotos novas da vitrine):
+https://claude.ai/artifact/PyUf35GJGK65xo7MpPg1Ja, publicada pela conta fluxon.ai.agency. A
+antiga (https://claude.ai/artifact/1nKW7pBrMaenJmezz3rB7V) é da conta original e ficou
+desatualizada.
+
+`npm run previa` gera a cópia em `previa/` (fora do git): build com `--base ./`, caminhos
+relativos, só WebP, sem o iframe do Google Maps (bloqueado no claude.ai), sem `.htaccess` e com
+`noindex`. Depois é publicar `previa/index.html` com os demais arquivos da pasta.
 
 ## Repositório
 

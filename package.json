@@ -14,7 +14,8 @@
     "screenshots": "node scripts/screenshots.mjs",
     "marca": "node scripts/marca.mjs",
     "qa": "npm run build && node scripts/qa.mjs",
-    "lighthouse": "npm run build && node scripts/lighthouse.mjs"
+    "lighthouse": "npm run build && node scripts/lighthouse.mjs",
+    "previa": "node scripts/previa.mjs"
   },
   "dependencies": {
     "three": "^0.187.0"
