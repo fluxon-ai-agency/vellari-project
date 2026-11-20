@@ -14,10 +14,18 @@ original está em `PROMPT.md.txt`. As pendências para o cliente estão em `docs
 - Testes: `npm run qa` passa 46 de 46; `npm run screenshots` passa 18 de 18.
 - Lighthouse mobile medido na máquina original: Acessibilidade 100, Boas práticas 100, SEO 100,
   LCP 2,14 s, CLS 0, **Performance 69** (meta 85). O que pesa é a partida do 3D (ver abaixo).
-- Hospedagem: Hostinger, domínio vellariphone.com (já em `store.ts`). Em 15/11/2026 o cliente
-  ainda não tinha pago o plano; o usuário avisa quando a Hostinger liberar.
-- Próximo passo combinado: quando liberar, publicar o `dist/` (passo a passo no README, seção
-  "Publicar"; o usuário prefere que eu faça pelo Chrome, no hPanel). Aí:
+- Hospedagem: Hostinger, plano Unlimited (vence em 16/11/2027), servidor no Brasil, site
+  PHP/HTML. Em 20/11/2026 o `dist/` foi publicado em `public_html` (o `default.php` da
+  Hostinger ficou lá; o `index.html` tem prioridade). Prévia da Hostinger:
+  https://sociable-bisque-salmon-77.hostingersite.com/ (3D, vitrine, imagens e `.htaccess`
+  conferidos).
+- Pendente: o registro do domínio vellariphone.com (hPanel > Domínios > Configurar) pede os dados
+  do titular, que o usuário preenche. Depois: esperar o DNS, ativar o SSL e o "Forçar HTTPS".
+- Como publicar de novo: `npm run build`, compactar o conteúdo de `dist/` em dois `.zip` (resto e
+  `img/`, menos de 10 MB cada, na pasta `publicar/`, fora do git) e enviar pelo Gerenciador de
+  arquivos. O "Extrair" da Hostinger cria uma pasta com o nome do `.zip`: mova o conteúdo para
+  `public_html` e apague as pastas e os `.zip` (eles ficam públicos).
+- Depois do domínio no ar:
   1. rodar o PageSpeed Insights (pagespeed.web.dev) no endereço publicado, celular e computador;
   2. conferir no relatório se o 3D chegou a ligar (os servidores do Google provavelmente não têm
      placa de vídeo, e sem ela o site fica no poster de propósito);

@@ -17,3 +17,6 @@ previa/
 
 # Permissões locais do Claude Code (de cada máquina)
 .claude/settings.local.json
+
+# Pacotes .zip para enviar à Hostinger (gerados)
+publicar/
