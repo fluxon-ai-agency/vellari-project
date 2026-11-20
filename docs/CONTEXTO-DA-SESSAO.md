@@ -25,13 +25,16 @@ original está em `PROMPT.md.txt`. As pendências para o cliente estão em `docs
   `img/`, menos de 10 MB cada, na pasta `publicar/`, fora do git) e enviar pelo Gerenciador de
   arquivos. O "Extrair" da Hostinger cria uma pasta com o nome do `.zip`: mova o conteúdo para
   `public_html` e apague as pastas e os `.zip` (eles ficam públicos).
-- Depois do domínio no ar:
-  1. rodar o PageSpeed Insights (pagespeed.web.dev) no endereço publicado, celular e computador;
-  2. conferir no relatório se o 3D chegou a ligar (os servidores do Google provavelmente não têm
-     placa de vídeo, e sem ela o site fica no poster de propósito);
-  3. testar os links de WhatsApp e a prévia do link (imagem `og-vellari.jpg`) no site publicado.
-- Se a Performance oficial ficar abaixo de 85, a alternativa discutida foi atrasar a partida do 3D
-  alguns segundos (custo: o poster fica mais tempo na tela). Não foi feita; depende do usuário.
+- **No ar desde 20/11/2026: https://vellariphone.com** (domínio ativo até 20/11/2027, com a
+  renovação automática desligada). HTTPS válido; o HTTP e o `www` já vão para o HTTPS pela CDN
+  da Hostinger. Conferido no domínio: 3D, 26 produtos, nenhuma imagem quebrada, nenhum erro no
+  console, 44 links de WhatsApp para 5517997220015, `og-vellari.jpg` e `sitemap.xml` com 200.
+- PageSpeed Insights oficial (20/11/2026): celular 98 · 100 · 100 · 100 (LCP 1,7 s, TBT 0, CLS 0);
+  computador 100 · 100 · 100 · 100. O 3D não ligou lá (só a marca `vellari-3d:checar-webgl`):
+  os servidores do Google não têm placa de vídeo, então a nota mede o poster. A medição local
+  com o 3D ligado (Performance 69) continua sendo a mais conservadora.
+- A ideia de atrasar a partida do 3D não foi feita; só faz sentido se o usuário quiser melhorar
+  a experiência em celular fraco, já que a nota oficial passou da meta.
 
 ## Decisões tomadas (premissas)
 

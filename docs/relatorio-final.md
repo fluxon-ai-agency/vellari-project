@@ -29,9 +29,10 @@ Como ler a Performance:
 - Esta máquina oscila muito (índice de benchmark entre 129 e 960 de uma medição para outra),
   então os números variam de uma rodada para outra. O script calibra a lentidão simulada pelo
   índice medido, como recomenda a calculadora oficial do Lighthouse.
-- **PageSpeed Insights** (pagespeed.web.dev), depois de publicar, dá o número oficial. Atenção:
-  os servidores do Google rodam sem placa de vídeo. Nesse caso o site fica no poster de propósito,
-  então a nota de lá tende a sair alta sem medir o 3D. A medição local acima, com o 3D ligado,
+- **PageSpeed Insights oficial, em https://vellariphone.com (20/11/2026):** celular 98 de
+  Performance, 100 em Acessibilidade, Boas práticas e SEO (LCP 1,7 s, bloqueio 0 ms, CLS 0);
+  computador 100 em tudo. Os servidores do Google rodam sem placa de vídeo, então lá o site
+  fica no poster de propósito e a nota não mede o 3D. A medição local acima, com o 3D ligado,
   é a mais conservadora.
 
 O que mudou para chegar aqui:
