@@ -15,8 +15,8 @@ original está em `PROMPT.md.txt`. As pendências para o cliente estão em `docs
 - Lighthouse mobile medido na máquina original: Acessibilidade 100, Boas práticas 100, SEO 100,
   LCP 2,14 s, CLS 0, **Performance 69** (meta 85). O que pesa é a partida do 3D (ver abaixo).
 - Hospedagem: Hostinger, plano Unlimited (vence em 16/11/2027), servidor no Brasil, site
-  PHP/HTML. Em 20/11/2026 o `dist/` foi publicado em `public_html` (o `default.php` da
-  Hostinger ficou lá; o `index.html` tem prioridade). Prévia da Hostinger:
+  PHP/HTML. Em 20/11/2026 o `dist/` foi publicado em `public_html` (o `default.php` de
+  exemplo da Hostinger foi apagado). Prévia da Hostinger:
   https://sociable-bisque-salmon-77.hostingersite.com/ (3D, vitrine, imagens e `.htaccess`
   conferidos).
 - Pendente: o registro do domínio vellariphone.com (hPanel > Domínios > Configurar) pede os dados
