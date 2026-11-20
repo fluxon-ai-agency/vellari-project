@@ -125,8 +125,8 @@ acessórios mostram apenas "Lacrado" ou "Seminovo", sem prazo, até a loja infor
   (`assets/media/fotos-dos-iphones-da-vitrine/`). Com isso, 18 Pro Max, 18 Pro, 15 Pro Max e
   14 Pro deixaram de mostrar "Foto em breve". O iPhone 11 continua com o recorte de story.
 - **Fones:** nenhuma foto limpa. A categoria não aparece nos filtros.
-- **Loja (fachada, entrada, balcão):** nenhuma foto. A seção "Por que a Vellari" mostra o bloco
-  "Foto da loja em breve".
+- **Loja:** desde 20/11/2026 a seção "Por que a Vellari" mostra o Rafael, dono da loja, na mesa
+  com os aparelhos (`assets/media/fotos-do-dono-da-vellari/`). Não há foto de fachada.
 - **Depoimentos:** nenhum texto real de cliente. A seção Clientes mostra só fotos.
 - **Wallpaper do aparelho 3D:** não havia; a tela usa um gradiente nas cores da marca.
 - **Poster do hero:** sem foto do 18 Pro Max, os posters são renders do próprio modelo 3D.
@@ -136,13 +136,18 @@ variam de uma para outra, ao contrário dos iPhones, que agora seguem o mesmo ce
 
 ## 5. Fotos de clientes (LGPD)
 
-Autorização de uso confirmada em 15/11/2026. O site usa 2 fotos, ambas da fase Vellari,
-recortadas para tirar o @ do cliente:
+O site usa 5 fotos. As 2 primeiras, da fase Vellari, tiveram a autorização de uso confirmada em
+15/11/2026 e foram recortadas para tirar o @ do cliente. As outras 3 foram enviadas pela agência
+em 20/11/2026 e recortadas para deixar de fora a sacola com a marca antiga "Rafa Imports";
+**confirmar a autorização de uso dessas 3**.
 
 | No site | Arquivo original |
 |---|---|
 | `cliente-01` | `assets/media/stories/202604/18095873783119613.jpg` |
 | `cliente-02` | `assets/media/stories/202609/17989385967103855.jpg` |
+| `cliente-03` | `assets/media/imgi_27_472001738_17943488021928369_279392224808660893_n.jpg` |
+| `cliente-04` | `assets/media/imgi_29_472439783_17943481472928369_8354848267092157557_n.jpg` |
+| `cliente-05` | `assets/media/imgi_30_472113185_17943481358928369_3541727666888919944_n.jpg` |
 
 Se alguma autorização for retirada, apague a entrada em `src/data/image-sources.json` e o nome
 na lista de `clientesSection`, em `src/sections/pagina/template.ts`.

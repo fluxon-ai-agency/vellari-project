@@ -1,7 +1,33 @@
 /* ---------- Hero: iPhone 18 Pro Max em 3D ----------
    Celular: título, aparelho, cores, confiança e CTA, tudo sem rolar.
    Desktop: título e texto à esquerda, aparelho à direita (como no protótipo). */
-.hero { position: relative; padding-block: 8px 40px; overflow: clip; }
+.hero { position: relative; isolation: isolate; padding-block: 8px 40px; overflow: clip; }
+/* Fundo: um brilho azul forte atrás do aparelho que se apaga no preto (como a referência
+   aprovada, em azul). No celular fica atrás do aparelho, abaixo do título; no desktop vem da
+   direita. A base funde com o fundo da página para a seção seguinte não ter corte. */
+.hero::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    linear-gradient(to bottom, rgba(5, 5, 5, 0) 78%, var(--bg) 100%),
+    radial-gradient(78% 34% at 50% 46%, var(--brilho-forte) 0%, var(--brilho-medio) 38%, var(--brilho-fraco) 66%, rgba(5, 5, 5, 0) 100%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero::before { animation: brilho-respira 9s ease-in-out infinite alternate; }
+}
+@keyframes brilho-respira { from { opacity: .82; } to { opacity: 1; } }
+
+/* Entrada do hero ao abrir a página: textos sobem em sequência e o aparelho se aproxima.
+   O poster só se move (sem sumir), para não atrasar a pintura da maior imagem (LCP). */
+@keyframes hero-subir { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes hero-aproximar { from { transform: translateY(14px) scale(.93); } to { transform: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  .hero-titulo .selo-phone { animation: hero-subir .7s var(--curva) both; }
+  .hero .t-display { animation: hero-subir .8s var(--curva) .08s both; }
+  .hero-poster { animation: hero-aproximar 1.3s var(--curva) both; }
+  .hero-cores, .mini-confianca { animation: hero-subir .7s var(--curva) .35s both; }
+  .hero-texto .lead { animation: hero-subir .7s var(--curva) .22s both; }
+  .hero-ctas { animation: hero-subir .7s var(--curva) .3s both; }
+}
 .hero .destaque { color: var(--azul-tx); }
 .hero-produto, .hero .destaque { display: block; white-space: nowrap; }
 
@@ -136,6 +162,11 @@
 
 @media (min-width: 900px) {
   .hero { padding-block: 40px 88px; }
+  .hero::before {
+    background:
+      linear-gradient(to bottom, rgba(5, 5, 5, 0) 82%, var(--bg) 100%),
+      radial-gradient(62% 95% at 84% 48%, var(--brilho-forte) 0%, var(--brilho-medio) 30%, var(--brilho-fraco) 58%, rgba(5, 5, 5, 0) 82%);
+  }
   .hero-grid {
     grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
     grid-template-areas: "titulo visual" "texto visual";

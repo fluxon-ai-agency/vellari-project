@@ -53,7 +53,18 @@ let geradas = 0;
 let reaproveitadas = 0;
 const quadros = [];
 
+let semOriginal = 0;
 for (const [id, def] of Object.entries(imagens)) {
+  // Original fora desta máquina (assets/media/ não vai para o git): reaproveita o que já foi
+  // gerado, desde que a definição não tenha mudado e os arquivos estejam em public/img/.
+  if (!existsSync(join(raiz, def.src)) && anterior[id]?.fonte === JSON.stringify([def.src, def.recorte, def.larguras ?? null])) {
+    const salvo = anterior[id];
+    if ([...salvo.avif, ...salvo.webp].every((f) => existsSync(join(raiz, 'public', f.src)))) {
+      manifesto[id] = { ...salvo, alt: def.alt ?? salvo.alt };
+      semOriginal++;
+      continue;
+    }
+  }
   const { origem, area } = await recortar(def);
   const assinatura = createHash('sha1')
     .update(JSON.stringify([def.src, def.recorte, def.larguras ?? LARGURAS, statSync(origem).size, statSync(origem).mtimeMs]))
@@ -68,6 +79,7 @@ for (const [id, def] of Object.entries(imagens)) {
     largura: larguras.at(-1),
     altura: Math.round(larguras.at(-1) * proporcao),
     assinatura,
+    fonte: JSON.stringify([def.src, def.recorte, def.larguras ?? null]),
     avif: larguras.map((w) => ({ w, src: `/img/${id}-${w}.avif` })),
     webp: larguras.map((w) => ({ w, src: `/img/${id}-${w}.webp` })),
   };
@@ -90,7 +102,7 @@ for (const [id, def] of Object.entries(imagens)) {
 }
 
 writeFileSync(MANIFESTO, JSON.stringify(manifesto, null, 2) + '\n');
-console.log(`Imagens: ${geradas} geradas, ${reaproveitadas} reaproveitadas. Manifesto: src/generated/images.json`);
+console.log(`Imagens: ${geradas} geradas, ${reaproveitadas} reaproveitadas${semOriginal ? `, ${semOriginal} sem o original nesta máquina (mantidas como estavam)` : ''}. Manifesto: src/generated/images.json`);
 
 if (preview) {
   const colunas = 6;

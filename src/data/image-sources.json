@@ -13,28 +13,38 @@
       "alfa": true
     },
     "iphone-18-pro-max": {
-      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-18-pro-max-chatgpt-1.png",
+      "src": "assets/media/novas_fotos_dos_iphones_na_vitrine/vellari-iphone-18-pro-max-FINAL-chatgpt.png",
       "recorte": null,
       "alt": "iPhone 18 Pro Max bordô, visto de trás"
     },
+    "iphone-18-pro-max-4": {
+      "src": "assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_cbn4macbn4macbn4.jfif",
+      "recorte": null,
+      "alt": "iPhone 18 Pro Max bordô em outro ângulo"
+    },
     "iphone-18-pro-max-2": {
-      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-18-pro-max-chatgpt-2.png",
+      "src": "assets/media/novas_fotos_dos_iphones_na_vitrine/vellari-iphone-18-pro-max-NOVO-chatgpt-1.png",
       "recorte": null,
       "alt": "iPhone 18 Pro Max bordô, com as câmeras em destaque"
     },
     "iphone-18-pro-max-3": {
-      "src": "assets/media/fotos-dos-iphones-da-vitrine/Gemini_Generated_Image_jzbqmojzbqmojzbq.jfif",
+      "src": "assets/media/novas_fotos_dos_iphones_na_vitrine/vellari-iphone-18-pro-max-NOVO-chatgpt-2.png",
       "recorte": null,
       "alt": "iPhone 18 Pro Max bordô na mão"
     },
     "iphone-18-pro": {
-      "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-18-pro-chatgpt.png",
+      "src": "assets/media/novas_fotos_dos_iphones_na_vitrine/vellari-iphone-18-pro-FINAL-chatgpt.png",
       "recorte": null,
       "alt": "iPhone 18 Pro prata, visto de trás"
     },
     "iphone-18-pro-2": {
-      "src": "assets/media/fotos-dos-iphones-da-vitrine/Gemini_Generated_Image_g6q4u7g6q4u7g6q4.jfif",
-      "recorte": null,
+      "src": "assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_a50hp8a50hp8a50h.jfif",
+      "recorte": [
+        0.0793,
+        0,
+        0.8414,
+        1
+      ],
       "alt": "iPhone 18 Pro prata na mão"
     },
     "iphone-17-pro-max": {
@@ -82,50 +92,85 @@
       "recorte": null,
       "alt": "iPhone 14 meia-noite, visto de trás"
     },
+    "iphone-14-2": {
+      "src": "assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_hrbs2chrbs2chrbs.jfif",
+      "recorte": null,
+      "alt": "iPhone 14 meia-noite na mão"
+    },
     "iphone-13-pro": {
       "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-13-pro-chatgpt.png",
       "recorte": null,
       "alt": "iPhone 13 Pro prateado, visto de trás"
+    },
+    "iphone-13-pro-2": {
+      "src": "assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_uecmwuuecmwuuecm.jfif",
+      "recorte": null,
+      "alt": "iPhone 13 Pro prateado na mão"
     },
     "iphone-13": {
       "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-13-chatgpt.png",
       "recorte": null,
       "alt": "iPhone 13 azul, visto de trás"
     },
+    "iphone-13-2": {
+      "src": "assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_i1wtvsi1wtvsi1wt.jfif",
+      "recorte": null,
+      "alt": "iPhone 13 azul na mão"
+    },
     "iphone-15-pro": {
       "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-15-pro-chatgpt.png",
       "recorte": null,
       "alt": "iPhone 15 Pro titânio branco, visto de trás"
+    },
+    "iphone-15-pro-2": {
+      "src": "assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_mqjmugmqjmugmqjm.jfif",
+      "recorte": null,
+      "alt": "iPhone 15 Pro titânio branco na mão"
     },
     "iphone-14-plus": {
       "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-14-plus-chatgpt.png",
       "recorte": null,
       "alt": "iPhone 14 Plus meia-noite, visto de trás"
     },
+    "iphone-14-plus-2": {
+      "src": "assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_orq6p6orq6p6orq6.jfif",
+      "recorte": null,
+      "alt": "iPhone 14 Plus meia-noite na mão"
+    },
     "iphone-13-pro-max": {
       "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-13-pro-max-chatgpt.png",
       "recorte": null,
       "alt": "iPhone 13 Pro Max dourado, visto de trás"
+    },
+    "iphone-13-pro-max-2": {
+      "src": "assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_mqgry7mqgry7mqgr.jfif",
+      "recorte": null,
+      "alt": "iPhone 13 Pro Max dourado na mão"
     },
     "iphone-12": {
       "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-12-chatgpt.png",
       "recorte": null,
       "alt": "iPhone 12 branco, visto de trás"
     },
+    "iphone-12-2": {
+      "src": "assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_jmgybojmgybojmgy.jfif",
+      "recorte": null,
+      "alt": "iPhone 12 branco na mão"
+    },
     "iphone-11-pro-max": {
       "src": "assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-11-pro-max-chatgpt.png",
       "recorte": null,
       "alt": "iPhone 11 Pro Max verde meia-noite, visto de trás"
     },
+    "iphone-11-pro-max-2": {
+      "src": "assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_8d7eqe8d7eqe8d7e.jfif",
+      "recorte": null,
+      "alt": "iPhone 11 Pro Max verde meia-noite na mão"
+    },
     "iphone-11": {
-      "src": "assets/media/posts/17913871682735746.jpg",
-      "recorte": [
-        0,
-        0.1,
-        1,
-        0.8
-      ],
-      "alt": "iPhone 11 em cinco cores"
+      "src": "assets/media/novas_fotos_dos_iphones_na_vitrine/vellari-iphone-11-chatgpt.png",
+      "recorte": null,
+      "alt": "iPhone 11 preto, visto de trás"
     },
     "redmi-14c": {
       "src": "assets/media/posts/17854145280382763.jpg",
@@ -266,6 +311,46 @@
         0.703
       ],
       "alt": "Cliente da Vellari Phone com o iPhone novo"
+    },
+    "loja": {
+      "src": "assets/media/fotos-do-dono-da-vellari/WhatsApp Image 2026-11-16 at 14.33.49.jpeg",
+      "recorte": [
+        0,
+        0.17,
+        1,
+        0.703
+      ],
+      "alt": "Rafael, dono da Vellari Phone, com iPhones e acessórios na mesa"
+    },
+    "cliente-03": {
+      "src": "assets/media/imgi_27_472001738_17943488021928369_279392224808660893_n.jpg",
+      "recorte": [
+        0.15,
+        0,
+        0.45,
+        0.5625
+      ],
+      "alt": "Cliente da Vellari Phone com o iPhone novo"
+    },
+    "cliente-04": {
+      "src": "assets/media/imgi_29_472439783_17943481472928369_8354848267092157557_n.jpg",
+      "recorte": [
+        0.02,
+        0,
+        0.56,
+        0.7
+      ],
+      "alt": "Cliente da Vellari Phone mostrando o iPhone novo"
+    },
+    "cliente-05": {
+      "src": "assets/media/imgi_30_472113185_17943481358928369_3541727666888919944_n.jpg",
+      "recorte": [
+        0,
+        0.01,
+        0.59,
+        0.7375
+      ],
+      "alt": "Cliente da Vellari Phone com a caixa do iPhone"
     }
   }
 }

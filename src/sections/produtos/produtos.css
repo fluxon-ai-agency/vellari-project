@@ -15,7 +15,8 @@
   background: var(--poco); display: grid; place-items: center;
 }
 .card-midia picture, .card-midia img { width: 100%; height: 100%; }
-.card-midia img { object-fit: cover; }
+.card-midia img { object-fit: cover; transition: transform .6s var(--curva); }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) { .card-produto:hover .card-midia img { transform: scale(1.05); } }
 .card-midia .selo { position: absolute; top: 10px; left: 10px; z-index: 1; }
 
 /* Placeholder neutro: produto sem foto oficial */

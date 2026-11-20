@@ -45,9 +45,10 @@ export function lojaSection(): string {
     { ic: 'loja', titulo: 'Loja física no Centro', texto: `Venha ver os aparelhos de perto, em ${store.endereco.cidade}.` },
     { ic: 'celular', titulo: 'Lacrados e seminovos', texto: 'iPhones para todo bolso, sempre com a garantia informada.' },
   ];
-  // Sem foto de fachada, entrada ou balcão em assets/: fica o bloco neutro até a loja enviar.
+  // Foto do Rafael, dono da loja, na mesa com os aparelhos (enviada em 20/11/2026).
+  // Sem ela, fica o bloco neutro.
   const foto = temImagem('loja')
-    ? picture('loja', { sizes: '(min-width: 900px) 520px, 92vw', alt: `Loja da ${store.nome} em ${store.endereco.cidade}` })
+    ? picture('loja', { sizes: '(min-width: 900px) 520px, 92vw' })
     : `<div class="placeholder-foto">${icone('loja')}<strong>Foto da loja em breve</strong></div>`;
   return `
 <section class="secao" id="loja" aria-labelledby="titulo-loja">
@@ -81,7 +82,7 @@ export function lojaSection(): string {
 /* ---------- Clientes Vellari ---------- */
 export function clientesSection(): string {
   // Só fotos de assets/, da fase Vellari. Todas vão para o relatório, para autorização (LGPD).
-  const fotos = ['cliente-01', 'cliente-02'].filter(temImagem);
+  const fotos = ['cliente-01', 'cliente-02', 'cliente-03', 'cliente-04', 'cliente-05'].filter(temImagem);
   if (fotos.length === 0) return '';
   return `
 <section class="secao" id="clientes" aria-labelledby="titulo-clientes">
@@ -91,7 +92,7 @@ export function clientesSection(): string {
       <h2 class="t-h2" id="titulo-clientes">Quem já saiu de aparelho novo</h2>
       <p class="lead">Clientes da ${esc(store.nome)} com o celular novo na mão.</p>
     </div>
-    <ul class="clientes">
+    <ul class="clientes" tabindex="0" aria-label="Fotos de clientes">
       ${fotos.map((id) => `<li><figure class="foto-cliente">${picture(id, { sizes: '(min-width: 760px) 300px, 46vw' })}</figure></li>`).join('')}
     </ul>
     <a class="btn btn-contorno" href="${store.instagram.url}" target="_blank" rel="noopener">${icone('instagram')}Ver mais no Instagram</a>

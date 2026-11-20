@@ -85,20 +85,27 @@ function initFlutuante(): void {
 function initRevelar(): void {
   if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const alvos = document.querySelectorAll<HTMLElement>(
-    '.cabecalho-secao, .beneficio, .grade-destaques > *, .motivo, .loja-fisica, .clientes > li, .entrega-acao, .faq-lista details, .cta-final-inner',
+    '.cabecalho-secao, .beneficio, .grade-destaques > *, .grade-produtos > *, .motivo, .loja-fisica, .clientes > li, .entrega-acao, .faq-lista details, .cta-final-inner',
   );
   // Só anima o que ainda está fora da tela. A primeira notificação de cada alvo diz onde ele
   // está, sem forçar o navegador a calcular o layout da página inteira.
   const conhecidos = new WeakSet<Element>();
   const io = new IntersectionObserver(
     (entradas) => {
+      const entrando: HTMLElement[] = [];
       for (const x of entradas) {
         const primeira = !conhecidos.has(x.target);
         conhecidos.add(x.target);
         if (!x.isIntersecting) continue;
-        if (!primeira) x.target.classList.add('revelar', 'entrando');
+        if (!primeira) entrando.push(x.target as HTMLElement);
         io.unobserve(x.target);
       }
+      // O que entra junto sobe em sequência, na ordem da página (no máximo 6 degraus)
+      entrando.sort((a, b) => (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1));
+      entrando.forEach((el, i) => {
+        el.style.setProperty('--atraso', `${Math.min(i, 6) * 70}ms`);
+        el.classList.add('revelar', 'entrando');
+      });
     },
     { threshold: 0.12 },
   );

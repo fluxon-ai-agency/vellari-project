@@ -136,7 +136,7 @@ export const hero = {
     { id: 'prata', nome: 'Prata', hex: '#DCDCDC', destaque: false },
     { id: 'glacial', nome: 'Glacial', hex: '#C9D8E2', destaque: false },
   ],
-  corInicial: 'bordo',
+  corInicial: 'glacial',
 
   confianca: ['Lacrado com 1 ano de garantia', 'Até 18x no cartão', 'Pix, débito e dinheiro'],
 

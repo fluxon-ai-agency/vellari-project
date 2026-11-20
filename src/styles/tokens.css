@@ -24,6 +24,10 @@
   --topo-bg: rgba(5, 5, 5, .82);
   --anel-cor: rgba(255, 255, 255, .3);
   --gradiente-arco: linear-gradient(90deg, #0237C9 0%, #074DFF 55%, #1E8CFF 100%);
+  /* Brilho do hero: luz azul vinda de trás do aparelho, apagando no preto do lado do texto */
+  --brilho-forte: rgba(46, 132, 255, .85);
+  --brilho-medio: rgba(7, 77, 255, .55);
+  --brilho-fraco: rgba(2, 40, 170, .22);
 
   /* Tipografia */
   --fonte-marca: "Archivo Variable", "Archivo", "Arial", system-ui, sans-serif;

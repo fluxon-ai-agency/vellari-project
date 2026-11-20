@@ -63,7 +63,7 @@ export const PRODUTOS: Produto[] = [
   {
     id: 'iphone-18-pro-max', nome: 'iPhone 18 Pro Max', categoria: 'iPhone', modelo: 'iPhone 18 Pro Max',
     armazenamento: null, cor: null, condicao: 'Lacrado', preco: null,
-    imagens: ['iphone-18-pro-max', 'iphone-18-pro-max-2', 'iphone-18-pro-max-3'],
+    imagens: ['iphone-18-pro-max', 'iphone-18-pro-max-2', 'iphone-18-pro-max-3', 'iphone-18-pro-max-4'],
     selo: 'Lançamento', destaque: true, confirmar: [ESTOQUE],
   },
   {
@@ -95,44 +95,44 @@ export const PRODUTOS: Produto[] = [
   {
     id: 'iphone-14', nome: 'iPhone 14', categoria: 'iPhone', modelo: 'iPhone 14',
     armazenamento: '128 GB', cor: 'Meia-noite', condicao: 'Seminovo', preco: null,
-    imagens: ['iphone-14'], selo: 'Mais vendido', destaque: true, confirmar: [ESTOQUE],
+    imagens: ['iphone-14', 'iphone-14-2'], selo: 'Mais vendido', destaque: true, confirmar: [ESTOQUE],
   },
   {
     id: 'iphone-13-pro', nome: 'iPhone 13 Pro', categoria: 'iPhone', modelo: 'iPhone 13 Pro',
     armazenamento: '128 GB', cor: 'Prateado', condicao: 'Seminovo', preco: null,
-    imagens: ['iphone-13-pro'], selo: 'Mais vendido', destaque: true, confirmar: [ESTOQUE],
+    imagens: ['iphone-13-pro', 'iphone-13-pro-2'], selo: 'Mais vendido', destaque: true, confirmar: [ESTOQUE],
   },
   {
     id: 'iphone-13', nome: 'iPhone 13', categoria: 'iPhone', modelo: 'iPhone 13',
     armazenamento: '128 GB', cor: 'Azul', condicao: 'Seminovo', preco: null,
-    imagens: ['iphone-13'], selo: 'Mais vendido', destaque: true, confirmar: [ESTOQUE],
+    imagens: ['iphone-13', 'iphone-13-2'], selo: 'Mais vendido', destaque: true, confirmar: [ESTOQUE],
   },
 
   /* ---------- Outros iPhones ---------- */
   {
     id: 'iphone-15-pro', nome: 'iPhone 15 Pro', categoria: 'iPhone', modelo: 'iPhone 15 Pro',
     armazenamento: '128 GB', cor: 'Titânio branco', condicao: 'Seminovo', preco: null,
-    imagens: ['iphone-15-pro'], selo: null, destaque: false, confirmar: ['ainda em estoque?'],
+    imagens: ['iphone-15-pro', 'iphone-15-pro-2'], selo: null, destaque: false, confirmar: ['ainda em estoque?'],
   },
   {
     id: 'iphone-14-plus', nome: 'iPhone 14 Plus', categoria: 'iPhone', modelo: 'iPhone 14 Plus',
     armazenamento: '128 GB', cor: 'Meia-noite', condicao: 'Seminovo', preco: null,
-    imagens: ['iphone-14-plus'], selo: null, destaque: false, confirmar: ['ainda em estoque?'],
+    imagens: ['iphone-14-plus', 'iphone-14-plus-2'], selo: null, destaque: false, confirmar: ['ainda em estoque?'],
   },
   {
     id: 'iphone-13-pro-max', nome: 'iPhone 13 Pro Max', categoria: 'iPhone', modelo: 'iPhone 13 Pro Max',
     armazenamento: '256 GB', cor: 'Dourado', condicao: 'Seminovo', preco: null,
-    imagens: ['iphone-13-pro-max'], selo: null, destaque: false, confirmar: ['ainda em estoque?'],
+    imagens: ['iphone-13-pro-max', 'iphone-13-pro-max-2'], selo: null, destaque: false, confirmar: ['ainda em estoque?'],
   },
   {
     id: 'iphone-12', nome: 'iPhone 12', categoria: 'iPhone', modelo: 'iPhone 12',
     armazenamento: '128 GB', cor: 'Branco', condicao: 'Seminovo', preco: null,
-    imagens: ['iphone-12'], selo: null, destaque: false, confirmar: ['ainda em estoque?'],
+    imagens: ['iphone-12', 'iphone-12-2'], selo: null, destaque: false, confirmar: ['ainda em estoque?'],
   },
   {
     id: 'iphone-11-pro-max', nome: 'iPhone 11 Pro Max', categoria: 'iPhone', modelo: 'iPhone 11 Pro Max',
     armazenamento: '256 GB', cor: 'Verde meia-noite', condicao: 'Seminovo', preco: null,
-    imagens: ['iphone-11-pro-max'], selo: null, destaque: false, confirmar: ['ainda em estoque?'],
+    imagens: ['iphone-11-pro-max', 'iphone-11-pro-max-2'], selo: null, destaque: false, confirmar: ['ainda em estoque?'],
   },
   {
     id: 'iphone-11', nome: 'iPhone 11', categoria: 'iPhone', modelo: 'iPhone 11',

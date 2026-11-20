@@ -26,7 +26,7 @@
 .motivo h3 { font-size: 16px; font-weight: 700; line-height: 1.35; letter-spacing: -.01em; }
 .motivo p { font-size: 14px; line-height: 1.5; color: var(--texto-2); margin-top: 2px; }
 .loja-fisica { display: grid; gap: 12px; align-content: start; }
-.foto-loja { position: relative; aspect-ratio: 4 / 3; max-width: 100%; border-radius: var(--raio-2xl); overflow: hidden; background: var(--poco); }
+.foto-loja { position: relative; aspect-ratio: 4 / 5; max-width: 100%; border-radius: var(--raio-2xl); overflow: hidden; background: var(--poco); }
 .foto-loja picture, .foto-loja img { width: 100%; height: 100%; }
 .foto-loja img { object-fit: cover; }
 .placeholder-foto {
@@ -46,11 +46,21 @@
 }
 
 /* ---------- Clientes ---------- */
-.clientes { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: 22px; max-width: 640px; }
+/* Celular e tablet: uma fileira que se arrasta para o lado (5 fotos não fecham em 2 colunas).
+   Desktop: as 5 lado a lado. */
+.clientes {
+  list-style: none; display: grid; grid-auto-flow: column; grid-auto-columns: 68%; gap: 10px;
+  margin-bottom: 22px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory;
+  scrollbar-width: thin; padding-bottom: 6px; border-radius: var(--raio-lg);
+}
+.clientes > li { scroll-snap-align: start; }
 .foto-cliente { aspect-ratio: 4 / 5; border-radius: var(--raio-lg); overflow: hidden; background: var(--poco); }
 .foto-cliente picture, .foto-cliente img { width: 100%; height: 100%; }
 .foto-cliente img { object-fit: cover; }
-@media (min-width: 640px) { .clientes { gap: 16px; } }
+@media (min-width: 640px) { .clientes { gap: 16px; grid-auto-columns: 38%; } }
+@media (min-width: 900px) {
+  .clientes { grid-auto-flow: row; grid-template-columns: repeat(5, minmax(0, 1fr)); overflow: visible; padding-bottom: 0; }
+}
 
 /* ---------- Entrega ---------- */
 .entrega-grid { display: grid; gap: 26px; }

@@ -4,6 +4,7 @@
     "largura": 480,
     "altura": 231,
     "assinatura": "46cb138f7b48",
+    "fonte": "[\"vellari-logo-branco-transparente.png\",null,[160,320,480]]",
     "avif": [
       {
         "w": 160,
@@ -37,7 +38,8 @@
     "alt": "iPhone 18 Pro Max bordô, visto de trás",
     "largura": 960,
     "altura": 960,
-    "assinatura": "62c71a8c9e81",
+    "assinatura": "1de3d35cb5d7",
+    "fonte": "[\"assets/media/novas_fotos_dos_iphones_na_vitrine/vellari-iphone-18-pro-max-FINAL-chatgpt.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -75,11 +77,55 @@
       }
     ]
   },
+  "iphone-18-pro-max-4": {
+    "alt": "iPhone 18 Pro Max bordô em outro ângulo",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "dbda235b7256",
+    "fonte": "[\"assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_cbn4macbn4macbn4.jfif\",null,null]",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-18-pro-max-4-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-18-pro-max-4-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-18-pro-max-4-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-18-pro-max-4-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-18-pro-max-4-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-18-pro-max-4-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-18-pro-max-4-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-18-pro-max-4-960.webp"
+      }
+    ]
+  },
   "iphone-18-pro-max-2": {
     "alt": "iPhone 18 Pro Max bordô, com as câmeras em destaque",
     "largura": 960,
     "altura": 960,
-    "assinatura": "78f5573137e0",
+    "assinatura": "c088d1166d13",
+    "fonte": "[\"assets/media/novas_fotos_dos_iphones_na_vitrine/vellari-iphone-18-pro-max-NOVO-chatgpt-1.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -121,7 +167,8 @@
     "alt": "iPhone 18 Pro Max bordô na mão",
     "largura": 960,
     "altura": 960,
-    "assinatura": "3fc9af52945a",
+    "assinatura": "9a351805b01f",
+    "fonte": "[\"assets/media/novas_fotos_dos_iphones_na_vitrine/vellari-iphone-18-pro-max-NOVO-chatgpt-2.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -163,7 +210,8 @@
     "alt": "iPhone 18 Pro prata, visto de trás",
     "largura": 960,
     "altura": 960,
-    "assinatura": "7a674af85d6f",
+    "assinatura": "2965b39b388d",
+    "fonte": "[\"assets/media/novas_fotos_dos_iphones_na_vitrine/vellari-iphone-18-pro-FINAL-chatgpt.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -203,9 +251,10 @@
   },
   "iphone-18-pro-2": {
     "alt": "iPhone 18 Pro prata na mão",
-    "largura": 960,
-    "altura": 960,
-    "assinatura": "d812198701b5",
+    "largura": 640,
+    "altura": 640,
+    "assinatura": "e9962b2a0b7b",
+    "fonte": "[\"assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_a50hp8a50hp8a50h.jfif\",[0.0793,0,0.8414,1],null]",
     "avif": [
       {
         "w": 320,
@@ -218,10 +267,6 @@
       {
         "w": 640,
         "src": "/img/iphone-18-pro-2-640.avif"
-      },
-      {
-        "w": 960,
-        "src": "/img/iphone-18-pro-2-960.avif"
       }
     ],
     "webp": [
@@ -236,10 +281,6 @@
       {
         "w": 640,
         "src": "/img/iphone-18-pro-2-640.webp"
-      },
-      {
-        "w": 960,
-        "src": "/img/iphone-18-pro-2-960.webp"
       }
     ]
   },
@@ -248,6 +289,7 @@
     "largura": 960,
     "altura": 960,
     "assinatura": "4b15410a0961",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-17-pro-max-chatgpt.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -290,6 +332,7 @@
     "largura": 960,
     "altura": 960,
     "assinatura": "616fdcf94fa5",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/Gemini_Generated_Image_wqmjmiwqmjmiwqmj.jfif\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -332,6 +375,7 @@
     "largura": 960,
     "altura": 960,
     "assinatura": "b9c7f0062e17",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-15-pro-max-chatgpt.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -374,6 +418,7 @@
     "largura": 960,
     "altura": 960,
     "assinatura": "21066c080cf1",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/Gemini_Generated_Image_f7s9b8f7s9b8f7s9.jfif\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -416,6 +461,7 @@
     "largura": 960,
     "altura": 960,
     "assinatura": "31f7c15bd429",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-14-pro-max-chatgpt.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -458,6 +504,7 @@
     "largura": 960,
     "altura": 960,
     "assinatura": "5933d185aec2",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/Gemini_Generated_Image_4zuewf4zuewf4zue.jfif\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -500,6 +547,7 @@
     "largura": 960,
     "altura": 960,
     "assinatura": "00ce843e11b5",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-14-pro-chatgpt.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -542,6 +590,7 @@
     "largura": 960,
     "altura": 960,
     "assinatura": "e6e14015947a",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/Gemini_Generated_Image_6i6kud6i6kud6i6k.jfif\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -584,6 +633,7 @@
     "largura": 960,
     "altura": 960,
     "assinatura": "60eb0ad74e53",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-14-chatgpt.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -621,11 +671,55 @@
       }
     ]
   },
+  "iphone-14-2": {
+    "alt": "iPhone 14 meia-noite na mão",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "e8c6b7bb95d8",
+    "fonte": "[\"assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_hrbs2chrbs2chrbs.jfif\",null,null]",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-2-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-2-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-2-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-2-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-2-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-2-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-2-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-2-960.webp"
+      }
+    ]
+  },
   "iphone-13-pro": {
     "alt": "iPhone 13 Pro prateado, visto de trás",
     "largura": 960,
     "altura": 960,
     "assinatura": "fb56854045b1",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-13-pro-chatgpt.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -663,11 +757,55 @@
       }
     ]
   },
+  "iphone-13-pro-2": {
+    "alt": "iPhone 13 Pro prateado na mão",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "085d6dda38b1",
+    "fonte": "[\"assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_uecmwuuecmwuuecm.jfif\",null,null]",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-pro-2-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-pro-2-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-pro-2-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-pro-2-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-pro-2-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-pro-2-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-pro-2-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-pro-2-960.webp"
+      }
+    ]
+  },
   "iphone-13": {
     "alt": "iPhone 13 azul, visto de trás",
     "largura": 960,
     "altura": 960,
     "assinatura": "950cfbc3294c",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-13-chatgpt.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -705,11 +843,55 @@
       }
     ]
   },
+  "iphone-13-2": {
+    "alt": "iPhone 13 azul na mão",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "f0323f75fff1",
+    "fonte": "[\"assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_i1wtvsi1wtvsi1wt.jfif\",null,null]",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-2-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-2-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-2-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-2-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-2-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-2-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-2-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-2-960.webp"
+      }
+    ]
+  },
   "iphone-15-pro": {
     "alt": "iPhone 15 Pro titânio branco, visto de trás",
     "largura": 960,
     "altura": 960,
     "assinatura": "85aefb5d331b",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-15-pro-chatgpt.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -747,11 +929,55 @@
       }
     ]
   },
+  "iphone-15-pro-2": {
+    "alt": "iPhone 15 Pro titânio branco na mão",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "017b9410fe4a",
+    "fonte": "[\"assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_mqjmugmqjmugmqjm.jfif\",null,null]",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-15-pro-2-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-15-pro-2-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-15-pro-2-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-15-pro-2-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-15-pro-2-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-15-pro-2-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-15-pro-2-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-15-pro-2-960.webp"
+      }
+    ]
+  },
   "iphone-14-plus": {
     "alt": "iPhone 14 Plus meia-noite, visto de trás",
     "largura": 960,
     "altura": 960,
     "assinatura": "e3cc22b242fc",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-14-plus-chatgpt.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -789,11 +1015,55 @@
       }
     ]
   },
+  "iphone-14-plus-2": {
+    "alt": "iPhone 14 Plus meia-noite na mão",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "c95e2ffc6e06",
+    "fonte": "[\"assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_orq6p6orq6p6orq6.jfif\",null,null]",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-plus-2-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-plus-2-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-plus-2-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-plus-2-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-14-plus-2-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-14-plus-2-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-14-plus-2-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-14-plus-2-960.webp"
+      }
+    ]
+  },
   "iphone-13-pro-max": {
     "alt": "iPhone 13 Pro Max dourado, visto de trás",
     "largura": 960,
     "altura": 960,
     "assinatura": "95dd715e4dbb",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-13-pro-max-chatgpt.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -831,11 +1101,55 @@
       }
     ]
   },
+  "iphone-13-pro-max-2": {
+    "alt": "iPhone 13 Pro Max dourado na mão",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "6e41a552c6d8",
+    "fonte": "[\"assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_mqgry7mqgry7mqgr.jfif\",null,null]",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-pro-max-2-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-pro-max-2-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-pro-max-2-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-pro-max-2-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-13-pro-max-2-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-13-pro-max-2-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-13-pro-max-2-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-13-pro-max-2-960.webp"
+      }
+    ]
+  },
   "iphone-12": {
     "alt": "iPhone 12 branco, visto de trás",
     "largura": 960,
     "altura": 960,
     "assinatura": "2f9dc1da1727",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-12-chatgpt.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -873,11 +1187,55 @@
       }
     ]
   },
+  "iphone-12-2": {
+    "alt": "iPhone 12 branco na mão",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "282347357a7c",
+    "fonte": "[\"assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_jmgybojmgybojmgy.jfif\",null,null]",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-12-2-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-12-2-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-12-2-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-12-2-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-12-2-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-12-2-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-12-2-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-12-2-960.webp"
+      }
+    ]
+  },
   "iphone-11-pro-max": {
     "alt": "iPhone 11 Pro Max verde meia-noite, visto de trás",
     "largura": 960,
     "altura": 960,
     "assinatura": "187838feab52",
+    "fonte": "[\"assets/media/fotos-dos-iphones-da-vitrine/vellari-iphone-11-pro-max-chatgpt.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -915,11 +1273,55 @@
       }
     ]
   },
-  "iphone-11": {
-    "alt": "iPhone 11 em cinco cores",
+  "iphone-11-pro-max-2": {
+    "alt": "iPhone 11 Pro Max verde meia-noite na mão",
     "largura": 960,
     "altura": 960,
-    "assinatura": "8ff901353d23",
+    "assinatura": "b73bee4c6c58",
+    "fonte": "[\"assets/media/novas_fotos_dos_iphones_na_vitrine/Gemini_Generated_Image_8d7eqe8d7eqe8d7e.jfif\",null,null]",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/iphone-11-pro-max-2-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-11-pro-max-2-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-11-pro-max-2-640.avif"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-11-pro-max-2-960.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/iphone-11-pro-max-2-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/iphone-11-pro-max-2-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/iphone-11-pro-max-2-640.webp"
+      },
+      {
+        "w": 960,
+        "src": "/img/iphone-11-pro-max-2-960.webp"
+      }
+    ]
+  },
+  "iphone-11": {
+    "alt": "iPhone 11 preto, visto de trás",
+    "largura": 960,
+    "altura": 960,
+    "assinatura": "2ada1a1dca3b",
+    "fonte": "[\"assets/media/novas_fotos_dos_iphones_na_vitrine/vellari-iphone-11-chatgpt.png\",null,null]",
     "avif": [
       {
         "w": 320,
@@ -962,6 +1364,7 @@
     "largura": 960,
     "altura": 960,
     "assinatura": "f81a1e9ba2e3",
+    "fonte": "[\"assets/media/posts/17854145280382763.jpg\",[0,0,1,1],null]",
     "avif": [
       {
         "w": 320,
@@ -1004,6 +1407,7 @@
     "largura": 1280,
     "altura": 1280,
     "assinatura": "a756b1b49b04",
+    "fonte": "[\"assets/media/stories/202512/18545164549056152.jpg\",[0,0.2,1,0.5627],null]",
     "avif": [
       {
         "w": 320,
@@ -1054,6 +1458,7 @@
     "largura": 1280,
     "altura": 1280,
     "assinatura": "630eedcabdf9",
+    "fonte": "[\"assets/media/stories/202512/18093107728927970.jpg\",[0,0.2,1,0.5627],null]",
     "avif": [
       {
         "w": 320,
@@ -1104,6 +1509,7 @@
     "largura": 1280,
     "altura": 1280,
     "assinatura": "2e88a5b75d5e",
+    "fonte": "[\"assets/media/stories/202610/17986305756088228.jpg\",[0,0.38,1,0.5627],null]",
     "avif": [
       {
         "w": 320,
@@ -1154,6 +1560,7 @@
     "largura": 1280,
     "altura": 1280,
     "assinatura": "d36ffdddf1f6",
+    "fonte": "[\"assets/media/stories/202512/18082440881169461.jpg\",[0,0.2,1,0.5627],null]",
     "avif": [
       {
         "w": 320,
@@ -1204,6 +1611,7 @@
     "largura": 1280,
     "altura": 1280,
     "assinatura": "1cff593f7bad",
+    "fonte": "[\"assets/media/stories/202512/18069299480123955.jpg\",[0,0.2,1,0.5627],null]",
     "avif": [
       {
         "w": 320,
@@ -1254,6 +1662,7 @@
     "largura": 1280,
     "altura": 1280,
     "assinatura": "42cd752d0a36",
+    "fonte": "[\"assets/media/stories/202610/18077483414720983.jpg\",[0,0.4,1,0.5627],null]",
     "avif": [
       {
         "w": 320,
@@ -1304,6 +1713,7 @@
     "largura": 1280,
     "altura": 1280,
     "assinatura": "60b2cec4a25c",
+    "fonte": "[\"assets/media/stories/202611/18178812742443762.jpg\",[0,0.25,1,0.5627],null]",
     "avif": [
       {
         "w": 320,
@@ -1354,6 +1764,7 @@
     "largura": 960,
     "altura": 960,
     "assinatura": "f52ebf32aec9",
+    "fonte": "[\"assets/media/stories/202504/17906623077122082.jpg\",[0,0.225,1,0.5627],null]",
     "avif": [
       {
         "w": 320,
@@ -1396,6 +1807,7 @@
     "largura": 1280,
     "altura": 1280,
     "assinatura": "9236d7ec2c23",
+    "fonte": "[\"assets/media/posts/18088355780076297.jpg\",[0,0.12,1,0.75],null]",
     "avif": [
       {
         "w": 320,
@@ -1446,6 +1858,7 @@
     "largura": 1280,
     "altura": 1280,
     "assinatura": "ac1d7d29438d",
+    "fonte": "[\"assets/media/stories/202609/18165052279470180.jpg\",[0,0.19,1,0.5627],null]",
     "avif": [
       {
         "w": 320,
@@ -1496,6 +1909,7 @@
     "largura": 640,
     "altura": 640,
     "assinatura": "1dbe5204b2f4",
+    "fonte": "[\"assets/media/stories/202403/18055491856561233.jpg\",[0.1,0.415,0.8,0.45],null]",
     "avif": [
       {
         "w": 320,
@@ -1530,6 +1944,7 @@
     "largura": 1280,
     "altura": 1280,
     "assinatura": "72f100e8d439",
+    "fonte": "[\"assets/media/stories/202604/18095873783119613.jpg\",[0,0.18,1,0.5627],null]",
     "avif": [
       {
         "w": 320,
@@ -1580,6 +1995,7 @@
     "largura": 960,
     "altura": 1199,
     "assinatura": "8b6822da98f8",
+    "fonte": "[\"assets/media/stories/202609/17989385967103855.jpg\",[0,0.06,1,0.703],null]",
     "avif": [
       {
         "w": 320,
@@ -1614,6 +2030,130 @@
       {
         "w": 960,
         "src": "/img/cliente-02-960.webp"
+      }
+    ]
+  },
+  "loja": {
+    "alt": "Rafael, dono da Vellari Phone, com iPhones e acessórios na mesa",
+    "largura": 640,
+    "altura": 800,
+    "assinatura": "1aa7a57693c9",
+    "fonte": "[\"assets/media/fotos-do-dono-da-vellari/WhatsApp Image 2026-11-16 at 14.33.49.jpeg\",[0,0.17,1,0.703],null]",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/loja-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/loja-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/loja-640.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/loja-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/loja-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/loja-640.webp"
+      }
+    ]
+  },
+  "cliente-03": {
+    "alt": "Cliente da Vellari Phone com o iPhone novo",
+    "largura": 320,
+    "altura": 400,
+    "assinatura": "7f8ea3b82ec0",
+    "fonte": "[\"assets/media/imgi_27_472001738_17943488021928369_279392224808660893_n.jpg\",[0.15,0,0.45,0.5625],null]",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/cliente-03-320.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/cliente-03-320.webp"
+      }
+    ]
+  },
+  "cliente-04": {
+    "alt": "Cliente da Vellari Phone mostrando o iPhone novo",
+    "largura": 640,
+    "altura": 800,
+    "assinatura": "3a6166a416f5",
+    "fonte": "[\"assets/media/imgi_29_472439783_17943481472928369_8354848267092157557_n.jpg\",[0.02,0,0.56,0.7],null]",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/cliente-04-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/cliente-04-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/cliente-04-640.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/cliente-04-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/cliente-04-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/cliente-04-640.webp"
+      }
+    ]
+  },
+  "cliente-05": {
+    "alt": "Cliente da Vellari Phone com a caixa do iPhone",
+    "largura": 640,
+    "altura": 800,
+    "assinatura": "c6e205faf126",
+    "fonte": "[\"assets/media/imgi_30_472113185_17943481358928369_3541727666888919944_n.jpg\",[0,0.01,0.59,0.7375],null]",
+    "avif": [
+      {
+        "w": 320,
+        "src": "/img/cliente-05-320.avif"
+      },
+      {
+        "w": 480,
+        "src": "/img/cliente-05-480.avif"
+      },
+      {
+        "w": 640,
+        "src": "/img/cliente-05-640.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 320,
+        "src": "/img/cliente-05-320.webp"
+      },
+      {
+        "w": 480,
+        "src": "/img/cliente-05-480.webp"
+      },
+      {
+        "w": 640,
+        "src": "/img/cliente-05-640.webp"
       }
     ]
   }

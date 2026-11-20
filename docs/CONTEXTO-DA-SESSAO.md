@@ -36,6 +36,25 @@ original está em `PROMPT.md.txt`. As pendências para o cliente estão em `docs
 - A ideia de atrasar a partida do 3D não foi feita; só faz sentido se o usuário quiser melhorar
   a experiência em celular fraco, já que a nota oficial passou da meta.
 
+## Mudanças de 20/11/2026 (pedidas pelo usuário)
+
+- Hero: fundo com brilho azul forte atrás do aparelho que se apaga no preto (como a referência
+  de iPhone em laranja que o usuário mandou, em azul); o aparelho abre na cor Glacial
+  (`hero.corInicial`). Os posters e a imagem de prévia continuam como estavam.
+- "Por que a Vellari": foto do Rafael, dono da loja, no lugar de "Foto da loja em breve"
+  (moldura 4:5).
+- Vitrine: fotos novas de `assets/media/novas_fotos_dos_iphones_na_vitrine/` (versões finais do
+  18 Pro Max e do 18 Pro, iPhone 11 no mesmo cenário e uma 2ª foto para cada modelo que tinha só
+  uma). O `vellari-iphone-11-pro-max-chatgpt.png` de lá é igual ao que já estava no site.
+- Clientes: 5 fotos (3 novas, recortadas sem a sacola "Rafa Imports"). No celular viram uma
+  fileira que se arrasta para o lado; no desktop, 5 lado a lado.
+- Movimento: entrada do hero ao abrir, seções e cards subindo em sequência ao rolar, fotos que
+  se acomodam na moldura, zoom na foto do card no hover e o brilho do hero "respirando".
+  Desligado com "reduzir movimento".
+- Esta pasta (`CUSTOMERS PROJECTS\VELLARI PHONE\vellari-site-3d`) não tem os originais do
+  Instagram (`assets/media/stories`, `posts` e a pasta antiga da vitrine). O `npm run images`
+  agora mantém as imagens já geradas quando o original não está na máquina.
+
 ## Decisões tomadas (premissas)
 
 Na Fase 0 o usuário aprovou sem responder às perguntas abaixo, então valem estas premissas.
